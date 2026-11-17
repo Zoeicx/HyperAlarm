@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/settings_show_title">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="prefs_key_settings_hide_app_icon"
+            android:title="@string/settings_hide_app_icon" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="prefs_key_settings_float_nav"
+            android:title="@string/settings_float_nav" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="prefs_key_settings_show_all_alarms"
+            android:title="@string/settings_show_all_alarms" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="prefs_key_settings_hide_script_alarms_clock"
+            android:summary="@string/clock_filter_summary"
+            android:title="@string/clock_filter_title" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:dependency="prefs_key_settings_hide_script_alarms_clock"
+            android:key="prefs_key_settings_hide_ringing_task_clock"
+            android:summary="@string/clock_filter_ringing_summary"
+            android:title="@string/clock_filter_ringing_title" />
+        <fan.preference.DropDownPreference
+            android:defaultValue="0"
+            android:key="prefs_key_settings_app_language"
+            android:title="@string/settings_app_language" />
+        <Preference
+            android:key="prefs_key_restart_tutorial"
+            android:summary="@string/restart_tutorial_summary"
+            android:title="@string/restart_tutorial_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/ha_logs_group">
+        <fan.preference.DropDownPreference
+            android:key="prefs_key_log_level_v2"
+            android:title="@string/log_level_title" />
+
+        <Preference
+            android:key="prefs_key_log_viewer"
+            android:title="@string/ha_history_logs">
+            <intent
+                android:targetPackage="com.hyperalarm"
+                android:targetClass="com.hyperalarm.log.LogViewerActivity"/>
+        </Preference>
+
+        <Preference
+            android:key="prefs_key_script_logs"
+            android:title="@string/ha_script_logs">
+            <intent
+                android:targetPackage="com.hyperalarm"
+                android:targetClass="com.hyperalarm.log.ScriptLogActivity"/>
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:isPreferenceVisible="false">
+        <fan.preference.DropDownPreference
+            android:defaultValue="0"
+            android:key="prefs_key_settings_icon"
+            android:title="@string/settings_icon"
+            app:isPreferenceVisible="false"
+            app:entries="@array/settings_icon"
+            app:entryValues="@array/settings_icon_value" />
+        <fan.preference.DropDownPreference
+            android:defaultValue="0"
+            android:key="prefs_key_settings_icon_mode"
+            android:title="@string/settings_icon_mode"
+            app:isPreferenceVisible="false"
+            app:entries="@array/settings_icon_mode"
+            app:entryValues="@array/settings_icon_mode_value" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/script_group_title">
+        <Preference
+            android:key="prefs_key_lock_password"
+            android:title="@string/lock_password_title" />
+        <Preference
+            android:key="prefs_key_script_dir"
+            android:title="@string/script_dir_copy">
+            <intent
+                android:targetPackage="com.hyperalarm"
+                android:targetClass="com.hyperalarm.script.ScriptDirActivity"/>
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_data_title">
+        <Preference
+            android:key="prefs_key_back"
+            android:title="@string/settings_back" />
+        <Preference
+            android:key="prefs_key_rest"
+            android:title="@string/settings_rest" />
+        <Preference
+            android:key="prefs_key_reset"
+            android:title="@string/settings_reset" />
+    </PreferenceCategory>
+</PreferenceScreen>

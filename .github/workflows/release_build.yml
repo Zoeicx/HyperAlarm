@@ -1,0 +1,205 @@
+name: Release Build
+
+# Pushing the tag and publishing the release need a write-scoped token. Repositories on GitHub's
+# read-only default made both jobs fail at the last step.
+permissions:
+  contents: write
+  packages: read
+
+on:
+  push:
+    branches: [ "main" ]
+    paths-ignore:
+      - ".github/**"
+      - "!.github/workflows/**"
+      - ".idea/"
+      - "*.md"
+      - "docs/**"
+      - "app/src/main/assets/**"
+  workflow_dispatch:
+
+jobs:
+  set_tag_version:
+    if: |
+      startsWith(github.event.head_commit.message, 'app: update version ')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Auto Tag if version update commit
+        env:
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+        run: |
+          set -e
+          MSG="${{ github.event.head_commit.message }}"
+          if [[ "$MSG" =~ app:\ update\ version\ ([^[:space:]]+)\ to\ ([^[:space:]]+) ]]; then
+            PREV_VER="${BASH_REMATCH[1]}"
+            NEXT_VER="${BASH_REMATCH[2]}"
+            git config user.name "${{ github.actor }}"
+            git config user.email "${{ github.actor }}@users.noreply.github.com"
+            git tag "$NEXT_VER" ${{ github.sha }}
+            git push origin "$NEXT_VER"
+          fi
+
+  build:
+    # set_tag_version is skipped for ordinary commits, hence always(): the tag is created first so
+    # post_release can name the release after it instead of guessing with git describe.
+    needs: set_tag_version
+    if: |
+      always() && (contains(github.event.head_commit.message, '[release]') || contains(github.event.head_commit.message, '[beta]'))
+    runs-on: macos-latest
+    name: Build App
+    steps:
+      - name: Checkout Git Repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - name: Setup JDK
+        uses: actions/setup-java@v5
+        with:
+          java-version: '25'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v6
+        with:
+          cache-overwrite-existing: true
+
+      - name: Configure GitHub Packages credentials
+        run: |
+          # settings.gradle.kts aborts without these, so every build that resolves fan.miuix needs them.
+          echo "GIT_ACTOR=${{ github.actor }}" >> $GITHUB_ENV
+          echo "GIT_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+
+      - name: Create Sign File
+        run: |
+          touch signing.properties
+          echo storePassword=${{ secrets.KEY_STORE_PASSWORD }} >> signing.properties
+          echo keyAlias=${{ secrets.ALIAS }} >> signing.properties
+          echo keyPassword='${{ secrets.KEY_STORE_PASSWORD }}' >> signing.properties
+          echo storeFile=key.jks >> signing.properties
+          echo ${{ secrets.SIGNING_KEY }} | base64 --decode > key.jks
+
+      - name: Check i18n conventions
+        run: ./gradlew checkI18n --max-workers=1
+
+      - name: Lint release sources
+        run: ./gradlew :app:lintRelease --max-workers=1
+
+      - name: Build Release APK
+        if: contains(github.event.head_commit.message, '[release]')
+        run: ./gradlew assembleRelease
+
+      - name: Build Beta APK
+        if: contains(github.event.head_commit.message, '[beta]')
+        run: ./gradlew assembleBeta
+
+      - name: Find APKs
+        run: |
+          if [[ "${{ github.event.head_commit.message }}" == *"[release]"* ]]; then
+            echo "APK_FILE_RELEASE=$(find app/build/outputs/apk/release -name '*.apk')" >> $GITHUB_ENV
+          fi
+          if [[ "${{ github.event.head_commit.message }}" == *"[beta]"* ]]; then
+            echo "APK_FILE_BETA=$(find app/build/outputs/apk/beta -name '*.apk')" >> $GITHUB_ENV
+          fi
+
+      - name: Show APKs SHA256
+        if: success()
+        run: |
+          echo "### Build Success" >> $GITHUB_STEP_SUMMARY
+          echo "|Artifact|SHA256|" >> $GITHUB_STEP_SUMMARY
+          echo "|:--------:|:----------|" >> $GITHUB_STEP_SUMMARY
+          if [[ -n "${{ env.APK_FILE_RELEASE }}" ]]; then
+            release=$(shasum -a 256 "${{ env.APK_FILE_RELEASE }}")
+            echo "|Release|$release" >> $GITHUB_STEP_SUMMARY
+          fi
+          if [[ -n "${{ env.APK_FILE_BETA }}" ]]; then
+            beta=$(shasum -a 256 "${{ env.APK_FILE_BETA }}")
+            echo "|Beta|$beta" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Upload Release APK
+        if: env.APK_FILE_RELEASE
+        uses: actions/upload-artifact@v7
+        with:
+          name: HyperAlarm Release
+          path: ${{ env.APK_FILE_RELEASE }}
+
+      - name: Upload Beta APK
+        if: env.APK_FILE_BETA
+        uses: actions/upload-artifact@v7
+        with:
+          name: HyperAlarm Beta
+          path: ${{ env.APK_FILE_BETA }}
+
+  post_release:
+    if: |
+      contains(github.event.head_commit.message, '[release]') || contains(github.event.head_commit.message, '[beta]')
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Download APKs
+        uses: actions/download-artifact@v8
+        with:
+          path: dist
+
+      - name: Locate APKs
+        run: |
+          # $GITHUB_ENV does not cross jobs, so the paths are rebuilt from the downloaded artifacts.
+          RELEASE=$(find dist -name '*.apk' -path '*Release*' | head -n1)
+          BETA=$(find dist -name '*.apk' -path '*Beta*' | head -n1)
+          if [[ -n "$RELEASE" ]]; then echo "APK_FILE_RELEASE=$RELEASE" >> $GITHUB_ENV; fi
+          if [[ -n "$BETA" ]]; then echo "APK_FILE_BETA=$BETA" >> $GITHUB_ENV; fi
+
+      - name: Get Tag Info
+        id: taginfo
+        run: |
+          git fetch --tags
+          # A repository without any tag yet is a first release: fall back to the version in the
+          # build file instead of letting `git describe` abort the job.
+          CUR_TAG=$(git describe --tags --abbrev=0 2>/dev/null || true)
+          if [[ -z "$CUR_TAG" ]]; then
+            CUR_TAG=$(grep -oP 'val appVersionName = "\K[^"]+' app/build.gradle.kts)
+          fi
+          PREV_TAG=$(git tag --sort=-creatordate | grep -Fxv "$CUR_TAG" | head -n1 || true)
+          echo "CUR_TAG=$CUR_TAG" >> $GITHUB_ENV
+          echo "PREV_TAG=$PREV_TAG" >> $GITHUB_ENV
+
+      - name: Generate Release Notes
+        id: notes
+        run: |
+          CONTRIBUTORS=$(git log ${{ env.PREV_TAG }}..${{ env.CUR_TAG }} --format='%aN' | sort | uniq | tr '\n' ',' | sed 's/,$//')
+          echo "RELEASE_TITLE=${{ env.CUR_TAG }}" >> $GITHUB_ENV
+          {
+            echo "RELEASE_BODY=此打包为自动自动触发，更新日志等待修改"
+            echo
+            echo "本次更新的贡献者们如下："
+            echo "$CONTRIBUTORS"
+            echo
+            echo "完整更新日志见：https://github.com/${{ github.repository }}/compare/${{ env.PREV_TAG }}...${{ github.sha }}"
+            echo
+            echo "注意事项："
+            echo "- 出现任何问题请将日志等级设置为 Debug 后携带日志及必要信息提交至 GitHub issue。"
+            echo "Copyright © 2023-2026 HyperAlarm Contributions"
+          } | sed ':a;N;$!ba;s/\n/\\n/g' >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.CUR_TAG }}
+          name: ${{ env.RELEASE_TITLE }}
+          body: ${{ env.RELEASE_BODY }}
+          # Only the APKs that were actually built: an empty path makes the action fail.
+          files: ${{ env.APK_FILE_RELEASE || env.APK_FILE_BETA }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

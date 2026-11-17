@@ -1,0 +1,1 @@
+-keepnames class * extends com.hyperalarm.libhook.base.BaseHook

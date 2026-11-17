@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <string name="provision_back_description">Zurück</string>
+    <string name="provision_start_content_description">Start</string>
+    <string name="provision_next">Weiter</string>
+    <string name="provision_skip_underline">Überspringen</string>
+    <string name="provision_permission_settings_title">Berechtigungseinstellungen</string>
+    <string name="provision_terms_and_statement_title">Nutzungsbedingungen</string>
+    <string name="provision_basic_settings_title">Allgemeine Einstellungen</string>
+    <string name="provision_agree_and_next">Zustimmen</string>
+    <string name="provision_agree_terms">Ich habe die Nutzungsvereinbarung und Datenschutzerklärung gelesen und stimme diesen zu.</string>
+    <string name="provision_terms_of_use">Nutzungsbedingungen</string>
+    <string name="provision_terms_of_use_label_use_network_china">Um Ihnen bessere Dienste anbieten zu können, müssen Sie vor der weiteren Nutzung des Systems unsere <annotation key="user_agreement">Nutzungsvereinbarung</annotation> und <annotation key="privacy_policy">Datenschutzrichtlinie</annotation> lesen und diesen zustimmen. Wir schützen Ihre persönlichen Daten in Übereinstimmung mit den relevanten Gesetzen, Vorschriften und Datenschutzbestimmungen.</string>
+    <string name="provision_protect_persoanl_info_statement">Wir schützen Ihre persönlichen Daten in Übereinstimmung mit den relevanten Gesetzen, Vorschriften und Datenschutzrichtlinien.</string>
+    <string name="provision_service_agreement">Ich habe die Nutzungsbedingungen gelesen und ihnen zugestimmt.</string>
+    <string name="provision_complete_text">System betreten</string>
+    <string name="provision_back">Zurück</string>
+    <string name="provision_set_permission_later">Diese notwendigen Berechtigungen kannst du auch später erteilen</string>
+    <string name="provision_permission_internet">Internetverbindung erlauben</string>
+    <string name="provision_permission_root">Aktionen als Root erlauben</string>
+    <string name="provision_permission_installed_apps">Zugriff auf die Liste installierter Apps erlauben</string>
+    <string name="provision_permission_lsp">Im Xposed-Manager aktivieren</string>
+    <string name="provision_terms_of_use_verification_code_tip">Dein Bestätigungscode ist %1$s.</string>
+    <string name="provision_terms_of_use_verification_code_dialog_title">Bestätigungscode eingeben</string>
+    <string name="provision_terms_of_use_verification_code_dialog_desc">Du findest ihn in unserer Nutzungsvereinbarung oder Datenschutzrichtlinie</string>
+    <string name="provision_terms_of_use_verification_code_dialog_continue">Weiter</string>
+    <string name="provision_terms_of_use_processing">Daten werden abgeglichen …</string>
+    <string name="provision_basic_settings_hide_app_icon">Symbol auf dem Startbildschirm</string>
+    <string name="provision_basic_settings_category_app">App</string>
+    <string name="provision_basic_settings_category_scope">Scope</string>
+    <string name="provision_basic_settings_language">Sprache</string>
+    <string name="provision_basic_settings_scope_sync">Scope-Sync</string>
+    <string name="provision_basic_settings_scope_sync_desc">Auswahl auf der Startseite mit dem Scope abgleichen</string>
+    <string name="provision_basic_settings_scope">Scope</string>
+    <string name="provision_basic_settings_icon">Symbol in den Einstellungen</string>
+    <string name="provision_basic_settings_icon_desc">Legt fest, wo das Modulsymbol in den Einstellungen erscheint</string>
+    <string name="provision_basic_settings_icon_mode">Symbolstil</string>
+    <string name="provision_basic_settings_icon_disable">Aus</string>
+    <string name="provision_basic_settings_icon_top">Oben</string>
+    <string name="provision_basic_settings_icon_medium">Mitte</string>
+    <string name="provision_basic_settings_icon_down">Unten</string>
+    <string name="provision_basic_settings_icon_miui_14">Abgerundetes Rechteck</string>
+    <string name="provision_basic_settings_icon_miui_13">Ausgeschnittener Hintergrund</string>
+    <string name="provision_system_preparing">System wird vorbereitet …</string>
+    <string name="provision_system_complete">Einrichtung abgeschlossen</string>
+    <string name="provision_scope_open_failed">Scope-Seite konnte nicht geöffnet werden</string>
+    <string name="provision_get_md_failed">## Inhalt konnte nicht geladen werden.   
+ - Du kannst [hier](%URL%) den Originalinhalt ansehen.   
+ - Oder diese Seite [neu laden](hyperalarm://refresh).</string>
+    <string name="clock_filter_title">Uhr zeigt nur Alarme</string>
+    <string name="clock_filter_summary">Skript-Aufgaben erscheinen nicht in der Alarmliste</string>
+    <string name="clock_filter_ringing_title">Klingelnde Aufgaben ausblenden</string>
+    <string name="clock_filter_ringing_summary">Aufgaben, deren Alarm klingelt, werden ausgeblendet</string>
+    <string name="lock_password_title">Sperrbildschirm-Passwort</string>
+    <string name="lock_password_summary_unset">Nicht gesetzt: Skripte laufen ohne Entsperren</string>
+    <string name="lock_password_summary_set">Gesetzt: stille Aufgaben entsperren vor dem Lauf</string>
+    <string name="provision_basic_settings_category_clock">Uhr-Liste</string>
+    <string name="lock_password_clear">Löschen</string>
+    <string name="lock_password_save">Speichern</string>
+    <string name="lock_password_cleared">Gelöscht</string>
+    <string name="lock_password_saved">Gespeichert</string>
+    <string name="lock_password_unchanged">Unverändert gelassen</string>
+    <string name="lock_password_desc">Wird verwendet, um den Bildschirm vor einer stillen Aufgabe zu entsperren. Leer lassen, um das aktuelle zu behalten.</string>
+    <string name="lock_password_hint">Sperrbildschirm-Passwort</string>
+    <string name="clock_filter_no_root">Zum Ändern des Uhrlisten-Filters ist Root erforderlich</string>
+    <string name="lock_password_failed_toast">Passwortdatei konnte nicht geschrieben werden. Ist Root erteilt?</string>
+</resources>

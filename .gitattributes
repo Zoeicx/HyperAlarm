@@ -1,0 +1,6 @@
+# Auto detect text files and perform LF normalization
+* text=auto eol=lf
+
+# Batch files keep CRLF: cmd.exe mis-parses labels and goto in an LF-only .bat.
+*.bat text eol=crlf
+*.cmd text eol=crlf

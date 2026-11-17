@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <!--Introduction to Xposed Modules-->
+    <string name="new_cta_app_all_purpose_agree">同意 &amp; 続行</string>
+    <string name="new_cta_app_all_purpose_reject">拒否 &amp; 終了</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="home">ホーム</string>
+    <string name="settings">設定</string>
+    <string name="about">アプリについて</string>
+    <string name="about_contributer">貢献者</string>
+    <string name="about_contributer_desc">HyperAlarm の開発に協力をして頂いた以下の方々に感謝をします。 (順不同)</string>
+    <string name="about_device_info_device">デバイス</string>
+    <string name="about_device_info_android">Android バージョン</string>
+    <string name="about_device_info_os">OS バージョン</string>
+    <string name="location_add">追加</string>
+    <string name="location_delete">削除</string>
+    <string name="edit">テキストを入力してください</string>
+    <string name="settings_show_title">表示</string>
+    <string name="settings_data_title">バックアップと復元</string>
+    <string name="settings_hide_app_icon">ホーム画面のアイコン</string>
+    <string name="settings_icon">設定アイコン</string>
+    <string name="settings_icon_disable">無効化</string>
+    <string name="settings_icon_top">上部</string>
+    <string name="settings_icon_medium">中間</string>
+    <string name="settings_icon_down">下部</string>
+    <string name="settings_icon_mode">アイコンのスタイル</string>
+    <string name="settings_app_language">言語 (Language)</string>
+    <string name="settings_icon_miui_14">丸みを帯びた長方形のスタイル</string>
+    <string name="settings_icon_miui_13">背景の切り抜きスタイル</string>
+    <string name="settings_back">モジュールの設定をバックアップ</string>
+    <string name="settings_rest">モジュールの設定を復元</string>
+    <string name="settings_reset">モジュールの設定をリセット</string>
+    <string name="reset_title">リセットをしてもよろしいですか?</string>
+    <string name="reset_desc">モジュールの設定をリセットすると、すべてのデータが削除されます!</string>
+    <string name="reset_okay">モジュールの設定がリセットされました</string>
+    <string name="backup_success">バックアップに成功</string>
+    <string name="backup_failed">バックアップに失敗</string>
+    <string name="rest_success">復元に成功</string>
+    <string name="rest_failed">復元に失敗</string>
+    <string name="about_other_title">その他</string>
+    <string name="about_github">ソースコード</string>
+    <string name="about_github_desc">このプロジェクトは、AGPL-3.0 ライセンスに基づいたオープンソースです</string>
+    <string name="about_privacy">プライバシーポリシー</string>
+    <string name="about_protocol">利用規約</string>
+    <!--Pop-up window/miuix part-->
+    <string name="more">詳細</string>
+    <string name="preference_recommend_tip">何か他のものをお探しですか?</string>
+    <!--String reuse-->
+    <string name="custom_enable">カスタムを有効化</string>
+    <!--Multi-list Array-->
+    <string name="array_default">デフォルト</string>
+    <string name="array_global_actions_none">アクションなし</string>
+    <string name="array_global_actions_notif">通知シェードを開く</string>
+    <string name="array_global_actions_lock">ロック画面</string>
+    <string name="array_global_actions_screenshot">スクリーンショット</string>
+    <string name="array_global_actions_recents">最近のタスクを開く</string>
+    <string name="array_global_actions_volume">音量ダイアログを開く</string>
+    <string name="array_global_actions_launch">アプリを起動</string>
+    <string name="array_global_actions_launch_choose">アプリを選択</string>
+    <string name="array_global_actions_powermenu">電源メニューを開く</string>
+    <string name="array_global_actions_clear_memory">メモリを解放</string>
+    <string name="array_global_actions_invert_colors">色反転</string>
+    <!--System Framework-->
+    <string name="system_framework">システムフレームワーク</string>
+    <string name="system_framework_share_menu_test">共有メニューをテスト</string>
+    <string name="system_framework_open_with_menu_test">「アプリで開く」メニューのテスト</string>
+    <!--Package Manager Service-->
+    <!--Browser-->
+    <!--Camera-->
+    <!--Calendar-->
+    <!--Community-->
+    <!--File Manager-->
+    <!--Phone-->
+    <!--Message-->
+    <!--Phone Service-->
+    <!--Download management program-->
+    <!--Download UI-->
+    <!--System UI-->
+    <!--Telecom-->
+    <!--Settings-->
+    <!--Themes-->
+    <!--remotecontroller-->
+    <!--Updater-->
+    <!--Permissions-->
+    <!--Cast-->
+    <!--Sound Recorder-->
+    <!--Notes-->
+    <string name="notes">メモ</string>
+    <!--Always-on display-->
+    <!--Taplus-->
+    <!--Xiaomi Cloud Service-->
+    <!--Mi Mover-->
+    <!--Backup-->
+    <!--Mi Canvas-->
+    <!--LPA-->
+    <!--Gallery-->
+    <!--System security components-->
+    <!--System launcher-->
+    <string name="home_gesture">ジェスチャーとナビゲーション</string>
+    <!--Gallery Editor-->
+    <!--Wallpaper-->
+    <!--Package installer-->
+    <!--NFC-->
+    <!--HTML Viewer-->
+    <!--App vault-->
+    <string name="personal_assistant">アプリ保管庫</string>
+    <!--Battery and performance-->
+    <string name="powerkeeper">バッテリーとパフォーマンス</string>
+    <!--Screen Recorder-->
+    <!--Screenshot-->
+    <!--System Service Plugin-->
+    <!--Security/Tablet security center-->
+    <string name="security">セキュリティ</string>
+    <!--MiTrustService-->
+    <!--Weather-->
+    <!--Analytics-->
+    <!--AI Translate-->
+    <!--Barrage-->
+    <!--Joyose-->
+    <string name="joyose">Joyose</string>
+    <!--GetApps-->
+    <!--Mi sound-->
+    <!--Mi Settings-->
+    <!--MTB-->
+    <!--Sogou input method-->
+    <!--Sim Activation Service-->
+    <!--Scanner-->
+    <!--Voice Trigger-->
+    <!--Contacts-->
+    <!--Health-->
+    <!--Other-->
+    <string name="custom_background">カスタム背景</string>
+    <string name="custom_background_blur_enabled">背景のぼかし</string>
+    <string name="custom_background_blur_radius">ぼかし半径</string>
+    <string name="custom_background_color">背景の色</string>
+    <string name="custom_background_corner_radius">背景の角の丸み</string>
+    <string name="location_data_title">データベース</string>
+    <string name="ic_qs_title_wifi">Wi-Fi</string>
+    <string name="ic_qs_title_cellular">モバイルデータ通信</string>
+    <string name="ic_qs_title_bluetooth">Bluetooth</string>
+    <string name="ic_qs_title_gps">GPS</string>
+    <string name="ic_qs_title_nfc">NFC</string>
+    <string name="ic_qs_title_hotspot">ホットスポット</string>
+    <string name="ic_qs_title_flashlight">ライト</string>
+    <string name="ic_qs_title_settings">設定</string>
+    <string name="ic_qs_title_airplane">機内モード</string>
+    <string name="ic_qs_title_autobrightness">明るさの自動調節</string>
+    <string name="ic_qs_title_vowifi1">VoWiFi SIM 1</string>
+    <string name="ic_qs_title_vowifi2">VoWiFi SIM 2</string>
+    <string name="settings_float_nav">フローティングボトムバー</string>
+    <string name="settings_show_all_alarms">すべてのアラームを表示</string>
+    <string name="settings_scope">スコープ</string>
+    <string name="backup_failed_detail">HyperAlarm に root 権限があり、そのファイルに書き込めるか確認してから再試行してください。</string>
+    <string name="rest_failed_detail">HyperAlarm のバックアップファイルか、root 権限があるかを確認してください。</string>
+    <string name="unsupported_app_version_func">現在のアプリバージョンではこの機能に対応していません</string>
+    <string name="supported_app_version_func">現在のアプリバージョンはこの機能に対応しています</string>
+    <string name="app_version_unavailable_warning_banner">アプリのバージョンを取得できませんでした。Hook の安全のため、このアプリの機能はすべて無効になっています。</string>
+    <string name="home_restart_launcher">ランチャーを再起動</string>
+    <string name="home_restart_zygote">Zygote を再起動</string>
+    <string name="home_restart_zygote_confirm">Android ランタイムを今すぐ再起動しますか？すべてのアプリが終了し、端末はロック画面に戻ります。</string>
+    <string name="scope_batch_no_changes">スコープに変更はありません。</string>
+    <string name="scope_batch_service_unavailable">LSPosed サービスが利用できません。</string>
+    <string name="scope_batch_remove_failed">スコープを削除できませんでした。</string>
+    <string name="scope_batch_updated">スコープを更新しました。</string>
+    <string name="scope_batch_request_not_approved">一部のスコープ要求が承認されませんでした: %1$s</string>
+    <string name="scope_batch_update_failed">スコープを更新できませんでした: %1$s</string>
+    <string name="scope_batch_request_failed">スコープを要求できませんでした。</string>
+    <string name="settings_hot_reload">プロセスをホットリロード</string>
+    <string name="settings_hot_reload_unsupported">現在の Xposed フレームワークはホットリロードに対応していません。libxposed API 102 以上が必要です。</string>
+    <string name="settings_hot_reload_pick_apps">ホットリロードするアプリを選択</string>
+    <string name="settings_hot_reload_pick_apps_subtitle">フレームワークのスコープで有効なアプリのみ表示されます。選択したアプリの現在挿入済みのプロセスがすべてリロードされます。</string>
+    <string name="settings_hot_reload_system_scope">システムフレームワーク</string>
+    <string name="settings_hot_reload_action">ホットリロード</string>
+    <string name="settings_hot_reload_no_scoped_apps">フレームワークのスコープで有効なインストール済みアプリがありません。</string>
+    <string name="settings_hot_reload_no_apps_selected">アプリを 1 つ以上選択してください。</string>
+    <string name="settings_hot_reload_batch_in_progress">%1$d 個のアプリをリロードしています…</string>
+    <string name="settings_hot_reload_batch_no_running_targets">選択した %1$d 個のアプリに、動作中のフック済みプロセスが見つかりませんでした。</string>
+    <string name="settings_hot_reload_batch_result">ホットリロード完了: %1$d/%2$d 個のプロセスが成功、%3$d 個が失敗、%4$d 個の選択アプリは動作中のプロセスがありませんでした。</string>
+    <string name="settings_hot_reload_batch_result_timeout">ホットリロードがタイムアウトしました: %1$d/%2$d 個のプロセスが成功、%3$d 個が失敗またはタイムアウト、%4$d 個の選択アプリは動作中のプロセスがありませんでした。</string>
+    <string name="settings_hot_reload_batch_failure_detail">最初の失敗 (%1$s): %2$s</string>
+    <string name="settings_hot_reload_batch_service_error">ホットリロードを開始できませんでした: %1$s</string>
+    <string name="rest_success_message">設定を反映するためにアプリを再起動してください。</string>
+    <string name="array_global_actions_home">ホームに戻る</string>
+    <string name="array_global_actions_control_center">コントロールセンターを開く</string>
+    <string name="array_global_actions_super_xiaoai">Super XiaoAi を開く</string>
+    <string name="array_global_actions_super_xiaoai_circle_search">Super XiaoAi の画面認識を開く</string>
+    <string name="array_global_actions_google_circle_to_search">Google かこって検索を開く</string>
+    <string name="array_global_actions_google_voice_assistant">Google 音声アシスタントを開く</string>
+    <string name="array_global_actions_force_stop_current_app">現在のアプリを終了</string>
+    <string name="system_framework_bypass_force_mi_appstore_desc">確認なしの転送を避け、サードパーティのアプリストアを選択できるようにします</string>
+    <string name="home_gesture_google_usage_banner">Google 音声アシスタントとかこって検索の説明:
+- Google アプリのインストールが必要です
+- Google を既定のデジタルアシスタントに設定してください
+- Google 音声アシスタントを呼び出せない場合は、Google アプリがバックグラウンドで動作しているか、既定のデジタルアシスタントを再設定してください
+- かこって検索を呼び出せない、またはプロンプトが使えない場合は、Google スコープで対応端末のふりをしてください</string>
+</resources>

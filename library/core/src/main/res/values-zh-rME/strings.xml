@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <!--Pop-up window/miuix part-->
+    <string name="miuix_appcompat_action_mode_select_all">我全都要！</string>
+    <string name="miuix_appcompat_action_mode_inverse">两极反转！</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="tip">我可跟您说了</string>
+    <string name="root">杂鱼~♡，有些东西没有Root/Su许可，可不能让你这杂鱼用呢♡</string>
+    <string name="soft_reboot">还... 还会再见的吧？</string>
+    <string name="restart_app_desc">确定要结束%1$s的这一生吗？</string>
+    <string name="hyperalarm_restart_quick">迅速重开</string>
+    <string name="hook_failed">你是不是忘记激活我啦杂鱼~♡。\n 去看看 Xposed 管理器有没有打开，或者有没有让我自己启动吧♡，要不试试重新优化或者重新开启手机吧杂鱼~♡</string>
+    <string name="kill_failed">钱不够 我很难帮你办事</string>
+    <string name="pid_failed">还没开呢，重开什么？</string>
+    <string name="reboot_failed">没法重启，你是不是又忘了给我 Root/Su 权限ヽ(`Д´) ﾉ</string>
+    <!--HyperAlarm Tips-->
+    <string name="happy_birthday_hyperalarm">今日无事可做？\n 你可以选择为 HyperAlarm 点一支蜡烛并祝 HyperAlarm 生日快乐！</string>
+    <!--System UI-->
+    <string name="system_ui">进程\"System UI\"</string>
+</resources>

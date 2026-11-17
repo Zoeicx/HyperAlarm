@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <!--Introduction to Xposed Modules-->
+    <!--HyperAlarm Settings/About Page-->
+    <string name="home">Inicio</string>
+    <string name="settings">Configuraciones</string>
+    <string name="about">Sobre nosotros</string>
+    <string name="about_contributer">Colaborador</string>
+    <string name="about_contributer_desc">Gracias a los siguientes colaboradores por su ayuda en el desarrollo de HyperAlarm (en ningún orden particular)</string>
+    <string name="about_device_info_device">Dispositivo</string>
+    <string name="about_device_info_android">Versión de Android</string>
+    <string name="about_device_info_os">Versión del sistema operativo</string>
+    <string name="location_add">Añadir</string>
+    <string name="location_delete">Eliminar</string>
+    <string name="edit">Ingrese texto</string>
+    <string name="settings_show_title">Mostrar</string>
+    <string name="settings_data_title">Copia y restauración</string>
+    <string name="settings_hide_app_icon">Íconos en el lanzador del sistema</string>
+    <string name="settings_icon">Ícono en Ajustes</string>
+    <string name="settings_icon_disable">Desactivar</string>
+    <string name="settings_icon_top">Arriba</string>
+    <string name="settings_icon_medium">Medio</string>
+    <string name="settings_icon_down">Fondo</string>
+    <string name="settings_icon_mode">Estilo de ícono</string>
+    <string name="settings_app_language">Lenguaje</string>
+    <string name="settings_icon_miui_14">Rectángulo con esquinas redondeadas</string>
+    <string name="settings_icon_miui_13">Fondo recortado</string>
+    <string name="settings_back">Copiar configuraciones</string>
+    <string name="settings_rest">Restaurar configuraciones</string>
+    <string name="settings_reset">Restablecer configuraciones</string>
+    <string name="reset_title">¿Está seguro de que quiere restablecer?</string>
+    <string name="reset_desc">¡Después de restablecer las configuraciones del módulo, se eliminarán todos sus datos!</string>
+    <string name="reset_okay">Las configuraciones del módulo se han restablecido</string>
+    <string name="backup_success">Se han copiado</string>
+    <string name="backup_failed">Copia falló</string>
+    <string name="rest_success">Se han restaurado</string>
+    <string name="rest_failed">Restauración falló</string>
+    <string name="about_other_title">Otros</string>
+    <string name="about_github">Código fuente</string>
+    <string name="about_github_desc">Este proyecto se basa en los códigos abiertos bajo la licencia de AGPL-3.0</string>
+    <string name="about_privacy">Políticas de privacidad</string>
+    <string name="about_protocol">Acuerdo de usuario</string>
+    <!--Pop-up window/miuix part-->
+    <string name="more">Más</string>
+    <string name="preference_recommend_tip">¿Necesitas otros ajustes?</string>
+    <!--String reuse-->
+    <string name="custom_enable">Activar personalizado</string>
+    <!--Multi-list Array-->
+    <string name="array_default">Predeterminado</string>
+    <string name="array_global_actions_none">Sin acción</string>
+    <string name="array_global_actions_notif">Abrir el centro de notificaciones</string>
+    <string name="array_global_actions_lock">Bloquear la pantalla</string>
+    <string name="array_global_actions_screenshot">Captura de pantalla</string>
+    <string name="array_global_actions_recents">Abrir multitarea</string>
+    <string name="array_global_actions_volume">Abrir diálogo de volumen</string>
+    <string name="array_global_actions_launch">Abrir aplicación</string>
+    <string name="array_global_actions_launch_choose">Seleccionar aplicación</string>
+    <string name="array_global_actions_powermenu">Abrir menú de batería</string>
+    <string name="array_global_actions_clear_memory">Eliminar memoria</string>
+    <string name="array_global_actions_invert_colors">Inversión de color</string>
+    <!--System Framework-->
+    <string name="system_framework">Estructura del sistema</string>
+    <string name="system_framework_share_menu_test">Probar el menú de compartir</string>
+    <string name="system_framework_open_with_menu_test">Probar el menú de apertura</string>
+    <!--Package Manager Service-->
+    <!--Browser-->
+    <!--Camera-->
+    <!--Calendar-->
+    <!--Community-->
+    <!--File Manager-->
+    <!--Phone-->
+    <!--Message-->
+    <!--Phone Service-->
+    <!--Download management program-->
+    <!--Download UI-->
+    <!--System UI-->
+    <!--Telecom-->
+    <!--Settings-->
+    <!--Themes-->
+    <!--remotecontroller-->
+    <!--Updater-->
+    <!--Permissions-->
+    <!--Cast-->
+    <!--Sound Recorder-->
+    <!--Notes-->
+    <!--Always-on display-->
+    <!--Taplus-->
+    <!--Xiaomi Cloud Service-->
+    <!--Mi Mover-->
+    <!--Backup-->
+    <!--Mi Canvas-->
+    <!--LPA-->
+    <!--Gallery-->
+    <!--System security components-->
+    <!--System launcher-->
+    <string name="home_gesture">Gestos y Navegación</string>
+    <!--Gallery Editor-->
+    <!--Wallpaper-->
+    <!--Package installer-->
+    <!--NFC-->
+    <!--HTML Viewer-->
+    <!--App vault-->
+    <string name="personal_assistant">Asistente personal</string>
+    <!--Battery and performance-->
+    <string name="powerkeeper">Batería y rendimiento</string>
+    <!--Screen Recorder-->
+    <!--Screenshot-->
+    <!--System Service Plugin-->
+    <!--Security/Tablet security center-->
+    <string name="security">Seguridad</string>
+    <!--MiTrustService-->
+    <!--Weather-->
+    <!--Analytics-->
+    <!--AI Translate-->
+    <!--Barrage-->
+    <!--Joyose-->
+    <!--GetApps-->
+    <!--Mi sound-->
+    <!--Mi Settings-->
+    <!--MTB-->
+    <!--Sogou input method-->
+    <!--Sim Activation Service-->
+    <!--Scanner-->
+    <!--Voice Trigger-->
+    <!--Contacts-->
+    <!--Health-->
+    <!--Other-->
+    <string name="custom_background">Fondo personalizado</string>
+    <string name="custom_background_blur_enabled">Desenfoque de fondo</string>
+    <string name="custom_background_blur_radius">Radio borroso</string>
+    <string name="custom_background_color">Color de fondo</string>
+    <string name="custom_background_corner_radius">Fondo esquinas redondeadas</string>
+    <string name="location_data_title">Base de datos</string>
+    <string name="ic_qs_title_cellular">Móvil</string>
+    <string name="ic_qs_title_hotspot">Punto de acceso</string>
+    <string name="ic_qs_title_flashlight">Linterna</string>
+    <string name="ic_qs_title_settings">Ajustes</string>
+    <string name="ic_qs_title_airplane">Modo avión</string>
+    <string name="ic_qs_title_autobrightness">Brillo automático</string>
+    <string name="ic_qs_title_vowifi1">SIM 1 de VoWiFi</string>
+    <string name="ic_qs_title_vowifi2">SIM 2 de VoWiFi</string>
+    <string name="settings_show_all_alarms">Mostrar todas las alarmas</string>
+    <string name="settings_float_nav">Barra inferior flotante</string>
+    <string name="settings_scope">Ámbito</string>
+    <string name="search_apps_hint">Buscar en %d aplicaciones</string>
+    <string name="load_apps_failed">No se pudo cargar la lista de aplicaciones</string>
+    <string name="backup_failed_detail">Comprueba que HyperAlarm tenga root y que el archivo se pueda escribir, y vuelve a intentarlo.</string>
+    <string name="rest_failed_detail">Comprueba que el archivo sea una copia de HyperAlarm y que HyperAlarm tenga root.</string>
+    <string name="app_error_desc">HyperAlarm se cerró inesperadamente. Para ayudarnos a arreglarlo, facilita esta información:
+
+Mantén pulsado cualquier mensaje para copiarlo todo.</string>
+    <string name="app_version_unavailable_warning_banner">No se pudo leer la versión de la app. Para que el Hook siga siendo seguro, todas las funciones de esta app se han desactivado.</string>
+    <string name="array_global_actions_control_center">Abrir el centro de control</string>
+    <string name="array_global_actions_force_stop_current_app">Detener la app actual</string>
+    <string name="array_global_actions_google_circle_to_search">Abrir Circle to Search de Google</string>
+    <string name="array_global_actions_google_voice_assistant">Abrir el Asistente de voz de Google</string>
+    <string name="array_global_actions_home">Ir al inicio</string>
+    <string name="array_global_actions_super_xiaoai">Abrir Super XiaoAi</string>
+    <string name="array_global_actions_super_xiaoai_circle_search">Abrir el reconocimiento de pantalla de Super XiaoAi</string>
+    <string name="error_build_time">Hora de compilación</string>
+    <string name="error_file_name">Nombre del archivo</string>
+    <string name="error_git_hash">Hash de Git</string>
+    <string name="error_message">Mensaje de la excepción</string>
+    <string name="error_time">Hora del registro</string>
+    <string name="error_type">Tipo de excepción</string>
+    <string name="error_version_name">Nombre de la versión</string>
+    <string name="feature_doing_func">Esta función aún está en desarrollo, mantente al tanto.</string>
+    <string name="home_gesture_google_usage_banner">Instrucciones del Asistente de voz de Google y Circle Search:
+- Hay que instalar la app de Google
+- Hay que poner Google como asistente digital predeterminado
+- Si no puedes llamar al Asistente de voz de Google, comprueba que la app de Google esté en segundo plano o vuelve a fijar el asistente digital predeterminado
+- Si no puedes llamar a Circle Search o el aviso no está disponible, puedes marcar el ámbito de Google para simular ser un dispositivo compatible</string>
+    <string name="home_restart_launcher">Reiniciar el launcher</string>
+    <string name="home_restart_zygote">Reiniciar Zygote</string>
+    <string name="home_restart_zygote_confirm">¿Reiniciar ahora el entorno de ejecución de Android? Las apps se cerrarán y el teléfono volverá a la pantalla de bloqueo.</string>
+    <string name="ic_qs_title_bluetooth">Bluetooth</string>
+    <string name="ic_qs_title_gps">GPS</string>
+    <string name="ic_qs_title_nfc">NFC</string>
+    <string name="ic_qs_title_wifi">Wi-Fi</string>
+    <string name="joyose">Joyose</string>
+    <string name="new_cta_app_all_purpose_agree">Aceptar y continuar</string>
+    <string name="new_cta_app_all_purpose_reject">Rechazar y salir</string>
+    <string name="notes">Notas</string>
+    <string name="rest_success_message">Reinicia la app para que la configuración surta efecto.</string>
+    <string name="scope_batch_no_changes">No hay cambios de ámbito.</string>
+    <string name="scope_batch_remove_failed">No se pudo quitar el ámbito.</string>
+    <string name="scope_batch_request_failed">No se pudo solicitar el ámbito.</string>
+    <string name="scope_batch_request_not_approved">Algunas solicitudes de ámbito no se aprobaron: %1$s</string>
+    <string name="scope_batch_service_unavailable">Servicio de LSPosed no disponible.</string>
+    <string name="scope_batch_update_failed">No se pudo actualizar el ámbito: %1$s</string>
+    <string name="scope_batch_updated">Ámbito actualizado.</string>
+    <string name="search_result_not_available">Puede que este dispositivo no admita esta función o que esté oculta en alguna opción</string>
+    <string name="settings_hot_reload">Recargar proceso</string>
+    <string name="settings_hot_reload_action">Recargar</string>
+    <string name="settings_hot_reload_batch_failure_detail">Primer fallo (%1$s): %2$s</string>
+    <string name="settings_hot_reload_batch_in_progress">Recargando %1$d app(s)…</string>
+    <string name="settings_hot_reload_batch_no_running_targets">No se encontró ningún proceso con hook en ejecución para las %1$d app(s) seleccionadas.</string>
+    <string name="settings_hot_reload_batch_result">Recarga terminada: %1$d/%2$d procesos correctos; %3$d fallaron; %4$d app(s) seleccionadas sin proceso en ejecución.</string>
+    <string name="settings_hot_reload_batch_result_timeout">La recarga agotó el tiempo: %1$d/%2$d procesos correctos; %3$d fallaron o agotaron el tiempo; %4$d app(s) seleccionadas sin proceso en ejecución.</string>
+    <string name="settings_hot_reload_batch_service_error">La recarga no pudo empezar: %1$s</string>
+    <string name="settings_hot_reload_no_apps_selected">Selecciona al menos una app.</string>
+    <string name="settings_hot_reload_no_scoped_apps">No hay apps instaladas y activadas en el ámbito del framework.</string>
+    <string name="settings_hot_reload_pick_apps">Elige las apps a recargar</string>
+    <string name="settings_hot_reload_pick_apps_subtitle">Solo se muestran las apps activadas en el ámbito del framework. Se recargarán todos los procesos ya inyectados de las apps elegidas.</string>
+    <string name="settings_hot_reload_system_scope">Framework del sistema</string>
+    <string name="settings_hot_reload_unsupported">El framework Xposed actual no admite la recarga en caliente. Requiere libxposed API 102 o superior.</string>
+    <string name="supported_app_version_func">La versión actual de la app admite esta función</string>
+    <string name="supported_system_func">Esta función está oficialmente admitida en la versión actual del sistema</string>
+    <string name="system_framework_bypass_force_mi_appstore_desc">Evitar la redirección sin confirmación y permitir elegir tiendas de apps de terceros</string>
+    <string name="unsupported_app_version_func">La versión actual de la app no admite esta función</string>
+    <string name="unsupported_system_func">Esta función no está admitida en la versión actual del sistema</string>
+</resources>

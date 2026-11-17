@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="provision_basic_settings">
+
+    <PreferenceCategory android:title="@string/provision_basic_settings_category_app">
+        <SwitchPreference
+            android:key="prefs_key_settings_hide_app_icon"
+            android:title="@string/provision_basic_settings_hide_app_icon" />
+
+        <fan.preference.DropDownPreference
+            android:key="prefs_key_settings_app_language"
+            android:title="@string/provision_basic_settings_language" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/provision_basic_settings_category_clock">
+        <SwitchPreference
+            android:key="prefs_key_settings_hide_script_alarms_clock"
+            android:title="@string/clock_filter_title"
+            android:summary="@string/clock_filter_summary" />
+
+        <SwitchPreference
+            android:key="prefs_key_settings_hide_ringing_task_clock"
+            android:title="@string/clock_filter_ringing_title"
+            android:summary="@string/clock_filter_ringing_summary" />
+
+        <Preference
+            android:key="prefs_key_lock_password"
+            android:title="@string/lock_password_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

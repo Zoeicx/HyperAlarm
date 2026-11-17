@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <string name="custom_order_title">Özel</string>
+    <string name="app_version_update">Yeni sürüm mevcut</string>
+    <string name="developer_build">Gelistirici derlemesi</string>
+    <string name="pull_to_enter_private">Gizli bölmeye girmek için aşağı çekin</string>
+    <string name="release_enter_private">Gizli bölmeye girmek için bırakın</string>
+    <!--Pop-up window/miuix part-->
+    <string name="miuix_appcompat_action_mode_select_all">Tümünü seç</string>
+    <string name="miuix_appcompat_action_mode_inverse">Ters</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="tip">Ipucu</string>
+    <string name="root">Bazı özellikler Root/Su izni olmadan kullanılamaz</string>
+    <string name="soft_reboot">Hızlı yeniden başlat</string>
+    <string name="restart_app_desc">Şimdi yeniden başlatmak istediğinize emin misiniz %1$s?</string>
+    <string name="hyperalarm_restart_quick">Hedef uygulamayı hızla yeniden başlatın</string>
+    <string name="hook_failed">HyperAlarm henüz etkinleştirilmemiştir. LSPosed\'in etkin olup olmadığını ve HyperAlarm\'ın otomatik olarak başlatılmasına izin verilip verilmediğini kontrol edin. Eğer öyleyse, lütfen modülü yeniden başlatın veya yeniden optimize edin.</string>
+    <string name="kill_failed">İşlem sonlandırılamadı, lütfen HyperAlarm\'ın Root/Su izni olup olmadığını kontrol edin.</string>
+    <string name="start_failed">İşlem başlatılamadı, lütfen HyperAlarm\'in root/su izinleri olup olmadığını kontrol ediniz.</string>
+    <string name="pid_failed">Hedef uygulama çalışmıyor ve yeniden başlatılması gerekmiyor.</string>
+    <string name="reboot_failed">Yeniden başlatma başarısız, lütfen HyperAlarm\'ın Root/Su izni olup olmadığını kontrol edin.</string>
+    <!--HyperAlarm Tips-->
+    <string name="error">Hata</string>
+    <string name="warn">Dikkat</string>
+    <string name="app_error_desc">HyperAlarm beklenmedik bir şekilde durduruldu. Bunu düzeltmeye yardım etmek için, aşağıdaki bilgiyi sağlayın:\n\nHer şeyi kopyalamak için herhangi bir mesajı basılı tutun.</string>
+    <string name="safe_mode_desc">%1$s birden fazla cokme nedeniyle Guvenli Moda gecti ve HyperAlarm ozellikleri gecici olarak devre disi birakildi.</string>
+    <string name="safe_mode_history">Hata kayitlarini goruntule</string>
+    <string name="safe_mode_cancel">Güvenli Modu kapat</string>
+    <string name="safe_mode_ok">İptal</string>
+    <string name="safe_mode_later_title">İpucu</string>
+    <string name="safe_mode_recorder_title">Hata kayitlari</string>
+    <string name="safe_mode_recorder_file">Dosya</string>
+    <string name="safe_mode_recorder_class">Sınıf</string>
+    <string name="safe_mode_recorder_method">Metod</string>
+    <string name="safe_mode_recorder_line">Satır</string>
+    <string name="safe_mode_recorder_msg">İstisna mesajı</string>
+    <string name="safe_mode_recorder_st">Yığın izleme</string>
+    <string name="error_message">İstisna Mesajı</string>
+    <string name="error_type">İstisna Türü</string>
+    <string name="error_file_name">Dosya adı</string>
+    <string name="error_time">Hata zamanı</string>
+    <string name="error_version_name">Versiyon adı</string>
+    <string name="error_git_hash">Git özeti</string>
+    <string name="error_build_time">Yapım zamanı</string>
+    <string name="copy_ok">Panoya kopyalandı</string>
+    <string name="notification_channel_app_crash_name">Uygulama anormal çalışıyor</string>
+    <string name="notification_title_message_emergency_crash">%s birçok kez çöktü</string>
+    <string name="notification_content_message">Ayrıntıları görmek için tıklayın</string>
+    <string name="notification_view">Gör</string>
+    <string name="headtip_warn_not_offical_rom">Şu anki kullandığınız ROM\'un kaynağı resmi Xiaomi ROM\'u olmayabilir, ve bazı özellikler çalışmayabilir. Lütfen detaylı bilgi için tedarikçiniz ile iletişime geçin.</string>
+    <string name="headtip_warn_unsupport_xposed">%1$s Xposed API %2$d kullanıyor, ancak HyperAlarm API %3$d veya üstünü gerektiriyor. Modül özellikleri devre dışı bırakıldı. Ayrıntılar için dokunun.</string>
+    <string name="headtip_warn_unsupport_sysver">Mevcut cihaz, HyperAlarm islevlerinde sorunlara neden olabilecek, tam olarak uyarlanmis olmayan bir sistem surumunde calisiyor.</string>
+    <string name="headtip_warn_sign_verification_failed">İmza doğrulaması başarısız oldu, ve kullandığınız sürüm HyperAlarm\'in resmi sürümü olmayabilir, ve zararlı kod içerebilir.</string>
+    <string name="headtip_tip_auto_safe_mode">Guvenli mod, guvenligi saglamak icin bazi uygulamalar birden cok kez coktugunde zamaninda hook\'u kaldirabilir. Bu ozelligin calismasi icin System Framework kanca kapsami gerekir. Guvenli modu acmak icin System Framework kapsamini isaretlemenizi siddetle oneririz.</string>
+    <string name="happy_birthday_hyperalarm">Bugun HyperAlarm\'in dogum gunu!\nGecen yilki desteginiz icin tesekkurler, bu yil da birlikte calismaya devam edelim!</string>
+    <string name="headtip_notice_dead_logger_errcode">Mevcut cihazin gunluk hizmeti anormal ve HyperAlarm ozellikleri sinirlanacak. Lutfen gunluk hizmetini normal calisabilecek sekilde geri yukleyin.\nHata kodu: %1$s</string>
+    <string name="headtip_notice_dead_logger">Mevcut cihazin gunluk hizmeti anormal ve HyperAlarm ozellikleri sinirlanacak. Lutfen gunluk hizmetini normal calisabilecek sekilde geri yukleyin.</string>
+    <string name="unsupported_system_func">Bu özellik geçerli sistem sürümünde desteklenmiyor</string>
+    <string name="supported_system_func">Bu özellik geçerli sistem sürümünde resmi olarak destekleniyor</string>
+    <string name="feature_doing_func">Bu ozellik su anda gelistirme asamasinda, takipte kalin.</string>
+    <!--System UI-->
+    <string name="system_ui">Sistem Arayüzü</string>
+    <!--System launcher-->
+    <string name="mihome">Sistem başlatıcı</string>
+    <!--Settings-->
+    <string name="system_settings">Ayarlar</string>
+    <!--Security/Tablet security center-->
+    <string name="security_center_hyperos">Güvenlik</string>
+    <!--Other-->
+    <string name="exit">Çık</string>
+    <string name="ignore">Yoksay</string>
+    <string name="log_level_none">Devre dışı</string>
+    <string name="disable_suggest">Tavsiyeleri devre dışı bırak</string>
+    <string name="enable_suggest">Tavsiyeleri etkinleştir</string>
+    <string name="logo_egg_NotificationName">Easter egg bildirimi</string>
+    <string name="logo_egg_NotificationName_tips">Bu bir Easter egg bildirimidir</string>
+    <string name="logo_egg_Notification_tips">Easter eggleri gormek icin ayarlarda bildirimleri etkinlestirin</string>
+    <string name="logo_egg1">Vay canina, burayi gercekten buldun, bu harika!</string>
+    <string name="logo_egg2">Lanet olsun, burada saklansam bile bulunacak miyim…</string>
+    <string name="logo_egg3">Burada Android eggs yok ama HyperAlarm eggs var!</string>
+    <string name="uninstall_title">HyperAlarm\'i kaldir</string>
+    <string name="uninstall_summary">HyperAlarm\'i kaldirdiktan sonra modul yapilandirmasi Xposed cercevesi veritabaninda kalir. Tamamen kaldirmak icin once modul ayarlarina gidip modul yapilandirmasini sifirlayin, ardindan kaldirin.</string>
+    <!-- LogViewer -->
+    <string name="log_search_hint">Gunluklerde ara</string>
+    <string name="log_level_label">Seviye</string>
+    <string name="log_tag_label">Etiket</string>
+    <string name="log_type_app">Uygulama gunlugu</string>
+    <string name="log_type_xposed">Xposed gunlugu</string>
+    <string name="log_filter_all">Tumu</string>
+    <string name="log_menu_clear">Gunlukleri temizle</string>
+    <string name="log_menu_export">Gunlukleri disa aktar</string>
+    <string name="log_menu_share">Gunlukleri paylas</string>
+    <string name="log_clear_title">Gunlukleri temizle</string>
+    <string name="log_clear_all_message">Tum gunlukleri temizlemek istediginizden emin misiniz? Buna uygulama gunlukleri ve Xposed gunlukleri dahildir. Bu islem geri alinamaz.</string>
+    <string name="log_clear_success">Gunlukler temizlendi</string>
+    <string name="log_clear_failed">Gunlukler temizlenemedi</string>
+    <string name="log_export_preparing">Disa aktarma hazirlaniyor…</string>
+    <string name="log_export_success">Gunlukler basariyla disa aktarildi</string>
+    <string name="log_export_failed">Gunlukler disa aktarilamadi</string>
+    <string name="log_share_title">Gunlukleri paylas</string>
+    <string name="log_share_preparing">Paylasim hazirlaniyor…</string>
+    <string name="log_share_failed">Gunlukler paylasilamadi</string>
+    <string name="log_share_text">HyperAlarm gunluk dosyasi</string>
+    <string name="log_copy">Kopyala</string>
+    <string name="log_copy_success">Gunlukler panoya kopyalandi</string>
+    <!-- Log detail dialog -->
+    <string name="log_detail_title">Gunluk ayrintilari</string>
+    <!-- Log Viewer -->
+    <string name="log_loading">Gunlukler yukleniyor…</string>
+    <string name="safe_mode_banner_title">Güvenli mod etkin</string>
+    <string name="safe_mode_banner_desc">%1$s, tekrar eden çökmelerin ardından Otomatik Güvenlik Modu tarafından HyperAlarm özellikleri geçici olarak devre dışı bırakıldı. Yönetmek için dokunun.</string>
+    <string name="headtip_warn_framework_service_error">HyperAlarm, XposedService\'ten geçerli çerçeve bilgisini okuyamadı. Modül özellikleri güvenlik için devre dışı bırakıldı. Ayrıntılar için dokunun.</string>
+    <string name="homepage_unsupported_version_message">Geçerli sistem sürümü HyperAlarm\'ın yerleşik uyum listesinde değil.\n\n%1$s\n\nBu sürümün desteklediği sistem sürümleri:\n%2$s\n\nBilinmeyen bir sistem ortamında çalışmayı önlemek için HyperAlarm 30 saniye sonra otomatik olarak kapanacak.</string>
+    <string name="homepage_unsupported_version_current">Geçerli sürüm: Android SDK %1$d - HyperOS %2$s</string>
+    <string name="load_failed">Yüklenemedi.</string>
+    <string name="log_level_general">Genel günlükler</string>
+    <string name="log_level_detailed">Ayrıntılı günlükler</string>
+    <string name="help_framework_warning_unknown_framework">Geçerli çerçeve</string>
+    <string name="help_framework_warning_section_framework_version">Geçerli çerçeve sürümü:</string>
+    <string name="help_framework_warning_section_banner_reason">Ana sayfada neden uyarı görünüyor?</string>
+    <string name="help_framework_warning_banner_reason">Ana sayfa uyarısı yalnızca HyperAlarm geçerli çerçevenin asgari çalışma gereksinimlerini karşılamadığını algıladığında veya XposedService çerçeve bilgisini döndüremediğinde görünür. Kanca yüklemesindeki anormalliklerden kaynaklanan kararsızlığı önlemek için HyperAlarm kancaları yüklemeyi de durdurur.</string>
+    <string name="help_framework_warning_version_unavailable">Geçerli çerçeve sürümü bilgisi XposedService\'ten okunamadı.</string>
+    <string name="log_menu_filter">Günlükleri filtrele</string>
+    <string name="log_empty_no_logs">Henüz günlük yok</string>
+    <string name="log_empty_no_results">Eşleşen günlük bulunamadı</string>
+    <string name="log_empty_root_required">Günlükleri yüklemek için Root izni verin ve uygulamayı yeniden başlatın</string>
+    <string name="tos_update_title">Kullanıcı sözleşmesi ve gizlilik politikası</string>
+    <string name="tos_update_desc">Kullanıcı sözleşmesini ve/veya gizlilik politikasını güncelledik. Lütfen inceleyin.\nHyperAlarm\'ı kullanmaya devam ederek <annotation key="protocol">Kullanıcı sözleşmesini</annotation> ve <annotation key="privacy">Gizlilik politikasını</annotation> kabul etmiş olursunuz.</string>
+    <string name="ha_logs_group">Günlükler</string>
+    <string name="ha_history_logs">Uygulama günlükleri</string>
+    <string name="ha_reference">Başvurular</string>
+    <string name="ha_script_logs">Betik günlükleri</string>
+    <string name="repeat_once">Bir kez</string>
+    <string name="repeat_every_day">Her gün</string>
+    <string name="repeat_workdays">Resmî iş günleri</string>
+    <string name="repeat_holidays">Resmî tatiller</string>
+    <string name="repeat_shift">Vardiya düzeni</string>
+    <string name="repeat_mon_fri">Pzt–Cum</string>
+    <string name="repeat_weekend">Cmt, Paz</string>
+    <string name="ringtone_default">Varsayılan zil sesi</string>
+    <string name="ringtone_silent">Sessiz</string>
+    <string name="ringtone_custom">Özel zil sesi</string>
+    <string name="ringtone_element">Dinamik: element</string>
+    <string name="ringtone_weather">Dinamik: hava</string>
+    <string name="ringtone_morning_dew">Sabah çiyi</string>
+    <string name="ringtone_fireflies">Ateş böcekleri</string>
+    <string name="ringtone_daydream">Hayal</string>
+    <string name="ringtone_digital_timer">Dijital zamanlayıcı</string>
+    <string name="ringtone_starry_sky">Yıldızlı gökyüzü</string>
+    <string name="ringtone_music">Müzik</string>
+    <string name="ringtone_recording">Kayıt</string>
+    <string name="countdown_hours_minutes">%1$d sa %2$d dk sonra çalacak</string>
+    <string name="countdown_hours">%1$d saat sonra çalacak</string>
+    <string name="countdown_minutes">%1$d dk sonra çalacak</string>
+    <string name="script_choose">Betik seç</string>
+    <string name="script_choose_first">Önce bir betik seçin</string>
+    <string name="script_running">Betik çalıştırılıyor…</string>
+    <string name="script_run_ok">Betik tamamlandı</string>
+    <string name="script_run_failed">Betik başarısız</string>
+    <string name="script_dir_empty">Betik klasörü boş</string>
+    <string name="script_open_dir">Klasör seçiciyi aç</string>
+    <string name="ringtone">Zil sesi</string>
+    <string name="ringtone_empty">Kullanılabilir zil sesi yok</string>
+    <string name="ringtone_load_failed">Zil sesi listesi okunamadı</string>
+    <string name="root_required">Root izni gerekli</string>
+    <string name="repeat_title">Tekrar</string>
+    <string name="repeat_custom">Özel</string>
+    <string name="repeat_custom_title">Özel tekrar</string>
+    <string name="action_cancel">İptal</string>
+    <string name="action_ok">Tamam</string>
+    <string name="alarm_saved">Kaydedildi</string>
+    <string name="shift_duration_days">%1$d gün</string>
+    <string name="shift_part_title">%1$d. vardiya</string>
+    <string name="shift_rest">Dinlenme</string>
+    <string name="shift_cycle_title">Vardiya döngüsü</string>
+    <string name="shift_ring">Çal</string>
+    <string name="shift_need_one">En az bir vardiya çalmalı</string>
+    <string name="shift_saved">Vardiya kaydedildi</string>
+    <string name="shift_save_failed">Kaydedilemedi; Mi Saat çalışıyor mu?</string>
+    <string name="alarm_delete_title">Alarmı sil</string>
+    <string name="alarm_delete_message">%1$d seçili alarm silinsin mi?</string>
+    <string name="action_delete">Sil</string>
+    <string name="loading">Yükleniyor…</string>
+    <string name="next_alarm_none">Etkin alarm yok</string>
+    <string name="next_alarm_in_hours_minutes">%1$d sa %2$d dk sonra</string>
+    <string name="next_alarm_in_hours">%1$d saat sonra</string>
+    <string name="next_alarm_in_minutes">%1$d dk sonra</string>
+    <string name="next_alarm_runs">%1$s çalıştır</string>
+    <string name="task_fallback">görev</string>
+    <string name="no_alarms">Alarm yok</string>
+    <string name="alarm_edit_title">Görevi düzenle</string>
+    <string name="ringtone_choose">Zil sesi seç</string>
+    <string name="ringtone_vibrate">Çalarken titret</string>
+    <string name="script">Betik</string>
+    <string name="script_run_now">Şimdi çalıştır</string>
+    <string name="shift_start_date">Başlangıç tarihi</string>
+    <string name="shift_parts">Vardiyalar</string>
+    <string name="wheel_hour">Saat</string>
+    <string name="wheel_minute">Dk</string>
+    <string name="script_import_done">%1$d betik içe aktarıldı</string>
+    <string name="script_import_done_skipped">%1$d içe aktarıldı, %2$d atlandı</string>
+    <string name="script_import_none_skipped">İçe aktarılacak betik yok: %1$d geçersiz ad</string>
+    <string name="script_import_none">Bu klasörde .sh betiği yok</string>
+    <string name="alarm_add">Alarm ekle</string>
+    <string name="alarm_add_failed">Alarm eklenemedi; Mi Saat çalışıyor mu?</string>
+    <string name="clock_restart">Mi Saat\'i yeniden başlat</string>
+    <string name="clock_restart_desc">Saati zorla durdurup arka planda yeniden başlatarak kancaları yeniden yükler.</string>
+    <string name="script_dir_label">Betik klasörü</string>
+    <string name="script_dir_copied">Betik klasörü kopyalandı: %1$s</string>
+    <string name="ringtone_updated">Zil sesi güncellendi</string>
+    <string name="shift_info">%1$d gün · %2$d vardiya</string>
+    <string name="clock_filter_no_root">Saat listesi filtresini değiştirmek için root gerekli</string>
+    <string name="clock_filter_title">Saat yalnızca alarmları göstersin</string>
+    <string name="clock_filter_summary">Betik görevleri alarm listesinde görünmez</string>
+    <string name="log_level_title">Günlük düzeyi</string>
+    <string name="script_group_title">Betik</string>
+    <string name="script_dir_copy">Betik klasörünü kopyala</string>
+    <string name="action_close">Kapat</string>
+    <string name="action_save">Kaydet</string>
+    <string name="clock_filter_ringing_title">Çalan görevleri gizle</string>
+    <string name="clock_filter_ringing_summary">Alarmı çalan görevler de gizlenir</string>
+    <string name="alarm_load_failed">Alarm listesi okunamadı</string>
+    <string name="alarm_load_failed_hint">Yeniden denemek için dokunun</string>
+    <string name="alarm_save_failed">Kaydedilemedi; Xiaomi Saat çalışıyor mu?</string>
+    <string name="alarm_delete_failed">Bazı alarmlar silinemedi; Xiaomi Saat çalışıyor mu?</string>
+    <string name="lock_password_title">Kilit ekranı parolası</string>
+    <string name="lock_password_summary_unset">Ayarlı değil: betikler ekran açılmadan çalışır</string>
+    <string name="lock_password_summary_set">Ayarlı: sessiz görevler çalışmadan önce ekranı açar</string>
+    <string name="lock_password_dialog_title">Kilit ekranı parolası</string>
+    <string name="lock_password_hint">Kilit ekranı parolası</string>
+    <string name="lock_password_save">Kaydet</string>
+    <string name="lock_password_clear">Temizle</string>
+    <string name="lock_password_saved">Kaydedildi</string>
+    <string name="lock_password_cleared">Temizlendi</string>
+    <string name="lock_password_unchanged">Değiştirilmedi</string>
+    <string name="restart_tutorial_title">Kurulumu tekrarla</string>
+    <string name="restart_tutorial_summary">Etkinleştirme, kapsam ve izin adımlarını yeniden geç</string>
+    <string name="lock_password_desc">Sessiz görev çalışmadan önce ekranı açmak için kullanılır. Boş bırakırsanız mevcut kalır.</string>
+    <string name="repeat_shift_is_schedule">Vardiyalı görevin tekrarı vardiyalardan gelir, buradan değiştirilmez</string>
+    <string name="ringtone_update_failed">Zil sesi güncellenemedi</string>
+</resources>

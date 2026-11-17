@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  -->
+<resources>
+
+    <!--Pop-up window/miuix part-->
+    <string name="miuix_appcompat_action_mode_select_all">Select all</string>
+    <string name="miuix_appcompat_action_mode_inverse">Deselect all</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="tip">Tip</string>
+    <string name="root">Some features aren\'t available without Root/Su permission</string>
+    <string name="soft_reboot">Reboot </string>
+    <string name="restart_app_desc">Are you sure you want to restart now %1$s?</string>
+    <string name="hyperalarm_restart_quick">Quickly restart apps</string>
+    <string name="hook_failed">HyperAlarm isn\'t activated yet. Please check if LSPosed is enabled and if allow HyperAlarm to start automatically. If so, please restart or re-optimize the module.</string>
+    <string name="kill_failed">Failed to end process. Please check if HyperAlarm has been granted Root/Su permissions.</string>
+    <string name="pid_failed">The target app isn\'t running and doesn\'t need to be restarted.</string>
+    <string name="reboot_failed">Reboot failed. Please check if HyperAlarm has been granted Root/Su permission.</string>
+    <!--HyperAlarm Tips-->
+    <string name="warn">Attention</string>
+    <string name="app_error_desc">HyperAlarm was unexpectedly closed. To help us fix this, provide the information below:\n\nPress and hold any message to copy everything.</string>
+    <string name="safe_mode_history">View exception records</string>
+    <string name="safe_mode_cancel">Disable Safe mode</string>
+    <string name="safe_mode_ok">Cancel</string>
+    <string name="safe_mode_later_title">Tip</string>
+    <string name="safe_mode_recorder_title">Exception records</string>
+    <string name="safe_mode_recorder_file">File</string>
+    <string name="safe_mode_recorder_class">Class</string>
+    <string name="safe_mode_recorder_method">Method</string>
+    <string name="safe_mode_recorder_line">Line</string>
+    <string name="safe_mode_recorder_msg">Exception message</string>
+    <string name="safe_mode_recorder_st">Stack trace</string>
+    <string name="error_message">Exception message</string>
+    <string name="error_type">Exception type</string>
+    <string name="error_file_name">File name</string>
+    <string name="error_time">Record time</string>
+    <string name="error_version_name">Version name</string>
+    <string name="error_git_hash">Git hash</string>
+    <string name="error_build_time">Build time</string>
+    <string name="headtip_tip_auto_safe_mode">Safe mode can unhook some apps in time when they crash multiple times to ensure security. This feature requires the System Framework hook scope to run. We strongly recommend checking the System Framework scope to turn on Safe mode.</string>
+    <string name="happy_birthday_hyperalarm">Today is HyperAlarm\'s birthday!\nThank you for your support over the past year, and let\'s continue to work together this year!</string>
+    <string name="headtip_notice_dead_logger_errcode">The current device log service is abnormal and HyperAlarm features will be limited. Please restore the log service so that it can run normally.\nError code: %1$s</string>
+    <string name="headtip_notice_dead_logger">The current device log service is abnormal and HyperAlarm features will be limited. Please restore the log service so that it can run normally.</string>
+    <string name="unsupported_system_func">This feature isn\'t supported in the current system version</string>
+    <string name="supported_system_func">This feature is officially supported in the current system version</string>
+    <string name="unsupported_app_version_func">The current app version doesn\'t support this feature</string>
+    <string name="supported_app_version_func">The current app version supports this feature</string>
+    <string name="app_version_unavailable_warning_banner">The app version couldn\'t be read. To ensure Hook safety, all features for this app have been disabled.</string>
+    <string name="feature_doing_func">The current feature is under development, stay tuned.</string>
+    <string name="search_result_not_available">This feature may not be supported on this device or is hidden under some options</string>
+    <!--System UI-->
+    <string name="system_ui">System UI</string>
+    <!--System launcher-->
+    <string name="mihome">System launcher</string>
+    <!--Settings-->
+    <string name="system_settings">Settings</string>
+    <!--Security/Tablet security center-->
+    <string name="security_center_hyperos">Security</string>
+    <!--Other-->
+    <string name="exit">Exit</string>
+    <string name="ignore">Ignore</string>
+    <string name="search_apps_hint">Search %d apps</string>
+    <string name="load_apps_failed">Failed to load application list</string>
+
+    <!--AICR-->
+
+    <string name="home_restart_launcher">Restart launcher</string>
+    <string name="home_restart_zygote">Restart Zygote</string>
+    <string name="home_restart_zygote_confirm">Restart the Android runtime now? Apps will close and the phone will return to the lock screen.</string>
+</resources>

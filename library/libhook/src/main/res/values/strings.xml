@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  -->
+<resources>
+    <string name="library_app_name" translatable="false">HyperAlarm</string>
+    <!--Introduction to Xposed Modules-->
+    <string name="xposed_description">Run your root scripts when an alarm fires</string>
+    <string name="miui_quick_settings_tiles_stock" translatable="false">reduce_brightness,vowifi1,vowifi2,cell,wifi,bt,airplane,autobrightness,mute,screenshot,flashlight,rotation,screenlock,dtmdtm,scanner,papermode,night,quietmode,batterysaver,uwb_shp,aitranslate,aisubtitles,freeformhang,vibrate,hotspot,sync,wirelesspower,nfc,dolbyatomssound,gps,edit,hearingassisttile,controls,wallet,inversion,saver,dark,onehanded,color_correction,user,dnd,taskmanager,settings,camerahandle,carsickness,voicetrans</string>
+    <string name="miui_quick_settings_tiles_stock_pad" translatable="false">reduce_brightness,vowifi1,vowifi2,cell,wifi,rotation,airplane,mute,screenshot,bt,autobrightness,screenlock,dtmdtm,night,papermode,quietmode,batterysaver,gps,flashlight,scanner,freeformhang,vibrate,hotspot,sync,wirelesspower,nfc,dolbyatomssound,edit,controls,workmode,wallet,inversion,saver,dark,onehanded,color_correction,user,dnd,taskmanager,settings,carsickness,voicetrans</string>
+    <!--String reuse-->
+    <!--Multi-list Array-->
+    <string name="system_ui_statusbar_network_speed_Bs" translatable="false">B/s</string>
+    <string name="system_ui_statusbar_network_speed_speedunits" translatable="false">KMG</string>
+    <!--System Framework-->
+    <!--System UI-->
+    <!--Settings-->
+    <!--Mi Share-->
+    <!--Smart cards-->
+
+    <!--Mi Wallet-->
+    <!--AICR-->
+    <!--XMSF-->
+    <!--Other-->
+    <!--Home-->
+</resources>

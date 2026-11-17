@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <string name="custom_order_title">Власне</string>
+    <string name="app_version_update">Доступна нова версія</string>
+    <string name="developer_build">Збірка для розробників</string>
+    <string name="pull_to_enter_private">Потягніть вниз, щоб увійти в приватний простір</string>
+    <string name="release_enter_private">Відпустіть, щоб увійти в приватний простір</string>
+    <!--Pop-up window/miuix part-->
+    <string name="miuix_appcompat_action_mode_select_all">Вибрати все</string>
+    <string name="miuix_appcompat_action_mode_inverse">Зняти виділення</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="tip">Порада</string>
+    <string name="root">Деякі функції недоступні без Root/Su дозволів</string>
+    <string name="soft_reboot">Перезавантажити</string>
+    <string name="restart_app_desc">Ви впевнені, що хочете перезапустити %1$s зараз?</string>
+    <string name="hyperalarm_restart_quick">Швидкий перезапуск додатків</string>
+    <string name="hook_failed">Модуль ще не активовано. Перевірте, чи увімкнено LSPosed. Якщо так, будь ласка, перезавантажте або повторно оптимізуйте модуль.</string>
+    <string name="kill_failed">Не вдалося завершити процес. Перевірте, чи надано HyperAlarm Root/Su дозволи.</string>
+    <string name="start_failed">Не вдалося запустити активність. Перевірте, чи надано HyperAlarm Root/Su дозволи.</string>
+    <string name="pid_failed">Цільовий додаток не запущено і не потребує перезапуску.</string>
+    <string name="reboot_failed">Перезавантаження не вдалося. Перевірте, чи надано HyperAlarm Root/Su дозволи.</string>
+    <!--HyperAlarm Tips-->
+    <string name="error">Помилка</string>
+    <string name="warn">Увага</string>
+    <string name="app_error_desc">HyperAlarm несподівано закрився. Щоб допомогти нам це виправити, надайте наведену нижче інформацію:\n\nНатисніть і утримуйте будь-яке повідомлення, щоб скопіювати все.</string>
+    <string name="safe_mode_desc">%1$s увійшов у безпечний режим через численні збої, функції HyperAlarm тимчасово вимкнено.</string>
+    <string name="safe_mode_history">Переглянути записи винятків</string>
+    <string name="safe_mode_cancel">Вимкнути безпечний режим</string>
+    <string name="safe_mode_ok">Скасувати</string>
+    <string name="safe_mode_later_title">Порада</string>
+    <string name="safe_mode_recorder_title">Записи винятків</string>
+    <string name="safe_mode_recorder_file">Файл</string>
+    <string name="safe_mode_recorder_class">Клас</string>
+    <string name="safe_mode_recorder_method">Метод</string>
+    <string name="safe_mode_recorder_line">Рядок</string>
+    <string name="safe_mode_recorder_msg">Повідомлення про виняток</string>
+    <string name="safe_mode_recorder_st">Трасування стека</string>
+    <string name="error_message">Повідомлення про виняток</string>
+    <string name="error_type">Тип винятку</string>
+    <string name="error_file_name">Назва файлу</string>
+    <string name="error_time">Час запису</string>
+    <string name="error_version_name">Назва версії</string>
+    <string name="error_git_hash">Git-хеш</string>
+    <string name="error_build_time">Час збірки</string>
+    <string name="copy_ok">Скопійовано в буфер обміну</string>
+    <string name="notification_channel_app_crash_name">Додаток працює ненормально</string>
+    <string name="notification_title_message_emergency_crash">%s зазнав збою кілька разів</string>
+    <string name="notification_content_message">Натисніть, щоб переглянути деталі</string>
+    <string name="notification_view">Переглянути</string>
+    <string name="headtip_warn_not_offical_rom">Джерело прошивки, яку ви використовуєте, може бути не офіційною прошивкою Xiaomi, і деякі функції можуть не працювати. Будь ласка, зв\'яжіться з вашим постачальником для отримання додаткової інформації.</string>
+    <string name="headtip_warn_unsupport_xposed">%1$s використовує Xposed API %2$d, а HyperAlarm потребує API %3$d або новішого. Функції модуля вимкнено. Торкніться, щоб переглянути подробиці.</string>
+    <string name="headtip_warn_unsupport_sysver">Поточний пристрій працює на версії системи, яка не (повністю) адаптована, що може призвести до аномалій у функціонуванні HyperAlarm.</string>
+    <string name="headtip_warn_sign_verification_failed">Перевірка підпису не вдалася, і поточна версія, яку ви використовуєте, може бути не офіційною версією HyperAlarm і може містити шкідливий код.</string>
+    <string name="headtip_tip_auto_safe_mode">Безпечний режим може вчасно відключати хуки для деяких додатків, коли вони зазнають збою кілька разів, для забезпечення безпеки. Ця функція вимагає, щоб область видимості хука системного фреймворку була увімкнена. Ми наполегливо рекомендуємо перевірити область видимості системного фреймворку, щоб увімкнути безпечний режим.</string>
+    <string name="happy_birthday_hyperalarm">Сьогодні день народження HyperAlarm!\nДякуємо за вашу підтримку протягом минулого року, і давайте продовжувати працювати разом і цього року!</string>
+    <string name="headtip_notice_dead_logger_errcode">Поточна служба логів пристрою працює ненормально, і функції HyperAlarm будуть обмежені. Будь ласка, відновіть службу логів, щоб вона могла працювати нормально.\nКод помилки: %1$s</string>
+    <string name="headtip_notice_dead_logger">Поточна служба логів пристрою працює ненормально, і функції HyperAlarm будуть обмежені. Будь ласка, відновіть службу логів, щоб вона могла працювати нормально.</string>
+    <string name="unsupported_system_func">Ця функція не підтримується у поточній версії системи</string>
+    <string name="supported_system_func">Ця функція офіційно підтримується у поточній версії системи</string>
+    <string name="feature_doing_func">Ця функція наразі в розробці, слідкуйте за оновленнями.</string>
+    <!--System UI-->
+    <string name="system_ui">Інтерфейс системи</string>
+    <!--System launcher-->
+    <string name="mihome">Системний лаунчер</string>
+    <!--Settings-->
+    <string name="system_settings">Налаштування</string>
+    <!--Security/Tablet security center-->
+    <string name="security_center_hyperos">Безпека</string>
+    <!--Other-->
+    <string name="exit">Вихід</string>
+    <string name="ignore">Ігнорувати</string>
+    <string name="log_level_none">Вимкнено</string>
+    <string name="disable_suggest">Вимкнути пропозиції</string>
+    <string name="enable_suggest">Увімкнути пропозиції</string>
+    <string name="logo_egg_NotificationName">Сповіщення про Easter egg</string>
+    <string name="logo_egg_NotificationName_tips">Це сповіщення про Easter egg</string>
+    <string name="logo_egg_Notification_tips">Увімкніть сповіщення в налаштуваннях, щоб побачити Easter eggs</string>
+    <string name="logo_egg1">Ого, ти справді знайшов це місце, це вражає!</string>
+    <string name="logo_egg2">От халепа, мене знайдуть навіть тут…</string>
+    <string name="logo_egg3">Тут немає Android eggs, зате є HyperAlarm eggs!</string>
+    <string name="uninstall_title">Видалити HyperAlarm</string>
+    <string name="uninstall_summary">Після видалення HyperAlarm конфігурація модуля залишиться в базі даних фреймворку Xposed. Щоб повністю її прибрати, спочатку перейдіть у налаштування модуля та скиньте конфігурацію, а вже потім видаліть його.</string>
+    <!-- LogViewer -->
+    <string name="log_search_hint">Пошук у журналах</string>
+    <string name="log_level_label">Рівень</string>
+    <string name="log_tag_label">Тег</string>
+    <string name="log_type_app">Журнал застосунку</string>
+    <string name="log_type_xposed">Журнал Xposed</string>
+    <string name="log_filter_all">Усі</string>
+    <string name="log_menu_clear">Очистити журнали</string>
+    <string name="log_menu_export">Експортувати журнали</string>
+    <string name="log_menu_share">Поділитися журналами</string>
+    <string name="log_clear_title">Очистити журнали</string>
+    <string name="log_clear_all_message">Ви впевнені, що хочете очистити всі журнали? Це включає журнали застосунку та журнали Xposed. Цю дію неможливо скасувати.</string>
+    <string name="log_clear_success">Журнали очищено</string>
+    <string name="log_clear_failed">Не вдалося очистити журнали</string>
+    <string name="log_export_preparing">Підготовка експорту…</string>
+    <string name="log_export_success">Журнали успішно експортовано</string>
+    <string name="log_export_failed">Не вдалося експортувати журнали</string>
+    <string name="log_share_title">Поділитися журналами</string>
+    <string name="log_share_preparing">Підготовка до поширення…</string>
+    <string name="log_share_failed">Не вдалося поділитися журналами</string>
+    <string name="log_share_text">Файл журналу HyperAlarm</string>
+    <string name="log_copy">Копіювати</string>
+    <string name="log_copy_success">Журнали скопійовано до буфера обміну</string>
+    <!-- Log detail dialog -->
+    <string name="log_detail_title">Деталі журналу</string>
+    <!-- Log Viewer -->
+    <string name="log_loading">Завантаження журналів…</string>
+    <string name="safe_mode_banner_title">Безпечний режим увімкнено</string>
+    <string name="safe_mode_banner_desc">Автоматичний безпечний режим тимчасово вимкнув функції HyperAlarm у %1$s після повторних збоїв. Торкніться, щоб керувати.</string>
+    <string name="headtip_warn_framework_service_error">HyperAlarm не вдалося прочитати поточну інформацію про фреймворк із XposedService. Функції модуля вимкнено для безпеки. Торкніться, щоб переглянути деталі.</string>
+    <string name="homepage_unsupported_version_message">Поточна версія системи відсутня у вбудованому списку сумісності HyperAlarm.\n\n%1$s\n\nПідтримувані цією версією системи:\n%2$s\n\nЩоб не працювати в невідомому середовищі, HyperAlarm автоматично завершиться через 30 секунд.</string>
+    <string name="homepage_unsupported_version_current">Поточна версія: Android SDK %1$d - HyperOS %2$s</string>
+    <string name="load_failed">Не вдалося завантажити.</string>
+    <string name="log_level_general">Загальні журнали</string>
+    <string name="log_level_detailed">Детальні журнали</string>
+    <string name="help_framework_warning_unknown_framework">Поточний фреймворк</string>
+    <string name="help_framework_warning_section_framework_version">Поточна версія фреймворку:</string>
+    <string name="help_framework_warning_section_banner_reason">Чому на головній сторінці з\'являється попередження?</string>
+    <string name="help_framework_warning_banner_reason">Попередження на головній сторінці з\'являється лише тоді, коли HyperAlarm виявляє, що поточний фреймворк не відповідає мінімальним вимогам, або XposedService не може повернути інформацію про фреймворк. Щоб уникнути нестабільності через аномальне завантаження хуків, HyperAlarm також припиняє їх завантаження.</string>
+    <string name="help_framework_warning_version_unavailable">Не вдалося прочитати поточну версію фреймворку з XposedService.</string>
+    <string name="log_menu_filter">Фільтр журналів</string>
+    <string name="log_empty_no_logs">Журналів ще немає</string>
+    <string name="log_empty_no_results">Відповідних журналів не знайдено</string>
+    <string name="log_empty_root_required">Надайте права Root і перезапустіть застосунок, щоб завантажити журнали</string>
+    <string name="tos_update_title">Угода користувача та політика конфіденційності</string>
+    <string name="tos_update_desc">Ми оновили угоду користувача та (або) політику конфіденційності. Ознайомтеся з ними.\nПродовжуючи користуватися HyperAlarm, ви приймаєте нашу <annotation key="protocol">Угоду користувача</annotation> та <annotation key="privacy">Політику конфіденційності</annotation>.</string>
+    <string name="ha_logs_group">Журнали</string>
+    <string name="ha_history_logs">Журнали застосунку</string>
+    <string name="ha_reference">Довідкові матеріали</string>
+    <string name="ha_script_logs">Журнали скриптів</string>
+    <string name="repeat_once">Один раз</string>
+    <string name="repeat_every_day">Щодня</string>
+    <string name="repeat_workdays">Робочі дні за календарем</string>
+    <string name="repeat_holidays">Святкові дні за календарем</string>
+    <string name="repeat_shift">Змінний графік</string>
+    <string name="repeat_mon_fri">Пн–Пт</string>
+    <string name="repeat_weekend">Сб, Нд</string>
+    <string name="ringtone_default">Звук за замовчуванням</string>
+    <string name="ringtone_silent">Без звуку</string>
+    <string name="ringtone_custom">Власний звук</string>
+    <string name="ringtone_element">Динамічний: елементи</string>
+    <string name="ringtone_weather">Динамічний: погода</string>
+    <string name="ringtone_morning_dew">Ранкова роса</string>
+    <string name="ringtone_fireflies">Світлячки</string>
+    <string name="ringtone_daydream">Мрії</string>
+    <string name="ringtone_digital_timer">Цифровий таймер</string>
+    <string name="ringtone_starry_sky">Зоряне небо</string>
+    <string name="ringtone_music">Музика</string>
+    <string name="ringtone_recording">Запис</string>
+    <string name="countdown_hours_minutes">Продзвенить через %1$d год %2$d хв</string>
+    <string name="countdown_hours">Продзвенить через %1$d год</string>
+    <string name="countdown_minutes">Продзвенить через %1$d хв</string>
+    <string name="script_choose">Вибрати скрипт</string>
+    <string name="script_choose_first">Спочатку виберіть скрипт</string>
+    <string name="script_running">Виконую скрипт…</string>
+    <string name="script_run_ok">Скрипт виконано</string>
+    <string name="script_run_failed">Скрипт завершився з помилкою</string>
+    <string name="script_dir_empty">Тека скриптів порожня</string>
+    <string name="script_open_dir">Відкрити вибір теки</string>
+    <string name="ringtone">Звук</string>
+    <string name="ringtone_empty">Немає доступних звуків</string>
+    <string name="ringtone_load_failed">Не вдалося прочитати список звуків</string>
+    <string name="root_required">Потрібен root-доступ</string>
+    <string name="repeat_title">Повтор</string>
+    <string name="repeat_custom">Власний набір</string>
+    <string name="repeat_custom_title">Власний повтор</string>
+    <string name="action_cancel">Скасувати</string>
+    <string name="action_ok">OK</string>
+    <string name="alarm_saved">Збережено</string>
+    <string name="shift_duration_days">%1$d дн.</string>
+    <string name="shift_part_title">Зміна %1$d</string>
+    <string name="shift_rest">Відпочинок</string>
+    <string name="shift_cycle_title">Цикл змін</string>
+    <string name="shift_ring">Дзвінок</string>
+    <string name="shift_need_one">Принаймні одна зміна має дзвонити</string>
+    <string name="shift_saved">Графік змін збережено</string>
+    <string name="shift_save_failed">Не вдалося зберегти. Перевірте, чи працює «Годинник Mi»</string>
+    <string name="alarm_delete_title">Видалити будильник</string>
+    <string name="alarm_delete_message">Видалити вибрані будильники (%1$d)?</string>
+    <string name="action_delete">Видалити</string>
+    <string name="loading">Завантаження…</string>
+    <string name="next_alarm_none">Немає увімкнених будильників</string>
+    <string name="next_alarm_in_hours_minutes">через %1$d год %2$d хв</string>
+    <string name="next_alarm_in_hours">через %1$d год</string>
+    <string name="next_alarm_in_minutes">через %1$d хв</string>
+    <string name="next_alarm_runs">Запустити %1$s</string>
+    <string name="task_fallback">завдання</string>
+    <string name="no_alarms">Немає будильників</string>
+    <string name="alarm_edit_title">Змінити завдання</string>
+    <string name="ringtone_choose">Вибрати звук</string>
+    <string name="ringtone_vibrate">Вібрація під час дзвінка</string>
+    <string name="script">Скрипт</string>
+    <string name="script_run_now">Запустити зараз</string>
+    <string name="shift_start_date">Дата початку</string>
+    <string name="shift_parts">Зміни</string>
+    <string name="wheel_hour">Год</string>
+    <string name="wheel_minute">Хв</string>
+    <string name="script_import_done">Імпортовано скриптів: %1$d</string>
+    <string name="script_import_done_skipped">Імпортовано: %1$d, пропущено: %2$d</string>
+    <string name="script_import_none_skipped">Немає скриптів для імпорту: неприпустимих назв — %1$d</string>
+    <string name="script_import_none">У цій теці немає скриптів .sh</string>
+    <string name="alarm_add">Додати будильник</string>
+    <string name="alarm_add_failed">Не вдалося додати будильник. Перевірте, чи працює «Годинник Mi»</string>
+    <string name="clock_restart">Перезапустити «Годинник Mi»</string>
+    <string name="clock_restart_desc">Примусово зупиняє процес годинника й запускає його у фоні, щоб хуки завантажилися заново.</string>
+    <string name="script_dir_label">Тека скриптів</string>
+    <string name="script_dir_copied">Шлях до теки скриптів скопійовано: %1$s</string>
+    <string name="ringtone_updated">Звук оновлено</string>
+    <string name="shift_info">%1$d дн. · %2$d змін</string>
+    <string name="clock_filter_no_root">Для зміни фільтра списку годинника потрібен root</string>
+    <string name="clock_filter_title">Годинник показує лише будильники</string>
+    <string name="clock_filter_summary">Скрипт-завдання не показуються у списку</string>
+    <string name="log_level_title">Рівень журналу</string>
+    <string name="script_group_title">Скрипти</string>
+    <string name="script_dir_copy">Скопіювати шлях до теки скриптів</string>
+    <string name="action_close">Закрити</string>
+    <string name="action_save">Зберегти</string>
+    <string name="clock_filter_ringing_title">Ховати завдання зі звуком</string>
+    <string name="clock_filter_ringing_summary">Завдання, чий будильник дзвонить, теж ховаються</string>
+    <string name="alarm_load_failed">Не вдалося прочитати список будильників</string>
+    <string name="alarm_load_failed_hint">Торкніться, щоб повторити</string>
+    <string name="alarm_save_failed">Не вдалося зберегти; «Годинник» Xiaomi запущено?</string>
+    <string name="alarm_delete_failed">Частину будильників не видалено; «Годинник» запущено?</string>
+    <string name="lock_password_title">Пароль блокування екрана</string>
+    <string name="lock_password_summary_unset">Не задано: скрипти виконуються без розблокування</string>
+    <string name="lock_password_summary_set">Задано: тихі завдання розблоковують екран перед запуском</string>
+    <string name="lock_password_dialog_title">Пароль блокування екрана</string>
+    <string name="lock_password_hint">Пароль блокування екрана</string>
+    <string name="lock_password_save">Зберегти</string>
+    <string name="lock_password_clear">Очистити</string>
+    <string name="lock_password_saved">Збережено</string>
+    <string name="lock_password_cleared">Очищено</string>
+    <string name="lock_password_unchanged">Залишено без змін</string>
+    <string name="restart_tutorial_title">Повторити налаштування</string>
+    <string name="restart_tutorial_summary">Ще раз пройти активацію, область і дозволи</string>
+    <string name="lock_password_desc">Потрібен, щоб розблокувати екран перед тихим завданням. Залиште порожнім, щоб не змінювати.</string>
+    <string name="repeat_shift_is_schedule">Повторення змінної задачі визначається змінами, тут це не змінюється</string>
+    <string name="ringtone_update_failed">Не вдалося оновити мелодію</string>
+</resources>

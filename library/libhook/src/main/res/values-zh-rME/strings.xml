@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="xposed_description">闹钟一响，就把你的 root 脚本跑起来</string>
+</resources>

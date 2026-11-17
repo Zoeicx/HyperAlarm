@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- No BLUETOOTH_CONNECT: nothing in this module talks to Bluetooth. It came in with the
+         HyperCeiler fork base and only showed up as a runtime permission on the store page. -->
+    <application>
+        <provider
+            android:name=".provider.SharedPrefsProvider"
+            android:authorities="com.hyperalarm.provider.sharedprefs"
+            android:defaultToDeviceProtectedStorage="true"
+            android:directBootAware="true"
+            android:exported="true"
+            android:grantUriPermissions="false" />
+
+    </application>
+</manifest>

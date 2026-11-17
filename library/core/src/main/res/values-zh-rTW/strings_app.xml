@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <!--Introduction to Xposed Modules-->
+    <string name="new_cta_app_all_purpose_agree">同意並繼續</string>
+    <string name="new_cta_app_all_purpose_reject">拒絕並退出</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="home">首頁</string>
+    <string name="settings">設定</string>
+    <string name="about">關於</string>
+    <string name="about_contributer">貢獻者</string>
+    <string name="about_contributer_desc">感謝以下貢獻者為 HyperAlarm 的開發提供了不同程度的幫助（排名順序不分先後）</string>
+    <string name="about_device_info_device">裝置</string>
+    <string name="about_device_info_android">Android 版本</string>
+    <string name="about_device_info_os">OS版本</string>
+    <!-- Scope -->
+    <string name="settings_scope">作用域</string>
+    <string name="scope_batch_no_changes">作用域沒有變化</string>
+    <string name="scope_batch_service_unavailable">LSPosed 服務不可用</string>
+    <string name="scope_batch_remove_failed">移除作用域失敗</string>
+    <string name="scope_batch_updated">作用域已更新</string>
+    <string name="scope_batch_request_not_approved">以下作用域申請未被批准：%1$s</string>
+    <string name="scope_batch_update_failed">更新作用域失敗：%1$s</string>
+    <string name="scope_batch_request_failed">申請作用域失敗</string>
+    <string name="location_add">增加</string>
+    <string name="location_delete">刪除</string>
+    <string name="edit">請輸入文字</string>
+    <string name="settings_hot_reload">熱重載行程</string>
+    <string name="settings_hot_reload_unsupported">目前 Xposed 框架不支援熱重載，需要 libxposed API 102 或更高版本。</string>
+    <string name="settings_hot_reload_pick_apps">選擇要熱重載的應用程式</string>
+    <string name="settings_hot_reload_pick_apps_subtitle">僅顯示已在框架作用域中勾選的應用程式。將重載所選應用程式目前全部已注入的行程。</string>
+    <string name="settings_hot_reload_system_scope">系統框架</string>
+    <string name="settings_hot_reload_action">熱重載</string>
+    <string name="settings_hot_reload_no_scoped_apps">框架作用域中沒有仍已安裝的應用程式。</string>
+    <string name="settings_hot_reload_no_apps_selected">請至少選擇一個應用程式。</string>
+    <string name="settings_hot_reload_batch_in_progress">正在重載 %1$d 個應用程式 ...</string>
+    <string name="settings_hot_reload_batch_no_running_targets">所選的 %1$d 個應用程式均沒有執行中的已注入行程。</string>
+    <string name="settings_hot_reload_batch_result">熱重載完成：%1$d/%2$d 個行程成功，%3$d 個失敗；%4$d 個所選應用程式沒有執行中的行程。</string>
+    <string name="settings_hot_reload_batch_result_timeout">熱重載等待逾時：%1$d/%2$d 個行程成功，%3$d 個失敗或逾時；%4$d 個所選應用程式沒有執行中的行程。</string>
+    <string name="settings_hot_reload_batch_failure_detail">首個失敗行程（%1$s）：%2$s</string>
+    <string name="settings_hot_reload_batch_service_error">熱重載無法開始：%1$s</string>
+    <string name="settings_show_title">顯示</string>
+    <string name="settings_data_title">備份與還原</string>
+    <string name="settings_hide_app_icon">桌面圖示</string>
+    <string name="settings_icon">設定圖示</string>
+    <string name="settings_icon_disable">停用</string>
+    <string name="settings_icon_top">頂部</string>
+    <string name="settings_icon_medium">中部</string>
+    <string name="settings_icon_down">底部</string>
+    <string name="settings_icon_mode">圖示樣式</string>
+    <string name="settings_app_language">語言</string>
+    <string name="settings_icon_miui_14">圓角矩形樣式</string>
+    <string name="settings_icon_miui_13">背景鏤空樣式</string>
+    <string name="settings_back">備份模組設定</string>
+    <string name="settings_rest">還原模組設定</string>
+    <string name="settings_reset">重設模組設定</string>
+    <string name="reset_title">確定要重設嗎？</string>
+    <string name="reset_desc">重設模組設定後其所有數據將會被刪除！</string>
+    <string name="reset_okay">已重設模組設定</string>
+    <string name="backup_success">備份成功</string>
+    <string name="backup_failed">備份失敗</string>
+    <string name="rest_success">還原成功</string>
+    <string name="rest_failed">還原失敗</string>
+    <string name="about_other_title">其他</string>
+    <string name="about_github">Github 存放庫</string>
+    <string name="about_github_desc">本專案基於 AGPL-3.0 協議開源</string>
+    <string name="about_privacy">隱私政策</string>
+    <string name="about_protocol">用戶協議</string>
+    <!--Pop-up window/miuix part-->
+    <string name="more">更多</string>
+    <string name="preference_recommend_tip">在找什麼嗎？</string>
+    <!--String reuse-->
+    <string name="custom_enable">啟用自訂</string>
+    <!--Multi-list Array-->
+    <string name="array_default">預設</string>
+    <string name="array_global_actions_none">無動作</string>
+    <string name="array_global_actions_notif">打開通知中心</string>
+    <string name="array_global_actions_lock">鎖定螢幕</string>
+    <string name="array_global_actions_screenshot">截圖</string>
+    <string name="array_global_actions_recents">打開最近任務</string>
+    <string name="array_global_actions_volume">打開音量對話框</string>
+    <string name="array_global_actions_launch">啟動應用程式</string>
+    <string name="array_global_actions_launch_choose">選擇應用程式</string>
+    <string name="array_global_actions_powermenu">打開電源擴展選單</string>
+    <string name="array_global_actions_clear_memory">清理記憶體</string>
+    <string name="array_global_actions_invert_colors">顏色反轉</string>
+    <!--System Framework-->
+    <string name="system_framework">系統框架</string>
+    <string name="system_framework_share_menu_test">分享選單測試</string>
+    <string name="system_framework_open_with_menu_test">打開方式選單測試</string>
+    <!--Package Manager Service-->
+    <!--Browser-->
+    <!--Camera-->
+    <!--Calendar-->
+    <!--Community-->
+    <!--File Manager-->
+    <!--Phone-->
+    <!--Message-->
+    <!--Phone Service-->
+    <!--Download management program-->
+    <!--Download UI-->
+    <!--System UI-->
+    <!--Telecom-->
+    <!--Settings-->
+    <!--Themes-->
+    <!--remotecontroller-->
+    <!--Updater-->
+    <!--Permissions-->
+    <!--Cast-->
+    <!--Sound Recorder-->
+    <!--Notes-->
+    <!--Always-on display-->
+    <!--Taplus-->
+    <!--Xiaomi Cloud Service-->
+    <!--Mi Mover-->
+    <!--Backup-->
+    <!--Mi Canvas-->
+    <!--LPA-->
+    <!--Gallery-->
+    <!--System security components-->
+    <!--System launcher-->
+    <string name="home_gesture">手勢與導覽列</string>
+    <!--Gallery Editor-->
+    <!--Wallpaper-->
+    <!--Package installer-->
+    <!--NFC-->
+    <!--HTML Viewer-->
+    <!--App vault-->
+    <string name="personal_assistant">智慧助理</string>
+    <!--Battery and performance-->
+    <string name="powerkeeper">電量和性能</string>
+    <!--Screen Recorder-->
+    <!--Screenshot-->
+    <!--System Service Plugin-->
+    <!--Security/Tablet security center-->
+    <string name="security">手機管家</string>
+    <!--MiTrustService-->
+    <!--Weather-->
+    <!--Analytics-->
+    <!--AI Translate-->
+    <!--Barrage-->
+    <!--Joyose-->
+    <string name="joyose">Joyose</string>
+    <!--GetApps-->
+    <!--Mi sound-->
+    <!--Mi Settings-->
+    <!--MTB-->
+    <!--Sogou input method-->
+    <!--Sim Activation Service-->
+    <!--Scanner-->
+    <!--Voice Trigger-->
+    <!--Contacts-->
+    <!--Health-->
+    <!--Other-->
+    <string name="custom_background">自訂背景</string>
+    <string name="custom_background_blur_enabled">背景模糊</string>
+    <string name="custom_background_blur_radius">模糊半徑</string>
+    <string name="custom_background_color">背景顏色</string>
+    <string name="custom_background_corner_radius">背景圓角</string>
+    <string name="location_data_title">資料庫</string>
+    <string name="ic_qs_title_wifi">Wi-Fi</string>
+    <string name="ic_qs_title_cellular">行動網路</string>
+    <string name="ic_qs_title_bluetooth">藍牙</string>
+    <string name="ic_qs_title_gps">定位</string>
+    <string name="ic_qs_title_nfc">NFC</string>
+    <string name="ic_qs_title_hotspot">熱點</string>
+    <string name="ic_qs_title_flashlight">手電筒</string>
+    <string name="ic_qs_title_settings">設定</string>
+    <string name="ic_qs_title_airplane">飛航模式</string>
+    <string name="ic_qs_title_autobrightness">自動亮度</string>
+    <string name="ic_qs_title_vowifi1">VoWiFi SIM1</string>
+    <string name="ic_qs_title_vowifi2">VoWiFi SIM2</string>
+    <string name="settings_show_all_alarms">顯示所有鬧鐘</string>
+    <string name="settings_float_nav">浮動底欄</string>
+    <string name="search_apps_hint">搜尋 %d 個應用程式</string>
+    <string name="load_apps_failed">無法載入應用程式清單</string>
+    <string name="backup_failed_detail">請確認 HyperAlarm 已取得 root 權限，且該檔案可寫入後重試。</string>
+    <string name="rest_failed_detail">請確認選擇的是 HyperAlarm 的備份檔案，且 HyperAlarm 已取得 root 權限。</string>
+    <string name="search_result_not_available">此功能可能不受目前裝置支援，或藏在某個選項裡</string>
+    <string name="home_restart_launcher">重新啟動桌面</string>
+    <string name="home_restart_zygote">重新啟動 Zygote</string>
+    <string name="home_restart_zygote_confirm">立即重新啟動 Android 執行環境？應用程式會全部關閉，手機會回到鎖定畫面。</string>
+    <string name="rest_success_message">請重新啟動應用程式讓設定生效。</string>
+    <string name="array_global_actions_home">回到桌面</string>
+    <string name="array_global_actions_control_center">開啟控制中心</string>
+    <string name="array_global_actions_super_xiaoai">開啟超級小愛</string>
+    <string name="array_global_actions_super_xiaoai_circle_search">超級小愛圈選螢幕</string>
+    <string name="array_global_actions_google_circle_to_search">開啟 Google 圈選搜尋</string>
+    <string name="array_global_actions_google_voice_assistant">開啟 Google 語音助理</string>
+    <string name="array_global_actions_force_stop_current_app">關閉目前應用程式</string>
+    <string name="system_framework_bypass_force_mi_appstore_desc">略過跳轉前的多餘確認，並允許選擇第三方應用商店</string>
+    <string name="notes">記事</string>
+    <string name="home_gesture_google_usage_banner">Google 語音助理與圈選搜尋說明：
+- 需要安裝 Google 應用程式
+- 需要將 Google 設為預設數位助理
+- 若無法喚起 Google 語音助理，請確認 Google 應用程式在背景執行，或重新設定預設數位助理
+- 若無法喚起圈選搜尋或提示無法使用，可到 Google 作用域假裝成支援的機型</string>
+</resources>

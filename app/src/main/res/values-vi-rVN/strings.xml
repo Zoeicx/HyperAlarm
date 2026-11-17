@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <string name="custom_order_title">Tùy chỉnh</string>
+    <string name="app_version_update">Có phiên bản mới</string>
+    <string name="developer_build">Bản phát triển</string>
+    <string name="pull_to_enter_private">Kéo xuống để vào không gian riêng tư</string>
+    <string name="release_enter_private">Thả ra để vào không gian riêng tư</string>
+    <!--Pop-up window/miuix part-->
+    <string name="miuix_appcompat_action_mode_select_all">Chọn tất cả</string>
+    <string name="miuix_appcompat_action_mode_inverse">Đảo ngược</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="tip">Mẹo</string>
+    <string name="root">Một số tính năng không khả dụng nếu không có quyền Root/Su</string>
+    <string name="soft_reboot">Khởi động lại</string>
+    <string name="restart_app_desc">Bạn có chắc chắn muốn khởi động lại ngay bây giờ không %1$s?</string>
+    <string name="hyperalarm_restart_quick">Ứng dụng khởi động lại nhanh</string>
+    <string name="hook_failed">Module chưa được kích hoạt. Vui lòng kiểm tra xem LSPosed có được bật không. Nếu có, vui lòng khởi động lại hoặc tối ưu hóa lại module.</string>
+    <string name="kill_failed">Không thể kết thúc tiến trình. Vui lòng kiểm tra xem HyperAlarm đã được cấp quyền Root/Su chưa.</string>
+    <string name="start_failed">Không thể bắt đầu hoạt động. Vui lòng kiểm tra xem HyperAlarm đã được cấp quyền Root/Su chưa.</string>
+    <string name="pid_failed">Ứng dụng mục tiêu không chạy và không cần phải khởi động lại.</string>
+    <string name="reboot_failed">Khởi động lại không thành công. Vui lòng kiểm tra xem HyperAlarm đã được cấp quyền Root/Su chưa.</string>
+    <!--HyperAlarm Tips-->
+    <string name="error">Lỗi</string>
+    <string name="warn">Cảnh báo</string>
+    <string name="app_error_desc">Mô-đun này đã gặp lỗi nghiêm trọng và không thể tiếp tục chạy! Vui lòng cung cấp thông tin lỗi sau để phản hồi! \n\n</string>
+    <string name="safe_mode_desc">%1$s đã vào chế độ An toàn do gặp nhiều sự cố và tính năng HyperAlarm đã bị vô hiệu hóa tạm thời.</string>
+    <string name="safe_mode_history">Xem hồ sơ ngoại lệ</string>
+    <string name="safe_mode_cancel">Tắt chế độ an toàn</string>
+    <string name="safe_mode_ok">Hủy</string>
+    <string name="safe_mode_later_title">Mẹo</string>
+    <string name="safe_mode_recorder_title">Hồ sơ ngoại lệ</string>
+    <string name="safe_mode_recorder_file">Tệp</string>
+    <string name="safe_mode_recorder_class">Lớp</string>
+    <string name="safe_mode_recorder_method">Phương thức</string>
+    <string name="safe_mode_recorder_line">Hàng</string>
+    <string name="safe_mode_recorder_msg">Thông báo ngoại lệ</string>
+    <string name="safe_mode_recorder_st">Dấu vết ngăn xếp</string>
+    <string name="error_message">Tin nhắn ngoại lệ</string>
+    <string name="error_type">Loại ngoại lệ</string>
+    <string name="error_file_name">Tên tập tin</string>
+    <string name="error_time">Thời gian ghi âm</string>
+    <string name="error_version_name">Tên phiên bản</string>
+    <string name="error_git_hash">Git hash</string>
+    <string name="error_build_time">Thời gian xây dựng</string>
+    <string name="copy_ok">Đã sao chép vào clipboard</string>
+    <string name="notification_channel_app_crash_name">Ứng dụng đang chạy bất thường</string>
+    <string name="notification_title_message_emergency_crash">%s đã bị văng nhiều lần</string>
+    <string name="notification_content_message">Nhấp để xem chi tiết</string>
+    <string name="notification_view">Xem</string>
+    <string name="headtip_warn_not_offical_rom">Nguồn ROM bạn đang sử dụng có thể không phải là ROM chính thức của Xiaomi và một số tính năng có thể không hoạt động. Vui lòng liên hệ với nhà cung cấp của bạn để biết thêm chi tiết.</string>
+    <string name="headtip_warn_unsupport_xposed">%1$s đang dùng Xposed API %2$d, nhưng HyperAlarm cần API %3$d trở lên. Các tính năng của mô-đun đã bị tắt. Chạm để xem chi tiết.</string>
+    <string name="headtip_warn_unsupport_sysver">Thiết bị hiện tại đang chạy trên phiên bản hệ thống chưa được điều chỉnh (hoàn toàn), điều này có thể dẫn đến những bất thường trong chức năng của HyperAlarm.</string>
+    <string name="headtip_warn_sign_verification_failed">Xác minh chữ ký không thành công và phiên bản hiện tại bạn đang sử dụng có thể không phải là phiên bản chính thức của HyperAlarm và có thể chứa mã độc hại.</string>
+    <string name="headtip_tip_auto_safe_mode">Chế độ an toàn có thể gỡ bỏ một số ứng dụng kịp thời khi chúng bị sập nhiều lần để đảm bảo an toàn. Tính năng này yêu cầu phạm vi hook của System Framework để chạy. Chúng tôi đặc biệt khuyên bạn nên kiểm tra phạm vi System Framework để bật Chế độ an toàn.</string>
+    <string name="happy_birthday_hyperalarm">Hôm nay là sinh nhật của HyperAlarm!\nCảm ơn sự ủng hộ của bạn trong năm qua và chúng ta hãy tiếp tục hợp tác trong năm nay nhé!</string>
+    <string name="headtip_notice_dead_logger_errcode">Dịch vụ nhật ký thiết bị hiện tại không bình thường và các tính năng HyperAlarm sẽ bị hạn chế. Vui lòng khôi phục dịch vụ nhật ký để nó có thể chạy bình thường.\nMã lỗi: %1$s</string>
+    <string name="headtip_notice_dead_logger">Dịch vụ nhật ký thiết bị hiện tại không bình thường và các tính năng của HyperAlarm sẽ bị hạn chế. Vui lòng khôi phục dịch vụ nhật ký để có thể chạy bình thường.</string>
+    <string name="unsupported_system_func">Tính năng này không được hỗ trợ trong phiên bản hệ thống hiện tại</string>
+    <string name="supported_system_func">Chức năng này được hỗ trợ chính thức bởi phiên bản hệ thống hiện tại</string>
+    <string name="feature_doing_func">Chức năng hiện tại đang được tạo ra, vui lòng chờ</string>
+    <!--System UI-->
+    <string name="system_ui">Giao diện hệ thống</string>
+    <!--System launcher-->
+    <string name="mihome">Trình khởi chạy hệ thống</string>
+    <!--Settings-->
+    <string name="system_settings">Cài đặt</string>
+    <!--Security/Tablet security center-->
+    <string name="security_center_hyperos">Bảo mật</string>
+    <!--Other-->
+    <string name="exit">Thoát</string>
+    <string name="ignore">Bỏ qua</string>
+    <string name="log_level_none">Tắt</string>
+    <string name="disable_suggest">Tắt đề xuất</string>
+    <string name="enable_suggest">Bật đề xuất</string>
+    <string name="logo_egg_NotificationName">Thông báo về Easter Egg</string>
+    <string name="logo_egg_NotificationName_tips">Đây là thông báo về Easter Egg</string>
+    <string name="logo_egg_Notification_tips">Vui lòng bật thông báo trong Cài đặt để xem Easter Egg</string>
+    <string name="logo_egg1">Ghê, bạn tìm ra được chỗ này à, thật tuyệt vời!</string>
+    <string name="logo_egg2">Chết tiệt, liệu tôi có bị phát hiện không nếu tôi trốn ở đây…</string>
+    <string name="logo_egg3">Ở đây không có Android Eggs mà chỉ có HyperAlarm Eggs!</string>
+    <string name="uninstall_title">Gỡ cài đặt HyperAlarm</string>
+    <string name="uninstall_summary">Sau khi gỡ cài đặt HyperAlarm, cấu hình mô-đun vẫn còn trong cơ sở dữ liệu của Xposed framework. Để xóa hoàn toàn, trước tiên hãy vào cài đặt mô-đun và đặt lại cấu hình mô-đun, sau đó gỡ cài đặt.</string>
+    <!-- LogViewer -->
+    <string name="log_search_hint">Tìm kiếm log</string>
+    <string name="log_level_label">Mức độ</string>
+    <string name="log_tag_label">Nhãn</string>
+    <string name="log_type_app">Log của ứng dụng</string>
+    <string name="log_type_xposed">Xposed Log</string>
+    <string name="log_filter_all">Tất cả</string>
+    <string name="log_menu_clear">Xoá log</string>
+    <string name="log_menu_export">Xuất log</string>
+    <string name="log_menu_share">Chia sẻ log</string>
+    <string name="log_clear_title">Xoá log</string>
+    <string name="log_clear_all_message">Bạn có chắc chắn muốn xóa tất cả nhật ký không? Thao tác này sẽ xóa nhật ký ứng dụng, cơ sở dữ liệu nhật ký Xposed đã đồng bộ hóa và nhật ký sự cố. Nhật ký nguồn Xposed sẽ được đồng bộ hóa lại vào lần khởi chạy ứng dụng tiếp theo.</string>
+    <string name="log_clear_success">Log đã xoá</string>
+    <string name="log_clear_failed">Xoá log thất bại</string>
+    <string name="log_export_preparing">Đang chuẩn bị xuất…</string>
+    <string name="log_export_success">Xuất log thành công</string>
+    <string name="log_export_failed">Xuất log thất bại</string>
+    <string name="log_share_title">Chia sẻ log</string>
+    <string name="log_share_preparing">Đang chuẩn bị chia sẻ…</string>
+    <string name="log_share_failed">Chia sẻ log thất bại</string>
+    <string name="log_share_text">Tệp log HyperAlarm</string>
+    <string name="log_copy">Sao chép</string>
+    <string name="log_copy_success">Log đã được sao chép vào clipboard</string>
+    <!-- Log detail dialog -->
+    <string name="log_detail_title">Log chi tiết</string>
+    <!-- Log Viewer -->
+    <string name="log_loading">Đang tải log…</string>
+    <string name="safe_mode_banner_title">Chế độ an toàn đang hoạt động</string>
+    <string name="safe_mode_banner_desc">Do nhiều sự cố xảy ra, các chức năng liên quan của %1$s đã tạm thời bị vô hiệu hóa khi Chế độ an toàn hoạt động. Nhấp vào đây để tiếp tục.</string>
+    <string name="headtip_warn_framework_service_error">HyperAlarm không thể đọc thông tin khung hiện tại từ XposedService. Các tính năng của mô-đun đã bị vô hiệu hóa vì lý do an toàn. Nhấn để xem chi tiết.</string>
+    <string name="log_level_general">Nhật ký chung</string>
+    <string name="log_level_detailed">Nhật ký chi tiết</string>
+    <string name="help_framework_warning_unknown_framework">Khung hiện tại</string>
+    <string name="help_framework_warning_section_framework_version">Phiên bản khung hiện tại:</string>
+    <string name="help_framework_warning_section_banner_reason">Tại sao trang chủ lại hiển thị cảnh báo?</string>
+    <string name="help_framework_warning_banner_reason">Cảnh báo trên trang chủ chỉ xuất hiện khi HyperAlarm phát hiện ra rằng framework hiện tại không đáp ứng các yêu cầu tối thiểu về thời gian chạy, hoặc XposedService không thể trả về thông tin framework một cách bình thường. Để tránh sự không ổn định do việc tải Hook bất thường gây ra, HyperAlarm sẽ dừng tải Hook cùng lúc đó.</string>
+    <string name="help_framework_warning_version_unavailable">Không thể đọc thông tin phiên bản framework hiện tại từ XposedService.</string>
+    <string name="log_menu_filter">Lọc nhật ký</string>
+    <string name="log_empty_no_logs">Chưa có nhật ký nào</string>
+    <string name="log_empty_no_results">Không tìm thấy nhật ký phù hợp</string>
+    <string name="log_empty_root_required">Cấp quyền Root và khởi động lại ứng dụng để tải nhật ký</string>
+    <string name="homepage_unsupported_version_message">Phiên bản hệ thống hiện tại không có trong danh sách tương thích tích hợp của HyperAlarm.\n\n%1$s\n\nCác phiên bản hệ thống được bản phát hành này hỗ trợ:\n%2$s\n\nĐể tránh chạy trong môi trường hệ thống không xác định, HyperAlarm sẽ tự thoát sau 30 giây.</string>
+    <string name="homepage_unsupported_version_current">Phiên bản hiện tại: Android SDK %1$d - HyperOS %2$s</string>
+    <string name="load_failed">Tải thất bại.</string>
+    <string name="tos_update_title">Thỏa thuận người dùng và chính sách quyền riêng tư</string>
+    <string name="tos_update_desc">Gần đây chúng tôi đã cập nhật thỏa thuận người dùng và/hoặc chính sách quyền riêng tư. Hãy xem qua.\nTiếp tục dùng HyperAlarm nghĩa là bạn đồng ý với <annotation key="protocol">Thỏa thuận người dùng</annotation> và <annotation key="privacy">Chính sách quyền riêng tư</annotation> của chúng tôi.</string>
+    <string name="ha_logs_group">Nhật ký</string>
+    <string name="ha_history_logs">Nhật ký ứng dụng</string>
+    <string name="ha_reference">Tài liệu tham khảo</string>
+    <string name="ha_script_logs">Nhật ký tập lệnh</string>
+    <string name="repeat_once">Chỉ một lần</string>
+    <string name="repeat_every_day">Hàng ngày</string>
+    <string name="repeat_workdays">Ngày làm việc theo lịch</string>
+    <string name="repeat_holidays">Ngày lễ theo lịch</string>
+    <string name="repeat_shift">Lịch ca</string>
+    <string name="repeat_mon_fri">T2–T6</string>
+    <string name="repeat_weekend">T7, CN</string>
+    <string name="ringtone_default">Nhạc chuông mặc định</string>
+    <string name="ringtone_silent">Im lặng</string>
+    <string name="ringtone_custom">Nhạc chuông tùy chỉnh</string>
+    <string name="ringtone_element">Động: nguyên tố</string>
+    <string name="ringtone_weather">Động: thời tiết</string>
+    <string name="ringtone_morning_dew">Sương mai</string>
+    <string name="ringtone_fireflies">Đom đóm</string>
+    <string name="ringtone_daydream">Mơ ban ngày</string>
+    <string name="ringtone_digital_timer">Hẹn giờ số</string>
+    <string name="ringtone_starry_sky">Bầu trời sao</string>
+    <string name="ringtone_music">Nhạc</string>
+    <string name="ringtone_recording">Bản ghi âm</string>
+    <string name="countdown_hours_minutes">Đổ chuông sau %1$d giờ %2$d phút</string>
+    <string name="countdown_hours">Đổ chuông sau %1$d giờ</string>
+    <string name="countdown_minutes">Đổ chuông sau %1$d phút</string>
+    <string name="script_choose">Chọn tập lệnh</string>
+    <string name="script_choose_first">Hãy chọn tập lệnh trước</string>
+    <string name="script_running">Đang chạy tập lệnh…</string>
+    <string name="script_run_ok">Tập lệnh hoàn tất</string>
+    <string name="script_run_failed">Tập lệnh thất bại</string>
+    <string name="script_dir_empty">Thư mục tập lệnh trống</string>
+    <string name="script_open_dir">Mở chọn thư mục</string>
+    <string name="ringtone">Nhạc chuông</string>
+    <string name="ringtone_empty">Không có nhạc chuông</string>
+    <string name="ringtone_load_failed">Không đọc được danh sách nhạc chuông</string>
+    <string name="root_required">Cần quyền root</string>
+    <string name="repeat_title">Lặp lại</string>
+    <string name="repeat_custom">Tùy chỉnh</string>
+    <string name="repeat_custom_title">Lặp lại tùy chỉnh</string>
+    <string name="action_cancel">Hủy</string>
+    <string name="action_ok">OK</string>
+    <string name="alarm_saved">Đã lưu</string>
+    <string name="shift_duration_days">%1$d ngày</string>
+    <string name="shift_part_title">Ca %1$d</string>
+    <string name="shift_rest">Nghỉ</string>
+    <string name="shift_cycle_title">Chu kỳ ca</string>
+    <string name="shift_ring">Chuông</string>
+    <string name="shift_need_one">Cần ít nhất một ca đổ chuông</string>
+    <string name="shift_saved">Đã lưu lịch ca</string>
+    <string name="shift_save_failed">Không lưu được; Đồng hồ Mi có đang chạy không?</string>
+    <string name="alarm_delete_title">Xóa báo thức</string>
+    <string name="alarm_delete_message">Xóa %1$d báo thức đã chọn?</string>
+    <string name="action_delete">Xóa</string>
+    <string name="loading">Đang tải…</string>
+    <string name="next_alarm_none">Không có báo thức nào bật</string>
+    <string name="next_alarm_in_hours_minutes">sau %1$d giờ %2$d phút</string>
+    <string name="next_alarm_in_hours">sau %1$d giờ</string>
+    <string name="next_alarm_in_minutes">sau %1$d phút</string>
+    <string name="next_alarm_runs">Chạy %1$s</string>
+    <string name="task_fallback">tác vụ</string>
+    <string name="no_alarms">Không có báo thức</string>
+    <string name="alarm_edit_title">Sửa tác vụ</string>
+    <string name="ringtone_choose">Chọn nhạc chuông</string>
+    <string name="ringtone_vibrate">Rung khi đổ chuông</string>
+    <string name="script">Tập lệnh</string>
+    <string name="script_run_now">Chạy ngay</string>
+    <string name="shift_start_date">Ngày bắt đầu</string>
+    <string name="shift_parts">Ca</string>
+    <string name="wheel_hour">Giờ</string>
+    <string name="wheel_minute">Phút</string>
+    <string name="script_import_done">Đã nhập %1$d tập lệnh</string>
+    <string name="script_import_done_skipped">Đã nhập %1$d, bỏ qua %2$d</string>
+    <string name="script_import_none_skipped">Không có tập lệnh để nhập: %1$d tên không hợp lệ</string>
+    <string name="script_import_none">Không có tập lệnh .sh trong thư mục đó</string>
+    <string name="alarm_add">Thêm báo thức</string>
+    <string name="alarm_add_failed">Không thêm được báo thức; Đồng hồ Mi có đang chạy không?</string>
+    <string name="clock_restart">Khởi động lại Đồng hồ Mi</string>
+    <string name="clock_restart_desc">Buộc dừng đồng hồ và khởi động lại ở chế độ nền để nạp lại hook.</string>
+    <string name="script_dir_label">Thư mục tập lệnh</string>
+    <string name="script_dir_copied">Đã sao chép đường dẫn tập lệnh: %1$s</string>
+    <string name="ringtone_updated">Đã cập nhật nhạc chuông</string>
+    <string name="shift_info">%1$d ngày · %2$d ca</string>
+    <string name="clock_filter_no_root">Cần quyền root để đổi bộ lọc danh sách đồng hồ</string>
+    <string name="clock_filter_title">Đồng hồ chỉ hiện báo thức</string>
+    <string name="clock_filter_summary">Tác vụ script không hiện trong danh sách</string>
+    <string name="log_level_title">Mức nhật ký</string>
+    <string name="script_group_title">Tập lệnh</string>
+    <string name="script_dir_copy">Sao chép thư mục tập lệnh</string>
+    <string name="action_close">Đóng</string>
+    <string name="action_save">Lưu</string>
+    <string name="clock_filter_ringing_title">Ẩn tác vụ có chuông</string>
+    <string name="clock_filter_ringing_summary">Tác vụ có báo thức reo cũng bị ẩn</string>
+    <string name="alarm_load_failed">Không đọc được danh sách báo thức</string>
+    <string name="alarm_load_failed_hint">Chạm để thử lại</string>
+    <string name="alarm_save_failed">Không lưu được; Đồng hồ Xiaomi có đang chạy không?</string>
+    <string name="alarm_delete_failed">Không xóa được một số báo thức; Đồng hồ có đang chạy?</string>
+    <string name="lock_password_title">Mật khẩu khóa màn hình</string>
+    <string name="lock_password_summary_unset">Chưa đặt: script chạy mà không mở khóa</string>
+    <string name="lock_password_summary_set">Đã đặt: tác vụ im lặng sẽ mở khóa trước khi chạy</string>
+    <string name="lock_password_dialog_title">Mật khẩu khóa màn hình</string>
+    <string name="lock_password_hint">Mật khẩu màn hình khóa</string>
+    <string name="lock_password_save">Lưu</string>
+    <string name="lock_password_clear">Xóa</string>
+    <string name="lock_password_saved">Đã lưu</string>
+    <string name="lock_password_cleared">Đã xóa</string>
+    <string name="lock_password_unchanged">Giữ nguyên</string>
+    <string name="restart_tutorial_title">Chạy lại hướng dẫn</string>
+    <string name="restart_tutorial_summary">Xem lại các bước bật, phạm vi và quyền</string>
+    <string name="lock_password_desc">Dùng để mở khóa màn hình trước khi tác vụ im lặng chạy. Để trống nếu không đổi.</string>
+    <string name="repeat_shift_is_schedule">Nhiệm vụ theo ca lặp lại theo ca, không đổi được ở đây</string>
+    <string name="ringtone_update_failed">Không cập nhật được nhạc chuông</string>
+</resources>

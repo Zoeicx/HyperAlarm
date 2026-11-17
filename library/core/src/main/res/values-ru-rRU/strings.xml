@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <!--Pop-up window/miuix part-->
+    <string name="miuix_appcompat_action_mode_select_all">Выбрать все</string>
+    <string name="miuix_appcompat_action_mode_inverse">Отменить выбор</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="tip">Совет</string>
+    <string name="root">Некоторые функции недоступны без Root прав</string>
+    <string name="soft_reboot">Перезагрузка</string>
+    <string name="restart_app_desc">Вы точно хотите перезагрузить %1$s?</string>
+    <string name="hyperalarm_restart_quick">Быстрый перезапуск приложений</string>
+    <string name="hook_failed">Модуль не активирован. Пожалуйста, убедитесь, что вы активировали модуль в LSPosed и перезапустите приложение.</string>
+    <string name="kill_failed">Не удалось закончить процесс. Проверьте, предоставлены ли HyperAlarm разрешения Root/Su.</string>
+    <string name="pid_failed">Целевое приложение не запущено и не требует перезапуска.</string>
+    <string name="reboot_failed">Перезагрузка не удалась. Проверьте, предоставлено ли HyperAlarm разрешение Root/Su.</string>
+    <!--HyperAlarm Tips-->
+    <string name="warn">Предупреждение</string>
+    <string name="app_error_desc">Произошла критическая ошибка HyperAlarm! Пожалуйста, предоставьте нам следующую информацию об ошибке для обратной связи:\n\n Зажмите текст, чтобы его скопировать.</string>
+    <string name="safe_mode_history">Посмотреть записи</string>
+    <string name="safe_mode_cancel">Отключить безопасный режим</string>
+    <string name="safe_mode_ok">Отмена</string>
+    <string name="safe_mode_later_title">Совет</string>
+    <string name="safe_mode_recorder_title">Записи об исключениях</string>
+    <string name="safe_mode_recorder_file">Файл</string>
+    <string name="safe_mode_recorder_class">Класс</string>
+    <string name="safe_mode_recorder_method">Метод</string>
+    <string name="safe_mode_recorder_line">Линия</string>
+    <string name="safe_mode_recorder_msg">Сообщение об исключении</string>
+    <string name="safe_mode_recorder_st">Трассировка стека</string>
+    <string name="error_message">Сообщение об исключении</string>
+    <string name="error_type">Тип исключения</string>
+    <string name="error_file_name">Имя файла</string>
+    <string name="error_time">Время записи</string>
+    <string name="error_version_name">Название версии</string>
+    <string name="error_git_hash">Git хеш</string>
+    <string name="error_build_time">Время сборки</string>
+    <string name="headtip_tip_auto_safe_mode">Безопасный режим может отцепить некоторые приложения во время нескольких сбоев для обеспечения безопасности. Для запуска этой функции требуется включённый перехват для приложения Системный фреймворк. Для включения безопасного режима настоятельно рекомендуем проверить галочку в Xposed фреймворк.</string>
+    <string name="happy_birthday_hyperalarm">Сегодня день рождения HyperAlarm!\nСпасибо за вашу поддержку в течение прошлого года, давайте продолжим работать вместе в этом году!</string>
+    <string name="headtip_notice_dead_logger_errcode">Текущая служба журнала устройства ненормальна, и функции HyperAlarm будут ограничены. Пожалуйста, восстановите службу журнала, чтобы она могла работать нормально.\nКод ошибки: %1$s</string>
+    <string name="headtip_notice_dead_logger">Текущая служба журнала устройства ненормальна, и функции HyperAlarm будут ограничены. Пожалуйста, восстановите службу журнала, чтобы она могла работать нормально.</string>
+    <string name="unsupported_system_func">Эта функция не поддерживается в текущей версии системы</string>
+    <string name="supported_system_func">Эта функция официально поддерживается в текущей версии системы</string>
+    <string name="feature_doing_func">Текущая функция находится в разработке, следите за обновлениями.</string>
+    <!--System UI-->
+    <string name="system_ui">Интерфейс системы</string>
+    <!--System launcher-->
+    <string name="mihome">Системный лаунчер</string>
+    <!--Settings-->
+    <string name="system_settings">Настройки</string>
+    <!--Security/Tablet security center-->
+    <string name="security_center_hyperos">Безопасность</string>
+    <!--Other-->
+    <string name="exit">Выход</string>
+    <string name="ignore">Игнорировать</string>
+    <string name="load_apps_failed">Неудалось загрузить список приложений</string>
+    <string name="search_apps_hint">Поиск %d приложений</string>
+</resources>

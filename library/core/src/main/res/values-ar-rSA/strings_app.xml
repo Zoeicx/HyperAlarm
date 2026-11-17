@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <!--Introduction to Xposed Modules-->
+    <string name="new_cta_app_all_purpose_agree">الموافقة والاستمرار</string>
+    <string name="new_cta_app_all_purpose_reject">الرفض والخروج</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="home">الرئيسية</string>
+    <string name="settings">الإعدادات</string>
+    <string name="about">عن البرنامج</string>
+    <string name="about_contributer">المساهمون</string>
+    <string name="about_contributer_desc">شكرا للمساهمين التالية أسماؤهم على مساعدتهم في تطوير HyperAlarm (بدون ترتيب معين)</string>
+    <string name="about_device_info_device">الجهاز</string>
+    <string name="about_device_info_android">إصدار أندرويد</string>
+    <string name="about_device_info_os">إصدار نظام التشغيل</string>
+    <string name="location_add">إضافة</string>
+    <string name="location_delete">حذف</string>
+    <string name="edit">الرجاء إدخال نص</string>
+    <string name="settings_show_title">إظهار</string>
+    <string name="settings_data_title">النسخ الإحتياطي والإستعادة</string>
+    <string name="settings_hide_app_icon">أيقونة في الشاشة الرئيسية</string>
+    <string name="settings_icon">أيقونة في الإعدادات</string>
+    <string name="settings_icon_disable">تعطيل</string>
+    <string name="settings_icon_top">في الأعلى</string>
+    <string name="settings_icon_medium">في المنتصف</string>
+    <string name="settings_icon_down">في الاسفل</string>
+    <string name="settings_icon_mode">نمط الأيقونه</string>
+    <string name="settings_app_language">اللغة</string>
+    <string name="settings_icon_miui_14">نمط المستطيل المدوّر</string>
+    <string name="settings_icon_miui_13">نمط اقتطاع الخلفية</string>
+    <string name="settings_back">نسخ احتياطي لإعدادات الإضافة</string>
+    <string name="settings_rest">إستعادة إعدادات الإضافة</string>
+    <string name="settings_reset">إعادة تعيين إعدادات الإضافة</string>
+    <string name="reset_title">هل أنت متأكد من إعادة الضبط؟</string>
+    <string name="reset_desc">بعد إعادة تعيين إعدادات الإضافة سيتم حذف جميع بياناتها!</string>
+    <string name="reset_okay">تم إعادة تعيين إعدادات الإضافة</string>
+    <string name="backup_success">تم النسخ الاحتياطي بنجاح</string>
+    <string name="backup_failed">فشل النسخ الاحتياطي</string>
+    <string name="rest_success">نجح الاستعادة</string>
+    <string name="rest_failed">فشل الاستعادة</string>
+    <string name="about_other_title">آخرين</string>
+    <string name="about_github">شيفرة المصدر</string>
+    <string name="about_github_desc">هذا المشروع مفتوح المصدر استناداً إلى ترخيص AGPL-3.0</string>
+    <string name="about_privacy">سياسة الخصوصية</string>
+    <string name="about_protocol">إتفاقية المستخدم</string>
+    <!--Pop-up window/miuix part-->
+    <string name="more">المزيد</string>
+    <string name="preference_recommend_tip">هل تحتاج إلى إعدادات أخرى؟</string>
+    <!--String reuse-->
+    <string name="custom_enable">تفعيل مخصص</string>
+    <!--Multi-list Array-->
+    <string name="array_default">الافتراضي</string>
+    <string name="array_global_actions_none">بلا إجراء</string>
+    <string name="array_global_actions_notif">فتح مركز الإشعارات</string>
+    <string name="array_global_actions_lock">قفل الشاشة</string>
+    <string name="array_global_actions_screenshot">لقطة الشاشة</string>
+    <string name="array_global_actions_recents">فتح الأخيرة</string>
+    <string name="array_global_actions_volume">فتح قائمة الصوت</string>
+    <string name="array_global_actions_launch">تشغيل تطبيق</string>
+    <string name="array_global_actions_launch_choose">اختر تطبيقاً</string>
+    <string name="array_global_actions_powermenu">فتح قائمة الطاقة</string>
+    <string name="array_global_actions_clear_memory">تنظيف الذاكرة</string>
+    <string name="array_global_actions_invert_colors">عكس الألوان</string>
+    <!--System Framework-->
+    <string name="system_framework">إطار النظام</string>
+    <string name="system_framework_share_menu_test">اختبار القائمة المشاركة</string>
+    <string name="system_framework_open_with_menu_test">اختبار قائمة فتح بواسطة</string>
+    <!--Package Manager Service-->
+    <!--Browser-->
+    <!--Camera-->
+    <!--Calendar-->
+    <!--Community-->
+    <!--File Manager-->
+    <!--Phone-->
+    <!--Message-->
+    <!--Phone Service-->
+    <!--Download management program-->
+    <!--Download UI-->
+    <!--System UI-->
+    <!--Telecom-->
+    <!--Settings-->
+    <!--Themes-->
+    <!--remotecontroller-->
+    <!--Updater-->
+    <!--Permissions-->
+    <!--Cast-->
+    <!--Sound Recorder-->
+    <!--Notes-->
+    <!--Always-on display-->
+    <!--Taplus-->
+    <!--Xiaomi Cloud Service-->
+    <!--Mi Mover-->
+    <!--Backup-->
+    <!--Mi Canvas-->
+    <!--LPA-->
+    <!--Gallery-->
+    <!--System security components-->
+    <!--System launcher-->
+    <string name="home_gesture">الإيماءات والملاحة</string>
+    <!--Gallery Editor-->
+    <!--Wallpaper-->
+    <!--Package installer-->
+    <!--NFC-->
+    <!--HTML Viewer-->
+    <!--App vault-->
+    <string name="personal_assistant">خزنة التطبيقات</string>
+    <!--Battery and performance-->
+    <string name="powerkeeper">البطارية والأداء</string>
+    <!--Screen Recorder-->
+    <!--Screenshot-->
+    <!--System Service Plugin-->
+    <!--Security/Tablet security center-->
+    <string name="security">الأمان</string>
+    <!--MiTrustService-->
+    <!--Weather-->
+    <!--Analytics-->
+    <!--AI Translate-->
+    <!--Barrage-->
+    <!--Joyose-->
+    <string name="joyose">Joyose</string>
+    <!--GetApps-->
+    <!--Mi sound-->
+    <!--Mi Settings-->
+    <!--MTB-->
+    <!--Sogou input method-->
+    <!--Sim Activation Service-->
+    <!--Scanner-->
+    <!--Voice Trigger-->
+    <!--Contacts-->
+    <!--Health-->
+    <!--Other-->
+    <string name="custom_background">خلفية مخصصة</string>
+    <string name="custom_background_blur_enabled">تأثير التعتيم على الخلفية</string>
+    <string name="custom_background_blur_radius">نطاق الضبابية</string>
+    <string name="custom_background_color">لون الخلفية</string>
+    <string name="custom_background_corner_radius">نصف قطر الزوايا المدورة للخلفية</string>
+    <string name="location_data_title">قاعدة البيانات</string>
+    <string name="ic_qs_title_wifi">Wi-Fi</string>
+    <string name="ic_qs_title_cellular">الخلوي</string>
+    <string name="ic_qs_title_bluetooth">Bluetooth</string>
+    <string name="ic_qs_title_gps">GPS</string>
+    <string name="ic_qs_title_nfc">NFC</string>
+    <string name="ic_qs_title_hotspot">النقطة الساخنة</string>
+    <string name="ic_qs_title_flashlight">المصباح اليدوي</string>
+    <string name="ic_qs_title_settings">الإعدادات</string>
+    <string name="ic_qs_title_airplane">وضع الطائرة</string>
+    <string name="ic_qs_title_autobrightness">السطوع التلقائي</string>
+    <string name="ic_qs_title_vowifi1">VoWiFi SIM 1</string>
+    <string name="ic_qs_title_vowifi2">VoWiFi SIM 2</string>
+    <string name="settings_show_all_alarms">إظهار كل المنبهات</string>
+    <string name="settings_float_nav">شريط سفلي عائم</string>
+    <string name="settings_scope">النطاق</string>
+    <string name="search_apps_hint">البحث في %d تطبيقًا</string>
+    <string name="load_apps_failed">تعذّر تحميل قائمة التطبيقات</string>
+    <string name="backup_failed_detail">تأكد من أن HyperAlarm يملك صلاحية root وأن الملف قابل للكتابة، ثم أعد المحاولة.</string>
+    <string name="rest_failed_detail">تأكد من أن الملف نسخة احتياطية من HyperAlarm وأن HyperAlarm يملك صلاحية root.</string>
+    <string name="unsupported_app_version_func">إصدار التطبيق الحالي لا يدعم هذه الميزة</string>
+    <string name="supported_app_version_func">إصدار التطبيق الحالي يدعم هذه الميزة</string>
+    <string name="app_version_unavailable_warning_banner">تعذّر قراءة إصدار التطبيق. للحفاظ على سلامة Hook، تم تعطيل كل ميزات هذا التطبيق.</string>
+    <string name="search_result_not_available">قد لا يدعم هذا الجهاز هذه الميزة أو أنها مخفية داخل أحد الخيارات</string>
+    <string name="home_restart_launcher">إعادة تشغيل المشغّل</string>
+    <string name="home_restart_zygote">إعادة تشغيل Zygote</string>
+    <string name="home_restart_zygote_confirm">إعادة تشغيل بيئة Android الآن؟ ستُغلق التطبيقات وسيعود الهاتف إلى شاشة القفل.</string>
+    <string name="rest_success_message">أعد تشغيل التطبيق ليصبح الإعداد ساريًا.</string>
+    <string name="system_framework_bypass_force_mi_appstore_desc">تجنّب إعادة التوجيه دون تأكيد والسماح باختيار متاجر تطبيقات طرف ثالث</string>
+    <string name="notes">ملاحظات</string>
+    <string name="home_gesture_google_usage_banner">إرشادات مساعد Google الصوتي و Circle Search:
+- يلزم تثبيت تطبيق Google
+- يلزم تعيين Google كمساعد رقمي افتراضي
+- إن تعذّر استدعاء مساعد Google الصوتي، تأكد من أن تطبيق Google يعمل في الخلفية أو أعد تعيين المساعد الرقمي الافتراضي
+- إن تعذّر استدعاء Circle Search أو لم تظهر المطالبة، يمكنك تفعيل نطاق Google لانتحال جهاز مدعوم</string>
+    <string name="array_global_actions_home">العودة إلى الشاشة الرئيسية</string>
+    <string name="array_global_actions_control_center">فتح مركز التحكم</string>
+    <string name="array_global_actions_super_xiaoai">فتح Super XiaoAi</string>
+    <string name="array_global_actions_super_xiaoai_circle_search">فتح التعرّف على الشاشة في Super XiaoAi</string>
+    <string name="array_global_actions_google_circle_to_search">فتح Circle to Search من Google</string>
+    <string name="array_global_actions_google_voice_assistant">فتح مساعد Google الصوتي</string>
+    <string name="array_global_actions_force_stop_current_app">إيقاف التطبيق الحالي</string>
+    <string name="scope_batch_no_changes">لا تغيير في النطاق.</string>
+    <string name="scope_batch_service_unavailable">خدمة LSPosed غير متاحة.</string>
+    <string name="scope_batch_remove_failed">تعذّرت إزالة النطاق.</string>
+    <string name="scope_batch_updated">تم تحديث النطاق.</string>
+    <string name="scope_batch_request_not_approved">لم تتم الموافقة على بعض طلبات النطاق: %1$s</string>
+    <string name="scope_batch_update_failed">تعذّر تحديث النطاق: %1$s</string>
+    <string name="scope_batch_request_failed">تعذّر طلب النطاق.</string>
+    <string name="settings_hot_reload">إعادة تحميل العملية</string>
+    <string name="settings_hot_reload_unsupported">إطار Xposed الحالي لا يدعم إعادة التحميل السريع. يتطلب libxposed API 102 أو أحدث.</string>
+    <string name="settings_hot_reload_pick_apps">اختر التطبيقات لإعادة تحميلها</string>
+    <string name="settings_hot_reload_pick_apps_subtitle">تُعرض فقط التطبيقات المفعّلة في نطاق الإطار. ستُعاد تحميل كل العمليات المحقونة حاليًا للتطبيقات المختارة.</string>
+    <string name="settings_hot_reload_system_scope">إطار النظام</string>
+    <string name="settings_hot_reload_action">إعادة تحميل</string>
+    <string name="settings_hot_reload_no_scoped_apps">لا توجد تطبيقات مثبّتة مفعّلة في نطاق الإطار.</string>
+    <string name="settings_hot_reload_no_apps_selected">اختر تطبيقًا واحدًا على الأقل.</string>
+    <string name="settings_hot_reload_batch_in_progress">جارٍ إعادة تحميل %1$d تطبيق…</string>
+    <string name="settings_hot_reload_batch_no_running_targets">لم يُعثر على عملية محقونة قيد التشغيل للتطبيقات المختارة (%1$d).</string>
+    <string name="settings_hot_reload_batch_result">انتهت إعادة التحميل: نجحت %1$d/%2$d عملية؛ فشلت %3$d؛ %4$d تطبيق مختار بلا عملية قيد التشغيل.</string>
+    <string name="settings_hot_reload_batch_result_timeout">انتهت مهلة إعادة التحميل: نجحت %1$d/%2$d عملية؛ فشلت أو انتهت مهلتها %3$d؛ %4$d تطبيق مختار بلا عملية قيد التشغيل.</string>
+    <string name="settings_hot_reload_batch_failure_detail">أول فشل (%1$s): %2$s</string>
+    <string name="settings_hot_reload_batch_service_error">تعذّر بدء إعادة التحميل: %1$s</string>
+</resources>

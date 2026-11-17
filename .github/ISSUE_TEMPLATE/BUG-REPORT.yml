@@ -1,0 +1,95 @@
+name: "🐛 Bug"
+description: Report an issue | 问题反馈
+title: "🐛 [BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请尽量把下面填完整——缺信息的问题通常没法复现，只能被关掉。
+        Thanks for the report. Please fill this in; a report without these details usually cannot be reproduced.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 先自查 | Before you file
+      options:
+        - label: 我用的是本仓库最新构建的包，并且已读 README 的“排障”一节
+          required: true
+        - label: LSPosed 里 HyperAlarm 已启用，作用域**只有** `com.android.deskclock`
+          required: true
+
+  - type: input
+    id: module-version
+    attributes:
+      label: HyperAlarm 版本 | Module version
+      description: 设置 → 关于 里的 `versionName` 与 `versionCode`（例如 `1.0.0-20261110` / `202611100`）
+      placeholder: 1.0.0-20261110 / 202611100
+    validations:
+      required: true
+
+  - type: input
+    id: clock-version
+    attributes:
+      label: 小米时钟版本 | Xiaomi Clock version
+      description: 时钟应用信息里的版本号（例如 18.28.0）
+      placeholder: 18.28.0
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: 设备与系统 | Device and ROM
+      description: 机型 / Android 版本 / HyperOS 版本 / root 方案（KernelSU 或 Magisk）/ LSPosed 版本
+      placeholder: 机型 · Android 16 · HyperOS 3.x · KernelSU · LSPosed 1.9.x (API 102)
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤 | Steps
+      description: |
+        做了哪些操作？例如：新建闹钟标签 `x.sh`，时间设为 2 分钟后，等它触发。
+      placeholder: |
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+
+  - type: input
+    id: expected
+    attributes:
+      label: 期望结果 | Expected
+    validations:
+      required: true
+
+  - type: input
+    id: actual
+    attributes:
+      label: 实际结果 | Actual
+    validations:
+      required: true
+
+  - type: textarea
+    id: script
+    attributes:
+      label: 相关脚本（脱敏） | Related script (redacted)
+      description: 如果问题跟脚本执行有关，贴出脚本内容，**务必删掉密码、token、内网地址**
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志 | Logs
+      description: |
+        优先贴这两处：
+        - 设置 → 脚本日志 → 右上角导出/分享，把对应那次运行的日志贴上来
+        - `adb logcat -d | grep -iE 'HyperAlarm|LSPosed'`
+      render: text
+    validations:
+      required: false

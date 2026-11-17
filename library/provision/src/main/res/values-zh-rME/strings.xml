@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <string name="provision_back_description">回去</string>
+    <string name="provision_start_content_description">启动</string>
+    <string name="provision_back">回去</string>
+    <string name="provision_next">看看后面有什么</string>
+    <string name="provision_skip_underline">我不喜欢这个</string>
+    <string name="provision_agree_and_next">👴准许了</string>
+    <string name="provision_agree_terms">用户协议和隐私政策我都看过了，同意。</string>
+    <string name="provision_basic_settings_category_app">应用这边</string>
+    <string name="provision_basic_settings_category_scope">管到谁头上</string>
+    <string name="provision_basic_settings_hide_app_icon">桌面上的图标</string>
+    <string name="provision_basic_settings_icon">设置里的图标</string>
+    <string name="provision_basic_settings_icon_desc">挑模块图标露脸在设置页的哪一层</string>
+    <string name="provision_basic_settings_icon_disable">关掉</string>
+    <string name="provision_basic_settings_icon_down">车底</string>
+    <string name="provision_basic_settings_icon_medium">车里</string>
+    <string name="provision_basic_settings_icon_miui_13">背景镂空款</string>
+    <string name="provision_basic_settings_icon_miui_14">圆角矩形款</string>
+    <string name="provision_basic_settings_icon_mode">图标穿什么</string>
+    <string name="provision_basic_settings_icon_top">车顶</string>
+    <string name="provision_basic_settings_language">话</string>
+    <string name="provision_basic_settings_scope">管到谁头上</string>
+    <string name="provision_basic_settings_scope_sync">作用域跟着走</string>
+    <string name="provision_basic_settings_scope_sync_desc">主页勾的和作用域保持一致</string>
+    <string name="provision_basic_settings_title">先把底子打好</string>
+    <string name="provision_complete_text">进 HyperAlarm 里看看</string>
+    <string name="provision_get_md_failed">## 内容没拿到。   \n - 可以去[这儿](%URL%)看原文。   \n - 或者试着[刷新](hyperalarm://refresh)这一页。</string>
+    <string name="provision_permission_installed_apps">允许读已安装应用列表</string>
+    <string name="provision_permission_internet">允许联网</string>
+    <string name="provision_permission_lsp">去 Xposed 管理器里激活</string>
+    <string name="provision_permission_root">允许以 Root 身份干活</string>
+    <string name="provision_permission_settings_title">权限得先点头</string>
+    <string name="provision_protect_persoanl_info_statement">你的个人信息我们会按相关法律法规和隐私政策护着。</string>
+    <string name="provision_scope_open_failed">作用域页面打不开</string>
+    <string name="provision_service_agreement">条款我都看过、也同意了。</string>
+    <string name="provision_set_permission_later">这几个必要权限可以待会儿再给</string>
+    <string name="provision_system_complete">搞定了</string>
+    <string name="provision_system_preparing">正在准备系统…</string>
+    <string name="provision_terms_and_statement_title">条款与条件</string>
+    <string name="provision_terms_of_use">条款与条件</string>
+    <string name="provision_terms_of_use_label_use_network_china">为了给你更好的服务，继续用 HyperAlarm 之前得先读并同意我们的<annotation key="user_agreement">用户协议</annotation>和<annotation key="privacy_policy">隐私政策</annotation>。你的个人信息我们会按相关法律法规和隐私政策护着。</string>
+    <string name="provision_terms_of_use_processing">正在同步数据…</string>
+    <string name="provision_terms_of_use_verification_code_dialog_continue">接着来</string>
+    <string name="provision_terms_of_use_verification_code_dialog_desc">在我们用户协议或隐私政策里能找到</string>
+    <string name="provision_terms_of_use_verification_code_dialog_title">填验证码</string>
+    <string name="provision_terms_of_use_verification_code_tip">你的验证码是 %1$s。</string>
+    <string name="clock_filter_title">小米时钟只许露真闹钟</string>
+    <string name="clock_filter_summary">脚本任务在闹钟列表里隐身</string>
+    <string name="clock_filter_ringing_title">带响儿的任务也一并藏好</string>
+    <string name="clock_filter_ringing_summary">开了响铃的也一起藏起来</string>
+    <string name="lock_password_title">锁屏咒语怎么念</string>
+    <string name="lock_password_summary_unset">还没设：脚本开跑前不会帮你解锁</string>
+    <string name="lock_password_summary_set">设好了：闷声跑之前会先解锁</string>
+    <string name="provision_basic_settings_category_clock">小米时钟那头</string>
+    <string name="lock_password_clear">擦掉</string>
+    <string name="lock_password_save">存一下</string>
+    <string name="lock_password_cleared">清干净了</string>
+    <string name="lock_password_saved">存好了</string>
+    <string name="lock_password_unchanged">一个字都没改</string>
+    <string name="lock_password_desc">闷声跑任务前拿它解锁屏幕；留空就是不动它。</string>
+    <string name="lock_password_hint">把这串咒语打进去</string>
+    <string name="clock_filter_no_root">改时钟列表过滤得有 Root 权限</string>
+    <string name="lock_password_failed_toast">密码写不进去，root 给了没？</string>
+</resources>

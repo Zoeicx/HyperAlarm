@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <string name="custom_order_title">自訂</string>
+    <string name="app_version_update">有新版本</string>
+    <string name="developer_build">開發版</string>
+    <string name="pull_to_enter_private">向下拉進入隱私空間</string>
+    <string name="release_enter_private">釋放進入隱私空間</string>
+    <!--Pop-up window/miuix part-->
+    <string name="miuix_appcompat_action_mode_select_all">選擇所有</string>
+    <string name="miuix_appcompat_action_mode_inverse">取消所有選擇</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="tip">提示</string>
+    <string name="root">沒有Root/Su權限，某些特性不可用</string>
+    <string name="soft_reboot">重啟</string>
+    <string name="restart_app_desc">確實要重新啟動%1$s吗？</string>
+    <string name="hyperalarm_restart_quick">快速重啟應用程式</string>
+    <string name="hook_failed">模塊還沒有啟用。請檢查是否啟用了LSPosed。如果是，請重新啟動或重新優化模塊。</string>
+    <string name="kill_failed">結束進程失敗。請檢查HyperAlarm是否已被授予Root/Su權限。</string>
+    <string name="start_failed">啟動進程失敗。請檢查HyperAlarm是否已被授予Root/Su權限。</string>
+    <string name="pid_failed">目標應用程式沒有運行，不需要重新啟動。</string>
+    <string name="reboot_failed">重啟失敗。請檢查HyperAlarm是否被授予Root/Su權限。</string>
+    <!--HyperAlarm Tips-->
+    <string name="error">錯誤</string>
+    <string name="warn">注意</string>
+    <string name="app_error_desc">HyperAlarm意外關閉。為了幫助我們解決這個問題，請提供下面的訊息：\n\n長按並保留以上訊息來複製所有內容。</string>
+    <string name="safe_mode_desc">%1$s由於多次崩潰而進入安全模式，HyperAlarm功能已被暫時禁用。</string>
+    <string name="safe_mode_history">查看異常記錄</string>
+    <string name="safe_mode_cancel">關閉安全模式</string>
+    <string name="safe_mode_ok">取消</string>
+    <string name="safe_mode_later_title">提示</string>
+    <string name="safe_mode_banner_title">主動安全模式已啟用</string>
+    <string name="safe_mode_banner_desc">%1$s 因多次崩潰，已被主動安全模式臨時停用相關功能。點按前往處理。</string>
+    <string name="safe_mode_recorder_title">異常記錄</string>
+    <string name="safe_mode_recorder_file">文件</string>
+    <string name="safe_mode_recorder_class">種類</string>
+    <string name="safe_mode_recorder_method">方式</string>
+    <string name="safe_mode_recorder_line">線</string>
+    <string name="safe_mode_recorder_msg">異常訊息</string>
+    <string name="safe_mode_recorder_st">堆棧跟蹤</string>
+    <string name="error_message">異常訊息</string>
+    <string name="error_type">例外類型</string>
+    <string name="error_file_name">文件名稱</string>
+    <string name="error_time">記錄時間</string>
+    <string name="error_version_name">版本名稱</string>
+    <string name="error_git_hash">Git 雜湊</string>
+    <string name="error_build_time">構建時間</string>
+    <string name="copy_ok">複製到剪貼簿</string>
+    <string name="notification_channel_app_crash_name">應用程式運行異常</string>
+    <string name="notification_title_message_emergency_crash">%s 多次奔潰</string>
+    <string name="notification_content_message">點擊查看詳細訊息</string>
+    <string name="notification_view">查看</string>
+    <string name="headtip_warn_not_offical_rom">您正在使用的 ROM 來源可能並不是 Xiaomi 官方，部分功能可能會失效，詳情請諮詢您正在使用 ROM 的提供者。</string>
+    <string name="headtip_warn_unsupport_xposed">目前框架 %1$s 的 Xposed API 版本為 %2$d，低於 HyperAlarm 要求的 %3$d，相關模組功能已停止載入。點按查看詳情。</string>
+    <string name="headtip_warn_framework_service_error">HyperAlarm 無法透過 XposedService 讀取目前框架資訊，相關模組功能已出於安全原因停止載入。點按查看詳情。</string>
+    <string name="headtip_warn_unsupport_sysver">當前設備運行的系統版本未 （完全） 適配，HyperAlarm 功能可能存在異常。</string>
+    <string name="headtip_warn_sign_verification_failed">簽名校驗失敗，您當前使用的版本可能並非來自於 HyperAlarm 官方的版本，可能包含惡意代碼，請注意使用安全。</string>
+    <string name="headtip_tip_auto_safe_mode">主動安全模式可以在部分應用多次崩潰時及時取消 hook 以確保安全。 該功能需要 hook 作用域「系統框架」來運行，我們十分建議您勾選作用域「系統框架」以啟動和運行主動安全模式。</string>
+    <string name="happy_birthday_hyperalarm">今天是 HyperAlarm 的生日！\n感謝與您歲月相伴之恩，願來年再續前緣，共赴風雨，攜手並進！</string>
+    <string name="headtip_notice_dead_logger_errcode">當前設備Log服務異常，HyperAlarm 功能將被限制。\n請恢復 Log 服務，使其可以正常運行。 n錯誤代碼： %1$s</string>
+    <string name="headtip_notice_dead_logger">當前設備 Log 服務異常，HyperAlarm 功能將被限制。 請恢復 Log 服務，使其可以正常運行。</string>
+    <string name="homepage_unsupported_version_message">当前系統版本不在 HyperAlarm 內置系統版本列表中。\n\n%1$s\n\n本版本支援的系統版本範圍為：\n%2$s\n\n為避免在未知系統環境下繼續運行，HyperAlarm 程式将在 30 秒后自動退出。</string>
+    <string name="homepage_unsupported_version_current">当前版本：Android SDK %1$d - HyperOS %2$s</string>
+    <string name="unsupported_system_func">當前系統版本不支持此功能</string>
+    <string name="supported_system_func">當前系統版本正式支持此特性</string>
+    <string name="feature_doing_func">目前功能正在開發中，敬請期待。</string>
+    <!--System UI-->
+    <string name="system_ui">系統界面</string>
+    <!--System launcher-->
+    <string name="mihome">系統桌面</string>
+    <!--Settings-->
+    <string name="system_settings">設定</string>
+    <!--Security/Tablet security center-->
+    <string name="security_center_hyperos">安全服務</string>
+    <!--Other-->
+    <string name="exit">退出</string>
+    <string name="ignore">忽略</string>
+    <string name="log_level_none">關閉</string>
+    <string name="disable_suggest">關閉建議</string>
+    <string name="enable_suggest">開啟建議</string>
+    <string name="logo_egg_NotificationName">彩蛋通知</string>
+    <string name="logo_egg_NotificationName_tips">這是彩蛋通知</string>
+    <string name="logo_egg_Notification_tips">請在設定裡打開通知以查看彩蛋</string>
+    <string name="logo_egg1">哇，你居然能找到這裡，太厲害了</string>
+    <string name="logo_egg2">可惡，藏在這裡也會被發現嗎…</string>
+    <string name="logo_egg3">這裡沒有 Android Eggs… 但是有 HyperAlarm Eggs!</string>
+    <string name="uninstall_title">解除安裝 HyperAlarm</string>
+    <string name="uninstall_summary">從此入口解除安裝 HyperAlarm 後，您的模組配置將仍然保留在 Xposed 框架資料庫中，如需徹底清除請先前往模組設定中重置模組配置，再進行解除安裝。</string>
+    <string name="help_framework_warning_unknown_framework">目前框架</string>
+    <string name="help_framework_warning_section_framework_version">目前框架版本:</string>
+    <string name="help_framework_warning_section_banner_reason">為什麼首頁會彈出警告?</string>
+    <string name="help_framework_warning_banner_reason">只有在 HyperAlarm 偵測到目前框架不符合最低執行要求，或 XposedService 無法正常回傳框架資訊時，首頁才會彈出這條警告。為避免異常 Hook 導致功能失效或系統不穩定，HyperAlarm 會同時停止載入 Hook。</string>
+    <string name="help_framework_warning_version_unavailable">無法透過 XposedService 讀取目前框架版本資訊。</string>
+    <!-- LogViewer -->
+    <string name="log_search_hint">搜尋日誌</string>
+    <string name="log_level_label">等級</string>
+    <string name="log_tag_label">標籤</string>
+    <string name="log_type_app">應用程式日誌</string>
+    <string name="log_type_xposed">Xposed 日誌</string>
+    <string name="log_filter_all">全部</string>
+    <string name="log_menu_clear">清空日誌</string>
+    <string name="log_menu_export">匯出日誌</string>
+    <string name="log_menu_share">分享日誌</string>
+    <string name="log_clear_title">清空日誌</string>
+    <string name="log_clear_all_message">確定要清空所有日誌嗎？這會清除應用程式日誌、已同步的 Xposed 日誌資料庫以及 Crash 日誌。Xposed 原始日誌會在下次啟動應用程式時重新同步。</string>
+    <string name="log_clear_success">日誌已清空</string>
+    <string name="log_clear_failed">清空日誌失敗</string>
+    <string name="log_export_preparing">正在準備匯出…</string>
+    <string name="log_export_success">日誌匯出成功</string>
+    <string name="log_export_failed">日誌匯出失敗</string>
+    <string name="log_share_title">分享日誌</string>
+    <string name="log_share_preparing">正在準備分享…</string>
+    <string name="log_share_failed">分享日誌失敗</string>
+    <string name="log_share_text">HyperAlarm 日誌檔案</string>
+    <string name="log_copy">複製</string>
+    <string name="log_copy_success">日誌已複製到剪貼簿</string>
+    <string name="log_empty_no_logs">暫無日誌</string>
+    <string name="log_empty_no_results">未找到匹配的日誌</string>
+    <string name="log_empty_root_required">請授予 Root 權限後重啟應用以加載</string>
+    <!-- Log detail dialog -->
+    <string name="log_detail_title">日誌詳情</string>
+    <!-- Log Viewer -->
+    <string name="log_loading">正在載入日誌…</string>
+    <string name="load_failed">載入失敗。</string>
+    <string name="log_level_general">一般日誌</string>
+    <string name="log_level_detailed">詳細日誌</string>
+    <string name="log_menu_filter">過濾日誌</string>
+    <string name="tos_update_title">使用者條款與隱私權政策</string>
+    <string name="tos_update_desc">我們近期更新了使用者條款和／或隱私權政策，請查看。\n繼續使用 HyperAlarm 即表示你同意我們的<annotation key="protocol">使用者條款</annotation>與<annotation key="privacy">隱私權政策</annotation>。</string>
+    <string name="ha_logs_group">日誌</string>
+    <string name="ha_history_logs">應用程式日誌</string>
+    <string name="ha_reference">參考</string>
+    <string name="ha_script_logs">腳本日誌</string>
+    <string name="repeat_once">只響一次</string>
+    <string name="repeat_every_day">每天</string>
+    <string name="repeat_workdays">法定工作日</string>
+    <string name="repeat_holidays">法定節假日</string>
+    <string name="repeat_shift">輪班制</string>
+    <string name="repeat_mon_fri">週一至週五</string>
+    <string name="repeat_weekend">週六 週日</string>
+    <string name="ringtone_default">預設鈴聲</string>
+    <string name="ringtone_silent">靜音</string>
+    <string name="ringtone_custom">自訂鈴聲</string>
+    <string name="ringtone_element">元素動態鈴聲</string>
+    <string name="ringtone_weather">天氣動態鈴聲</string>
+    <string name="ringtone_morning_dew">晨露</string>
+    <string name="ringtone_fireflies">螢火蟲</string>
+    <string name="ringtone_daydream">白日夢</string>
+    <string name="ringtone_digital_timer">電子計時器</string>
+    <string name="ringtone_starry_sky">星空</string>
+    <string name="ringtone_music">音樂</string>
+    <string name="ringtone_recording">錄音</string>
+    <string name="countdown_hours_minutes">%1$d小時%2$d分鐘後響鈴</string>
+    <string name="countdown_hours">%1$d小時後響鈴</string>
+    <string name="countdown_minutes">%1$d分鐘後響鈴</string>
+    <string name="script_choose">選擇腳本</string>
+    <string name="script_choose_first">請先選擇腳本</string>
+    <string name="script_running">正在執行腳本</string>
+    <string name="script_run_ok">腳本執行成功</string>
+    <string name="script_run_failed">腳本執行失敗</string>
+    <string name="script_dir_empty">腳本目錄為空</string>
+    <string name="script_open_dir">開啟目錄選擇</string>
+    <string name="ringtone">鈴聲</string>
+    <string name="ringtone_empty">沒有可用鈴聲</string>
+    <string name="ringtone_load_failed">無法讀取鈴聲列表</string>
+    <string name="root_required">請先授予 root 權限</string>
+    <string name="repeat_title">重複</string>
+    <string name="repeat_custom">自訂</string>
+    <string name="repeat_custom_title">自訂重複</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_ok">確定</string>
+    <string name="alarm_saved">已儲存</string>
+    <string name="shift_duration_days">%1$d天</string>
+    <string name="shift_part_title">第%1$d班</string>
+    <string name="shift_rest">休息</string>
+    <string name="shift_cycle_title">輪班週期</string>
+    <string name="shift_ring">響鈴</string>
+    <string name="shift_need_one">至少需要一個響鈴班次</string>
+    <string name="shift_saved">輪班制已儲存</string>
+    <string name="shift_save_failed">儲存失敗，請確認小米時鐘正在執行</string>
+    <string name="alarm_delete_title">刪除鬧鐘</string>
+    <string name="alarm_delete_message">確定刪除選取的 %1$d 個鬧鐘？</string>
+    <string name="action_delete">刪除</string>
+    <string name="loading">正在載入…</string>
+    <string name="next_alarm_none">暫無啟用的定時任務</string>
+    <string name="next_alarm_in_hours_minutes">%1$d小時%2$d分鐘後</string>
+    <string name="next_alarm_in_hours">%1$d小時後</string>
+    <string name="next_alarm_in_minutes">%1$d分鐘後</string>
+    <string name="next_alarm_runs">執行 %1$s 任務</string>
+    <string name="task_fallback">任務</string>
+    <string name="no_alarms">暫無鬧鐘</string>
+    <string name="alarm_edit_title">編輯任務</string>
+    <string name="ringtone_choose">選擇鈴聲</string>
+    <string name="ringtone_vibrate">響鈴時震動</string>
+    <string name="script">腳本</string>
+    <string name="script_run_now">立即執行</string>
+    <string name="shift_start_date">開始日期</string>
+    <string name="shift_parts">班次</string>
+    <string name="wheel_hour">時</string>
+    <string name="wheel_minute">分</string>
+    <string name="script_import_done">已匯入 %1$d 個腳本</string>
+    <string name="script_import_done_skipped">已匯入 %1$d 個腳本，略過 %2$d 個非法檔名</string>
+    <string name="script_import_none_skipped">沒有可匯入的腳本，%1$d 個檔名不合法</string>
+    <string name="script_import_none">目錄中沒有 .sh 腳本</string>
+    <string name="alarm_add">新增鬧鐘</string>
+    <string name="alarm_add_failed">新增鬧鐘失敗，請確認小米時鐘正在執行</string>
+    <string name="clock_restart">重新啟動小米時鐘</string>
+    <string name="clock_restart_desc">強制停止並在背景重新啟動時鐘程序，讓 Hook 重新載入。</string>
+    <string name="script_dir_label">腳本目錄</string>
+    <string name="script_dir_copied">腳本目錄已複製: %1$s</string>
+    <string name="ringtone_updated">鈴聲已更新</string>
+    <string name="shift_info">%1$d天%2$d班</string>
+    <string name="clock_filter_no_root">需要 root 權限才能修改時鐘列表過濾</string>
+    <string name="clock_filter_title">時鐘只顯示鬧鐘</string>
+    <string name="clock_filter_summary">腳本任務不在鬧鐘列表顯示</string>
+    <string name="log_level_title">日誌輸出等級</string>
+    <string name="script_group_title">腳本</string>
+    <string name="script_dir_copy">複製腳本目錄</string>
+    <string name="action_close">關閉</string>
+    <string name="action_save">儲存</string>
+    <string name="clock_filter_ringing_title">隱藏響鈴任務</string>
+    <string name="clock_filter_ringing_summary">開啟了響鈴鬧鐘的任務也不顯示</string>
+    <string name="alarm_load_failed">讀取鬧鐘列表失敗</string>
+    <string name="alarm_load_failed_hint">點擊重試</string>
+    <string name="alarm_save_failed">儲存失敗，請確認小米時鐘正在執行</string>
+    <string name="alarm_delete_failed">部分鬧鐘刪除失敗，請確認小米時鐘正在執行</string>
+    <string name="lock_password_title">鎖屏密碼設定</string>
+    <string name="lock_password_summary_unset">未設定：腳本執行前不會解鎖螢幕</string>
+    <string name="lock_password_summary_set">已設定：靜音任務執行前會先解鎖螢幕</string>
+    <string name="lock_password_dialog_title">鎖屏密碼</string>
+    <string name="lock_password_hint">鎖屏密碼</string>
+    <string name="lock_password_save">儲存</string>
+    <string name="lock_password_clear">清空</string>
+    <string name="lock_password_saved">已儲存</string>
+    <string name="lock_password_cleared">已清空</string>
+    <string name="lock_password_unchanged">已維持不變</string>
+    <string name="restart_tutorial_title">重啟教學</string>
+    <string name="restart_tutorial_summary">重新走一遍啟用、作用域與權限步驟</string>
+    <string name="lock_password_desc">靜音任務執行前用它解鎖螢幕；留空表示不修改。</string>
+    <string name="repeat_shift_is_schedule">輪班的重複由班次表決定，不能在這裡改</string>
+    <string name="ringtone_update_failed">鈴聲更新失敗</string>
+</resources>

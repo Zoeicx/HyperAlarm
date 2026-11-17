@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <string name="provision_back_description">返回</string>
+    <string name="provision_start_content_description">開始</string>
+    <string name="provision_next">下一項</string>
+    <string name="provision_skip_underline">跳過</string>
+    <string name="provision_permission_settings_title">隱私設定</string>
+    <string name="provision_terms_and_statement_title">條款和條件</string>
+    <string name="provision_basic_settings_title">基本設定</string>
+    <string name="provision_agree_and_next">同意</string>
+    <string name="provision_agree_terms">我已閱讀並同意用戶協議與隱私鄭策。</string>
+    <string name="provision_terms_of_use">條款與條件</string>
+    <string name="provision_terms_of_use_label_use_network_china">為了向您提供更好的服務，您必須閱讀並同意我們的<annotation key="user_agreement">用戶協議</annotation>和<annotation key="privacy_policy">隱私政策</annotation>，您才能繼續使用系統。我們將按照相關法律、法規和隱私政策保護您的個人信息。</string>
+    <string name="provision_protect_persoanl_info_statement">我們將按照相關法律、法規和隱私政策保護您的個人信息。</string>
+    <string name="provision_service_agreement">我已經閱讀並同意了條款和條件。</string>
+    <string name="provision_complete_text">進入系統</string>
+    <string name="provision_permission_installed_apps">允許讀取應用列表</string>
+    <string name="provision_back">返回</string>
+    <string name="provision_set_permission_later">這些必要權限可以稍後再給</string>
+    <string name="provision_permission_internet">允許連線至網際網路</string>
+    <string name="provision_permission_root">允許以 Root 身分執行</string>
+    <string name="provision_permission_lsp">在 Xposed 管理器中啟用</string>
+    <string name="provision_terms_of_use_verification_code_tip">你的驗證碼是 %1$s。</string>
+    <string name="provision_terms_of_use_verification_code_dialog_title">輸入驗證碼</string>
+    <string name="provision_terms_of_use_verification_code_dialog_desc">可以在使用者協議或隱私政策中找到</string>
+    <string name="provision_terms_of_use_verification_code_dialog_continue">繼續</string>
+    <string name="provision_terms_of_use_processing">正在同步資料…</string>
+    <string name="provision_basic_settings_hide_app_icon">桌面上的圖示</string>
+    <string name="provision_basic_settings_category_app">應用程式</string>
+    <string name="provision_basic_settings_category_scope">作用域</string>
+    <string name="provision_basic_settings_language">語言</string>
+    <string name="provision_basic_settings_scope_sync">同步作用域</string>
+    <string name="provision_basic_settings_scope_sync_desc">讓首頁勾選與作用域保持一致</string>
+    <string name="provision_basic_settings_scope">作用域</string>
+    <string name="provision_basic_settings_icon">設定中的圖示</string>
+    <string name="provision_basic_settings_icon_desc">指定模組圖示出現在設定頁的哪一層</string>
+    <string name="provision_basic_settings_icon_mode">圖示樣式</string>
+    <string name="provision_basic_settings_icon_disable">關閉</string>
+    <string name="provision_basic_settings_icon_top">頂部</string>
+    <string name="provision_basic_settings_icon_medium">中間</string>
+    <string name="provision_basic_settings_icon_down">底部</string>
+    <string name="provision_basic_settings_icon_miui_14">圓角矩形樣式</string>
+    <string name="provision_basic_settings_icon_miui_13">背景鏤空樣式</string>
+    <string name="provision_system_preparing">正在準備系統…</string>
+    <string name="provision_system_complete">設定完成</string>
+    <string name="provision_scope_open_failed">無法開啟作用域頁面</string>
+    <string name="provision_get_md_failed">## 內容沒有取得。   
+ - 可以到[這裡](%URL%)查看原始內容。   
+ - 或試著[重新整理](hyperalarm://refresh)這一頁。</string>
+    <string name="clock_filter_title">時鐘只顯示鬧鐘</string>
+    <string name="clock_filter_summary">腳本任務不在鬧鐘列表顯示</string>
+    <string name="clock_filter_ringing_title">隱藏響鈴任務</string>
+    <string name="clock_filter_ringing_summary">開啟了響鈴鬧鐘的任務也不顯示</string>
+    <string name="lock_password_title">鎖屏密碼設定</string>
+    <string name="lock_password_summary_unset">未設定：腳本執行前不會解鎖螢幕</string>
+    <string name="lock_password_summary_set">已設定：靜音任務執行前會先解鎖螢幕</string>
+    <string name="provision_basic_settings_category_clock">時鐘清單</string>
+    <string name="lock_password_clear">清空</string>
+    <string name="lock_password_save">儲存</string>
+    <string name="lock_password_cleared">已清空</string>
+    <string name="lock_password_saved">已儲存</string>
+    <string name="lock_password_unchanged">已維持不變</string>
+    <string name="lock_password_desc">靜音任務執行前用它解鎖螢幕；留空表示不修改。</string>
+    <string name="lock_password_hint">鎖屏密碼</string>
+    <string name="clock_filter_no_root">需要 root 權限才能修改時鐘列表過濾</string>
+    <string name="lock_password_failed_toast">密碼檔案寫入失敗，請確認已授予 root</string>
+</resources>

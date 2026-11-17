@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <string name="provision_back_description">Назад</string>
+    <string name="provision_start_content_description">Почати</string>
+    <string name="provision_next">Далі</string>
+    <string name="provision_skip_underline">Пропустити</string>
+    <string name="provision_permission_settings_title">Налаштування дозволів</string>
+    <string name="provision_terms_and_statement_title">Умови та положення</string>
+    <string name="provision_basic_settings_title">Основні налаштування</string>
+    <string name="provision_agree_and_next">Погоджуюсь</string>
+    <string name="provision_agree_terms">Я прочитав(-ла) та погоджуюся з Угодою користувача та Політикою конфіденційності.</string>
+    <string name="provision_terms_of_use">Умови та положення</string>
+    <string name="provision_terms_of_use_label_use_network_china">Щоб надавати вам кращі послуги, ви повинні прочитати та погодитися з нашою <annotation key="user_agreement">Угодою користувача</annotation> та <annotation key="privacy_policy">Політикою конфіденційності</annotation>, перш ніж продовжити використання системи. Ми будемо захищати вашу особисту інформацію відповідно до чинного законодавства, нормативних актів та політики конфіденційності.</string>
+    <string name="provision_protect_persoanl_info_statement">Ми будемо захищати вашу особисту інформацію відповідно до чинного законодавства, нормативних актів та політики конфіденційності.</string>
+    <string name="provision_service_agreement">Я прочитав(-ла) та погоджуюся з умовами та положеннями.</string>
+    <string name="provision_complete_text">Увійти до системи</string>
+    <string name="provision_back">Назад</string>
+    <string name="provision_set_permission_later">Ці потрібні дозволи можна надати пізніше</string>
+    <string name="provision_permission_internet">Дозволити підключення до інтернету</string>
+    <string name="provision_permission_root">Дозволити дії від імені Root</string>
+    <string name="provision_permission_installed_apps">Дозволити читання списку встановлених застосунків</string>
+    <string name="provision_permission_lsp">Активувати в менеджері Xposed</string>
+    <string name="provision_terms_of_use_verification_code_tip">Ваш код підтвердження: %1$s.</string>
+    <string name="provision_terms_of_use_verification_code_dialog_title">Введіть код підтвердження</string>
+    <string name="provision_terms_of_use_verification_code_dialog_desc">Його можна знайти в угоді користувача або політиці конфіденційності</string>
+    <string name="provision_terms_of_use_verification_code_dialog_continue">Продовжити</string>
+    <string name="provision_terms_of_use_processing">Синхронізація даних …</string>
+    <string name="provision_basic_settings_hide_app_icon">Значок на головному екрані</string>
+    <string name="provision_basic_settings_category_app">Застосунок</string>
+    <string name="provision_basic_settings_category_scope">Область дії</string>
+    <string name="provision_basic_settings_language">Мова</string>
+    <string name="provision_basic_settings_scope_sync">Синхронізація області</string>
+    <string name="provision_basic_settings_scope_sync_desc">Тримати вибір на головній сторінці згідно з областю дії</string>
+    <string name="provision_basic_settings_scope">Область дії</string>
+    <string name="provision_basic_settings_icon">Значок у налаштуваннях</string>
+    <string name="provision_basic_settings_icon_desc">Задає, де значок модуля з\'явиться в налаштуваннях</string>
+    <string name="provision_basic_settings_icon_mode">Стиль значка</string>
+    <string name="provision_basic_settings_icon_disable">Вимкнено</string>
+    <string name="provision_basic_settings_icon_top">Зверху</string>
+    <string name="provision_basic_settings_icon_medium">По центру</string>
+    <string name="provision_basic_settings_icon_down">Знизу</string>
+    <string name="provision_basic_settings_icon_miui_14">Заокруглений прямокутник</string>
+    <string name="provision_basic_settings_icon_miui_13">Вирізаний фон</string>
+    <string name="provision_system_preparing">Підготовка системи …</string>
+    <string name="provision_system_complete">Налаштування завершено</string>
+    <string name="provision_scope_open_failed">Не вдалося відкрити сторінку області дії</string>
+    <string name="provision_get_md_failed">## Не вдалося отримати вміст.   
+ - Можна відкрити [тут](%URL%) оригінальний текст.   
+ - Або спробувати [оновити](hyperalarm://refresh) цю сторінку.</string>
+    <string name="clock_filter_title">Годинник показує лише будильники</string>
+    <string name="clock_filter_summary">Скрипт-завдання не показуються у списку</string>
+    <string name="clock_filter_ringing_title">Ховати завдання зі звуком</string>
+    <string name="clock_filter_ringing_summary">Завдання, чий будильник дзвонить, теж ховаються</string>
+    <string name="lock_password_title">Пароль блокування екрана</string>
+    <string name="lock_password_summary_unset">Не задано: скрипти виконуються без розблокування</string>
+    <string name="lock_password_summary_set">Задано: тихі завдання розблоковують екран перед запуском</string>
+    <string name="provision_basic_settings_category_clock">Список годинника</string>
+    <string name="lock_password_clear">Очистити</string>
+    <string name="lock_password_save">Зберегти</string>
+    <string name="lock_password_cleared">Очищено</string>
+    <string name="lock_password_saved">Збережено</string>
+    <string name="lock_password_unchanged">Залишено без змін</string>
+    <string name="lock_password_desc">Потрібен, щоб розблокувати екран перед тихим завданням. Залиште порожнім, щоб не змінювати.</string>
+    <string name="lock_password_hint">Пароль блокування екрана</string>
+    <string name="clock_filter_no_root">Для зміни фільтра списку годинника потрібен root</string>
+    <string name="lock_password_failed_toast">Не вдалося записати файл пароля. Root надано?</string>
+</resources>

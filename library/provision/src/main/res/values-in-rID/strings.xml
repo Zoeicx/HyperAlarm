@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+        <string name="provision_back_description">Kembali</string>
+    <string name="provision_agree_and_next">Setuju</string>
+    <string name="provision_agree_terms">Saya sudah membaca dan menyetujui Perjanjian Pengguna serta Kebijakan Privasi.</string>
+    <string name="provision_back">Kembali</string>
+    <string name="provision_basic_settings_category_app">Aplikasi</string>
+    <string name="provision_basic_settings_category_scope">Cakupan</string>
+    <string name="provision_basic_settings_hide_app_icon">Ikon di layar utama</string>
+    <string name="provision_basic_settings_icon">Ikon di setelan</string>
+    <string name="provision_basic_settings_icon_desc">Menentukan di mana ikon modul muncul di setelan</string>
+    <string name="provision_basic_settings_icon_disable">Nonaktif</string>
+    <string name="provision_basic_settings_icon_down">Bawah</string>
+    <string name="provision_basic_settings_icon_medium">Tengah</string>
+    <string name="provision_basic_settings_icon_miui_13">Latar terpotong</string>
+    <string name="provision_basic_settings_icon_miui_14">Persegi panjang membulat</string>
+    <string name="provision_basic_settings_icon_mode">Gaya ikon</string>
+    <string name="provision_basic_settings_icon_top">Atas</string>
+    <string name="provision_basic_settings_language">Bahasa</string>
+    <string name="provision_basic_settings_scope">Cakupan</string>
+    <string name="provision_basic_settings_scope_sync">Sinkron cakupan</string>
+    <string name="provision_basic_settings_scope_sync_desc">Jaga pilihan di beranda tetap sesuai cakupan</string>
+    <string name="provision_basic_settings_title">Setelan dasar</string>
+    <string name="provision_complete_text">Masuk HyperAlarm</string>
+    <string name="provision_get_md_failed">## Gagal mengambil konten.   
+ - Kamu bisa membuka [di sini](%URL%) untuk melihat konten aslinya.   
+ - Atau coba [muat ulang](hyperalarm://refresh) halaman ini.</string>
+    <string name="provision_next">Lanjut</string>
+    <string name="provision_permission_installed_apps">Izinkan membaca daftar aplikasi terpasang</string>
+    <string name="provision_permission_internet">Izinkan koneksi internet</string>
+    <string name="provision_permission_lsp">Aktifkan di Pengelola Xposed</string>
+    <string name="provision_permission_root">Izinkan operasi sebagai Root</string>
+    <string name="provision_permission_settings_title">Setelan izin</string>
+    <string name="provision_protect_persoanl_info_statement">Kami melindungi informasi pribadimu sesuai hukum, peraturan, dan kebijakan privasi yang berlaku.</string>
+    <string name="provision_scope_open_failed">Tidak bisa membuka halaman cakupan</string>
+    <string name="provision_service_agreement">Saya sudah membaca dan menyetujui syarat dan ketentuan.</string>
+    <string name="provision_set_permission_later">Izin yang diperlukan ini bisa diberikan nanti</string>
+    <string name="provision_skip_underline">Lewati</string>
+    <string name="provision_start_content_description">Mulai</string>
+    <string name="provision_system_complete">Penyiapan selesai</string>
+    <string name="provision_system_preparing">Menyiapkan sistem…</string>
+    <string name="provision_terms_and_statement_title">Syarat dan ketentuan</string>
+    <string name="provision_terms_of_use">Syarat dan ketentuan</string>
+    <string name="provision_terms_of_use_label_use_network_china">Demi layanan yang lebih baik, kamu harus membaca dan menyetujui <annotation key="user_agreement">Perjanjian Pengguna</annotation> dan <annotation key="privacy_policy">Kebijakan Privasi</annotation> kami sebelum lanjut memakai HyperAlarm. Kami melindungi informasi pribadimu sesuai hukum dan kebijakan privasi yang berlaku.</string>
+    <string name="provision_terms_of_use_processing">Menyinkronkan data…</string>
+    <string name="provision_terms_of_use_verification_code_dialog_continue">Lanjut</string>
+    <string name="provision_terms_of_use_verification_code_dialog_desc">Kamu bisa menemukannya di Perjanjian Pengguna atau Kebijakan Privasi kami</string>
+    <string name="provision_terms_of_use_verification_code_dialog_title">Masukkan kode verifikasi</string>
+    <string name="provision_terms_of_use_verification_code_tip">Kode verifikasimu adalah %1$s.</string>
+    <string name="clock_filter_title">Jam hanya menampilkan alarm</string>
+    <string name="clock_filter_summary">Tugas skrip tidak tampil di daftar alarm</string>
+    <string name="clock_filter_ringing_title">Sembunyikan tugas berbunyi</string>
+    <string name="clock_filter_ringing_summary">Tugas yang alarmnya berbunyi ikut disembunyikan</string>
+    <string name="lock_password_title">Sandi kunci layar</string>
+    <string name="lock_password_summary_unset">Belum diatur: skrip berjalan tanpa membuka kunci</string>
+    <string name="lock_password_summary_set">Sudah diatur: tugas senyap membuka kunci sebelum berjalan</string>
+    <string name="provision_basic_settings_category_clock">Daftar jam</string>
+    <string name="lock_password_clear">Hapus</string>
+    <string name="lock_password_save">Simpan</string>
+    <string name="lock_password_cleared">Terhapus</string>
+    <string name="lock_password_saved">Tersimpan</string>
+    <string name="lock_password_unchanged">Tidak diubah</string>
+    <string name="lock_password_desc">Dipakai membuka kunci layar sebelum tugas senyap berjalan. Kosongkan bila tidak diubah.</string>
+    <string name="lock_password_hint">Sandi layar kunci</string>
+    <string name="clock_filter_no_root">Perlu izin root untuk mengubah filter daftar jam</string>
+    <string name="lock_password_failed_toast">Gagal menulis berkas sandi. Sudah diberi root?</string>
+</resources>

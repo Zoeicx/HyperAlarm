@@ -1,0 +1,19 @@
+{
+  "id": 0,
+  "alwaysShow": false,
+  "title": "",
+  "content": "",
+  "confirmDelaySeconds": 0,
+  "startTime": 0,
+  "endTime": 0,
+  "versionMin": -1,
+  "versionMax": -1,
+  "signCheckPassNeed": false,
+  "buildType": [],
+  "androidVersion": [],
+  "miuiBigVersion": [],
+  "miuiSmallVersion": [],
+  "lang": [],
+  "protocolVersion": -1,
+  "privacyVersion": -1
+}

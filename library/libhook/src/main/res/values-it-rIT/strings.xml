@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="xposed_description">Esegue i tuoi script root quando suona una sveglia</string>
+</resources>

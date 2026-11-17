@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+        <string name="provision_back_description">Indietro</string>
+    <string name="provision_agree_and_next">Accetto</string>
+    <string name="provision_agree_terms">Ho letto e accetto il Contratto utente e l\'Informativa sulla privacy.</string>
+    <string name="provision_back">Indietro</string>
+    <string name="provision_basic_settings_category_app">App</string>
+    <string name="provision_basic_settings_category_scope">Ambito</string>
+    <string name="provision_basic_settings_hide_app_icon">Icona nella schermata iniziale</string>
+    <string name="provision_basic_settings_icon">Icona nelle impostazioni</string>
+    <string name="provision_basic_settings_icon_desc">Indica dove comparirà l\'icona del modulo nelle impostazioni</string>
+    <string name="provision_basic_settings_icon_disable">Disattivata</string>
+    <string name="provision_basic_settings_icon_down">In basso</string>
+    <string name="provision_basic_settings_icon_medium">Al centro</string>
+    <string name="provision_basic_settings_icon_miui_13">Sfondo ritagliato</string>
+    <string name="provision_basic_settings_icon_miui_14">Rettangolo arrotondato</string>
+    <string name="provision_basic_settings_icon_mode">Stile dell\'icona</string>
+    <string name="provision_basic_settings_icon_top">In alto</string>
+    <string name="provision_basic_settings_language">Lingua</string>
+    <string name="provision_basic_settings_scope">Ambito</string>
+    <string name="provision_basic_settings_scope_sync">Sincronizza ambito</string>
+    <string name="provision_basic_settings_scope_sync_desc">Mantieni le scelte della home allineate all\'ambito</string>
+    <string name="provision_basic_settings_title">Impostazioni di base</string>
+    <string name="provision_complete_text">Entra in HyperAlarm</string>
+    <string name="provision_get_md_failed">## Impossibile ottenere il contenuto.   
+ - Puoi visitare [qui](%URL%) per vedere il contenuto originale.   
+ - Oppure prova a [ricaricare](hyperalarm://refresh) questa pagina.</string>
+    <string name="provision_next">Avanti</string>
+    <string name="provision_permission_installed_apps">Consenti la lettura dell\'elenco delle app installate</string>
+    <string name="provision_permission_internet">Consenti la connessione a Internet</string>
+    <string name="provision_permission_lsp">Attiva nel gestore Xposed</string>
+    <string name="provision_permission_root">Consenti operazioni come Root</string>
+    <string name="provision_permission_settings_title">Impostazioni dei permessi</string>
+    <string name="provision_protect_persoanl_info_statement">Proteggiamo i tuoi dati personali secondo le leggi, i regolamenti e le informative sulla privacy applicabili.</string>
+    <string name="provision_scope_open_failed">Impossibile aprire la pagina dell\'ambito</string>
+    <string name="provision_service_agreement">Ho letto e accettato i termini e le condizioni.</string>
+    <string name="provision_set_permission_later">Puoi concedere questi permessi necessari più tardi</string>
+    <string name="provision_skip_underline">Salta</string>
+    <string name="provision_start_content_description">Inizia</string>
+    <string name="provision_system_complete">Configurazione completata</string>
+    <string name="provision_system_preparing">Preparazione del sistema…</string>
+    <string name="provision_terms_and_statement_title">Termini e condizioni</string>
+    <string name="provision_terms_of_use">Termini e condizioni</string>
+    <string name="provision_terms_of_use_label_use_network_china">Per offrirti un servizio migliore, devi leggere e accettare il nostro <annotation key="user_agreement">Contratto utente</annotation> e la nostra <annotation key="privacy_policy">Informativa sulla privacy</annotation> prima di continuare a usare HyperAlarm. Proteggiamo i tuoi dati personali secondo le leggi e le informative applicabili.</string>
+    <string name="provision_terms_of_use_processing">Sincronizzazione dei dati…</string>
+    <string name="provision_terms_of_use_verification_code_dialog_continue">Continua</string>
+    <string name="provision_terms_of_use_verification_code_dialog_desc">Lo trovi nel nostro Contratto utente o nell\'Informativa sulla privacy</string>
+    <string name="provision_terms_of_use_verification_code_dialog_title">Inserisci il codice di verifica</string>
+    <string name="provision_terms_of_use_verification_code_tip">Il tuo codice di verifica è %1$s.</string>
+    <string name="clock_filter_title">Orologio solo sveglie</string>
+    <string name="clock_filter_summary">Le attività script non compaiono nell\'elenco</string>
+    <string name="clock_filter_ringing_title">Nascondi attività con suoneria</string>
+    <string name="clock_filter_ringing_summary">Anche le attività con sveglia che suona vengono nascoste</string>
+    <string name="lock_password_title">Password di blocco</string>
+    <string name="lock_password_summary_unset">Non impostata: gli script girano senza sbloccare</string>
+    <string name="lock_password_summary_set">Impostata: le attività silenziose sbloccano prima di partire</string>
+    <string name="provision_basic_settings_category_clock">Elenco dell\'orologio</string>
+    <string name="lock_password_clear">Cancella</string>
+    <string name="lock_password_save">Salva</string>
+    <string name="lock_password_cleared">Cancellata</string>
+    <string name="lock_password_saved">Salvata</string>
+    <string name="lock_password_unchanged">Lasciata invariata</string>
+    <string name="lock_password_desc">Serve a sbloccare lo schermo prima di un\'attività silenziosa. Lascia vuoto per mantenere quella attuale.</string>
+    <string name="lock_password_hint">Password della schermata di blocco</string>
+    <string name="clock_filter_no_root">Serve il permesso root per cambiare il filtro dell\'elenco orologi</string>
+    <string name="lock_password_failed_toast">Impossibile scrivere il file della password. Root concesso?</string>
+</resources>

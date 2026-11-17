@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <string name="provision_back_description">Назад</string>
+    <string name="provision_start_content_description">Начать</string>
+    <string name="provision_next">Далее</string>
+    <string name="provision_skip_underline">Пропустить</string>
+    <string name="provision_permission_settings_title">Настройки разрешений</string>
+    <string name="provision_terms_and_statement_title">Условия пользования</string>
+    <string name="provision_basic_settings_title">Основные настройки</string>
+    <string name="provision_agree_and_next">Принять</string>
+    <string name="provision_agree_terms">Я внимательно прочитал(а) и согласен(сна) с вышеуказанными условиями.</string>
+    <string name="provision_terms_of_use">Условия пользования</string>
+    <string name="provision_terms_of_use_label_use_network_china">Для предоставления вам более качественных услуг вам необходимо прочитать и согласиться с <annotation key="user_agreement">Пользовательским соглашением</annotation> и <annotation key="privacy_policy">Политика конфиденциальности</annotation> прежде чем вы сможете продолжить использование системы. Мы будем строго соблюдать соответствующие законы и правила, а также политику конфиденциальности для защиты вашей личной информации.</string>
+    <string name="provision_protect_persoanl_info_statement">Мы будем строго соблюдать соответствующие законы, правила и политику конфиденциальности для защиты вашей личной информации.</string>
+    <string name="provision_service_agreement">Я внимательно прочитал(а) и согласен(сна) с вышеуказанными условиями.</string>
+    <string name="provision_complete_text">Войти в систему</string>
+    <string name="provision_back">Назад</string>
+    <string name="provision_set_permission_later">Эти необходимые разрешения можно выдать позже</string>
+    <string name="provision_permission_internet">Разрешить подключение к интернету</string>
+    <string name="provision_permission_root">Разрешить действия от имени Root</string>
+    <string name="provision_permission_installed_apps">Разрешить чтение списка установленных приложений</string>
+    <string name="provision_permission_lsp">Активировать в менеджере Xposed</string>
+    <string name="provision_terms_of_use_verification_code_tip">Ваш код подтверждения: %1$s.</string>
+    <string name="provision_terms_of_use_verification_code_dialog_title">Введите код подтверждения</string>
+    <string name="provision_terms_of_use_verification_code_dialog_desc">Его можно найти в пользовательском соглашении или политике конфиденциальности</string>
+    <string name="provision_terms_of_use_verification_code_dialog_continue">Продолжить</string>
+    <string name="provision_terms_of_use_processing">Синхронизация данных …</string>
+    <string name="provision_basic_settings_hide_app_icon">Значок на главном экране</string>
+    <string name="provision_basic_settings_category_app">Приложение</string>
+    <string name="provision_basic_settings_category_scope">Область действия</string>
+    <string name="provision_basic_settings_language">Язык</string>
+    <string name="provision_basic_settings_scope_sync">Синхронизация области</string>
+    <string name="provision_basic_settings_scope_sync_desc">Держать выбор на главной странице в согласии с областью действия</string>
+    <string name="provision_basic_settings_scope">Область действия</string>
+    <string name="provision_basic_settings_icon">Значок в настройках</string>
+    <string name="provision_basic_settings_icon_desc">Задаёт, где значок модуля появится в настройках</string>
+    <string name="provision_basic_settings_icon_mode">Стиль значка</string>
+    <string name="provision_basic_settings_icon_disable">Выключен</string>
+    <string name="provision_basic_settings_icon_top">Сверху</string>
+    <string name="provision_basic_settings_icon_medium">По центру</string>
+    <string name="provision_basic_settings_icon_down">Снизу</string>
+    <string name="provision_basic_settings_icon_miui_14">Скруглённый прямоугольник</string>
+    <string name="provision_basic_settings_icon_miui_13">Вырезанный фон</string>
+    <string name="provision_system_preparing">Подготовка системы …</string>
+    <string name="provision_system_complete">Настройка завершена</string>
+    <string name="provision_scope_open_failed">Не удалось открыть страницу области действия</string>
+    <string name="provision_get_md_failed">## Не удалось получить содержимое.   
+ - Можно открыть [здесь](%URL%) исходный текст.   
+ - Или попробовать [обновить](hyperalarm://refresh) эту страницу.</string>
+    <string name="clock_filter_title">Часы показывают только будильники</string>
+    <string name="clock_filter_summary">Скрипт-задачи не отображаются в списке</string>
+    <string name="clock_filter_ringing_title">Скрывать задачи со звуком</string>
+    <string name="clock_filter_ringing_summary">Задачи, чей будильник звонит, тоже скрываются</string>
+    <string name="lock_password_title">Пароль блокировки экрана</string>
+    <string name="lock_password_summary_unset">Не задан: скрипты выполняются без разблокировки</string>
+    <string name="lock_password_summary_set">Задан: тихие задачи разблокируют экран перед запуском</string>
+    <string name="provision_basic_settings_category_clock">Список часов</string>
+    <string name="lock_password_clear">Очистить</string>
+    <string name="lock_password_save">Сохранить</string>
+    <string name="lock_password_cleared">Очищено</string>
+    <string name="lock_password_saved">Сохранено</string>
+    <string name="lock_password_unchanged">Оставлено без изменений</string>
+    <string name="lock_password_desc">Нужен, чтобы разблокировать экран перед тихой задачей. Оставьте пустым, чтобы не менять.</string>
+    <string name="lock_password_hint">Пароль блокировки экрана</string>
+    <string name="clock_filter_no_root">Для изменения фильтра списка часов нужен root</string>
+    <string name="lock_password_failed_toast">Не удалось записать файл пароля. Root выдан?</string>
+</resources>

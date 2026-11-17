@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <string name="custom_order_title">Benutzerdefiniert</string>
+    <string name="app_version_update">Neue Version verfuegbar</string>
+    <string name="developer_build">Entwickler-Build</string>
+    <string name="pull_to_enter_private">Zum Betreten des privaten Bereichs nach unten ziehen</string>
+    <string name="release_enter_private">Zum Öffnen des privaten Bereichs loslassen</string>
+    <!--Pop-up window/miuix part-->
+    <string name="miuix_appcompat_action_mode_select_all">Alles auswählen</string>
+    <string name="miuix_appcompat_action_mode_inverse">Gesamte Auswahl aufheben</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="tip">Tipp</string>
+    <string name="root">Einige Funktionen sind ohne Root/Su-Berechtigung nicht verfügbar</string>
+    <string name="soft_reboot">Neustart</string>
+    <string name="restart_app_desc">Sind Sie sicher, dass sie %1$s jetzt neu starten wollen?</string>
+    <string name="hyperalarm_restart_quick">Apps schnell neu starten</string>
+    <string name="hook_failed">Das Modul ist noch nicht aktiviert. Bitte prüfen Sie, ob LSPosed an ist. Falls ja, starten Sie das Modul neu oder optimieren Sie es erneut.</string>
+    <string name="kill_failed">Prozess konnte nicht beendet werden. Bitte überprüfen Sie, ob HyperAlarm Root/Su-Berechtigungen erhalten hat.</string>
+    <string name="start_failed">Fehler beim Start der Aktivität. Bitte überprüfen Sie, ob HyperAlarm Root/Su-Berechtigungen erhalten hat.</string>
+    <string name="pid_failed">Die Ziel-App läuft nicht und muss nicht neu gestartet werden.</string>
+    <string name="reboot_failed">Neustart fehlgeschlagen, bitte prüfen sie ob HyperAlarm Root/Su-Berechtigung hat.</string>
+    <!--HyperAlarm Tips-->
+    <string name="error">Fehler</string>
+    <string name="warn">Warnung</string>
+    <string name="app_error_desc">HyperAlarm wurde unerwartet geschlossen. Um uns dabei zu helfen, dies zu beheben, geben Sie folgende Informationen an:\n\n Drücken und halten Sie eine Nachricht, um alles zu kopieren.</string>
+    <string name="safe_mode_desc">%1$s ist aufgrund mehrerer Abstürze in den sicheren Modus gewechselt und HyperAlarm-Funktionen wurden vorübergehend deaktiviert.</string>
+    <string name="safe_mode_history">Ausnahmen einsehen</string>
+    <string name="safe_mode_cancel">Sichereren Modus deaktivieren</string>
+    <string name="safe_mode_ok">Abbrechen</string>
+    <string name="safe_mode_later_title">Tipp</string>
+    <string name="safe_mode_recorder_title">Ausnahmen</string>
+    <string name="safe_mode_recorder_file">Datei</string>
+    <string name="safe_mode_recorder_class">Klasse</string>
+    <string name="safe_mode_recorder_method">Verfahren</string>
+    <string name="safe_mode_recorder_line">Zeile</string>
+    <string name="safe_mode_recorder_msg">Ausnahmemeldung</string>
+    <string name="safe_mode_recorder_st">Stacktrace</string>
+    <string name="error_message">Ausnahmemeldung</string>
+    <string name="error_type">Ausnahmetyp</string>
+    <string name="error_file_name">Dateiname</string>
+    <string name="error_time">Aufnahmezeit</string>
+    <string name="error_version_name">Versionsname</string>
+    <string name="error_git_hash">Git Hash</string>
+    <string name="error_build_time">Bauzeit</string>
+    <string name="copy_ok">In Zwischenablage kopiert</string>
+    <string name="notification_channel_app_crash_name">Die App läuft ungewöhnlich</string>
+    <string name="notification_title_message_emergency_crash">%s ist mehrmals abgestürzt</string>
+    <string name="notification_content_message">Für Details klicken</string>
+    <string name="notification_view">Anzeigen</string>
+    <string name="headtip_warn_not_offical_rom">Es kann sein, dass die ROM, die Sie nutzen, nicht von Xiaomi stammt. In diesem Fall funktionieren eventuell einige Funktionen nicht wie erwartet. Für weitere Informationen wenden Sie sich bitte an Ihren Händler.</string>
+    <string name="headtip_warn_unsupport_xposed">%1$s verwendet Xposed API %2$d, HyperAlarm benötigt aber API %3$d oder neuer. Die Modulfunktionen wurden deaktiviert. Zum Anzeigen der Details tippen.</string>
+    <string name="headtip_warn_unsupport_sysver">Das aktuelle Gerät läuft auf einer Systemversion, die nicht (vollständig) angepasst ist, was zu Anomalien in der HyperAlarm-Funktionalität führen kann.</string>
+    <string name="headtip_warn_sign_verification_failed">Die Signaturprüfung ist fehlgeschlagen. Die von Ihnen genutzte Version stammt möglicherweise nicht aus einer offiziellen Quelle und könnte bösartigen Code enthalten.</string>
+    <string name="headtip_tip_auto_safe_mode">Der Sicherheitsmodus kann abstürzende Apps bei wiederholtem Fehlschlag rechtzeitig \'unhooken\', um die Systemsicherheit zu gewährleisten. Diese Funktion erfordert den \'System Framework Hook Scope\', um zu funktionieren. Wir empfehlen dringend, den \'System Framework Scope\' zu aktivieren, um den Sicherheitsmodus einzuschalten.</string>
+    <string name="happy_birthday_hyperalarm">Heute ist HyperAlarms Geburtstag!\nVielen Dank für eure Unterstützung im letzten Jahr. Lasst uns auch dieses Jahr wieder gemeinsam daran arbeiten!</string>
+    <string name="headtip_notice_dead_logger_errcode">Der aktuelle Geräte-Logdienst ist anormal, und die Funktionen von HyperAlarm werden eingeschränkt sein. Bitte stellen Sie den Logdienst wieder her, damit er normal ausgeführt werden kann.\nFehlercode: %1$s</string>
+    <string name="headtip_notice_dead_logger">Der aktuelle Geräte-Logdienst ist anormal, und die Funktionen von HyperAlarm werden eingeschränkt sein. Bitte stellen Sie den Logdienst wieder her, damit er normal ausgeführt werden kann.</string>
+    <string name="unsupported_system_func">Diese Funktion wird von der aktuellen Systemversion nicht unterstützt</string>
+    <string name="supported_system_func">Diese Funktion wird von der aktuellen Systemversion offiziell unterstützt</string>
+    <string name="feature_doing_func">Die aktuelle Funktion befindet sich in Entwicklung, bleibt dran.</string>
+    <!--System UI-->
+    <string name="system_ui">System-UI</string>
+    <!--System launcher-->
+    <string name="mihome">Systemlauncher</string>
+    <!--Settings-->
+    <string name="system_settings">Einstellungen</string>
+    <!--Security/Tablet security center-->
+    <string name="security_center_hyperos">Sicherheit</string>
+    <!--Other-->
+    <string name="exit">Beenden</string>
+    <string name="ignore">Ignorieren</string>
+    <string name="log_level_none">Aus</string>
+    <string name="disable_suggest">Vorschlag deaktivieren</string>
+    <string name="enable_suggest">Vorschlag aktivieren</string>
+    <string name="logo_egg_NotificationName">Easter-Egg-Benachrichtigung</string>
+    <string name="logo_egg_NotificationName_tips">Dies ist eine Easter-Egg-Benachrichtigung</string>
+    <string name="logo_egg_Notification_tips">Aktiviere Benachrichtigungen in den Einstellungen, um die Easter Eggs zu sehen</string>
+    <string name="logo_egg1">Wow, du hast diesen Ort tatsaechlich gefunden, das ist unglaublich!</string>
+    <string name="logo_egg2">Verdammt, werde ich sogar hier entdeckt…</string>
+    <string name="logo_egg3">Hier gibt es keine Android-Eier, aber HyperAlarm-Eier!</string>
+    <string name="uninstall_title">HyperAlarm deinstallieren</string>
+    <string name="uninstall_summary">Nach der Deinstallation von HyperAlarm bleibt die Modulkonfiguration in der Datenbank des Xposed-Frameworks erhalten. Um alles vollstaendig zu entfernen, gehe zuerst in die Moduleinstellungen und setze die Modulkonfiguration zurueck, danach deinstalliere das Modul.</string>
+    <!-- LogViewer -->
+    <string name="log_search_hint">Protokolle durchsuchen</string>
+    <string name="log_level_label">Stufe</string>
+    <string name="log_tag_label">Tag</string>
+    <string name="log_type_app">App-Protokoll</string>
+    <string name="log_type_xposed">Xposed-Protokoll</string>
+    <string name="log_filter_all">Alle</string>
+    <string name="log_menu_clear">Protokolle loeschen</string>
+    <string name="log_menu_export">Protokolle exportieren</string>
+    <string name="log_menu_share">Protokolle teilen</string>
+    <string name="log_clear_title">Protokolle loeschen</string>
+    <string name="log_clear_all_message">Moechtest du wirklich alle Protokolle loeschen? Dazu gehoeren App-Protokolle und Xposed-Protokolle. Diese Aktion kann nicht rueckgaengig gemacht werden.</string>
+    <string name="log_clear_success">Protokolle geloescht</string>
+    <string name="log_clear_failed">Loeschen der Protokolle fehlgeschlagen</string>
+    <string name="log_export_preparing">Export wird vorbereitet…</string>
+    <string name="log_export_success">Protokolle erfolgreich exportiert</string>
+    <string name="log_export_failed">Export der Protokolle fehlgeschlagen</string>
+    <string name="log_share_title">Protokolle teilen</string>
+    <string name="log_share_preparing">Freigabe wird vorbereitet…</string>
+    <string name="log_share_failed">Teilen der Protokolle fehlgeschlagen</string>
+    <string name="log_share_text">HyperAlarm-Protokolldatei</string>
+    <string name="log_copy">Kopieren</string>
+    <string name="log_copy_success">Protokolle in die Zwischenablage kopiert</string>
+    <!-- Log detail dialog -->
+    <string name="log_detail_title">Protokolldetails</string>
+    <!-- Log Viewer -->
+    <string name="log_loading">Protokolle werden geladen…</string>
+    <string name="safe_mode_banner_title">Sicherer Modus aktiv</string>
+    <string name="safe_mode_banner_desc">%1$s hat seine HyperAlarm-Funktionen nach wiederholten Abstürzen vorübergehend durch den automatischen sicheren Modus deaktiviert. Zum Verwalten tippen.</string>
+    <string name="headtip_warn_framework_service_error">HyperAlarm konnte die aktuellen Framework-Informationen nicht vom XposedService lesen. Modulfunktionen wurden zur Sicherheit deaktiviert. Zum Anzeigen der Details tippen.</string>
+    <string name="homepage_unsupported_version_message">Die aktuelle Systemversion ist nicht in der eingebauten Anpassungsliste von HyperAlarm enthalten.\n\n%1$s\n\nDie von dieser Version unterstützten Systemversionen sind:\n%2$s\n\nHyperAlarm wird nach 30 Sekunden automatisch beendet, um den Betrieb in einer unbekannten Systemumgebung zu vermeiden.</string>
+    <string name="homepage_unsupported_version_current">Aktuelle Version: Android SDK %1$d - HyperOS %2$s</string>
+    <string name="load_failed">Laden fehlgeschlagen.</string>
+    <string name="log_level_general">Allgemeine Protokolle</string>
+    <string name="log_level_detailed">Ausführliche Protokolle</string>
+    <string name="help_framework_warning_unknown_framework">Aktuelles Framework</string>
+    <string name="help_framework_warning_section_framework_version">Aktuelle Framework-Version:</string>
+    <string name="help_framework_warning_section_banner_reason">Warum zeigt die Startseite eine Warnung?</string>
+    <string name="help_framework_warning_banner_reason">Die Warnung auf der Startseite erscheint nur, wenn HyperAlarm erkennt, dass das aktuelle Framework die Mindestanforderungen nicht erfüllt oder der XposedService keine Framework-Informationen liefern kann. Um Instabilität durch fehlerhaftes Laden der Hooks zu vermeiden, lädt HyperAlarm dann keine Hooks.</string>
+    <string name="help_framework_warning_version_unavailable">Die aktuelle Framework-Version konnte nicht vom XposedService gelesen werden.</string>
+    <string name="log_menu_filter">Protokolle filtern</string>
+    <string name="log_empty_no_logs">Noch keine Protokolle</string>
+    <string name="log_empty_no_results">Keine passenden Protokolle gefunden</string>
+    <string name="log_empty_root_required">Erteile die Root-Berechtigung und starte die App neu, um Protokolle zu laden</string>
+    <string name="tos_update_title">Nutzungsbedingungen und Datenschutzerklärung</string>
+    <string name="tos_update_desc">Wir haben unsere Nutzungsbedingungen und/oder Datenschutzerklärung aktualisiert. Bitte lies sie.\nMit der weiteren Nutzung von HyperAlarm stimmst du unseren <annotation key="protocol">Nutzungsbedingungen</annotation> und der <annotation key="privacy">Datenschutzerklärung</annotation> zu.</string>
+    <string name="ha_logs_group">Protokolle</string>
+    <string name="ha_history_logs">App-Protokolle</string>
+    <string name="ha_reference">Referenzen</string>
+    <string name="ha_script_logs">Skript-Protokolle</string>
+    <string name="repeat_once">Einmal</string>
+    <string name="repeat_every_day">Jeden Tag</string>
+    <string name="repeat_workdays">Offizielle Arbeitstage</string>
+    <string name="repeat_holidays">Offizielle Feiertage</string>
+    <string name="repeat_shift">Schichtplan</string>
+    <string name="repeat_mon_fri">Mo–Fr</string>
+    <string name="repeat_weekend">Sa, So</string>
+    <string name="ringtone_default">Standardton</string>
+    <string name="ringtone_silent">Lautlos</string>
+    <string name="ringtone_custom">Eigener Ton</string>
+    <string name="ringtone_element">Dynamisch: Elemente</string>
+    <string name="ringtone_weather">Dynamisch: Wetter</string>
+    <string name="ringtone_morning_dew">Morgentau</string>
+    <string name="ringtone_fireflies">Glühwürmchen</string>
+    <string name="ringtone_daydream">Tagtraum</string>
+    <string name="ringtone_digital_timer">Digitaler Timer</string>
+    <string name="ringtone_starry_sky">Sternenhimmel</string>
+    <string name="ringtone_music">Musik</string>
+    <string name="ringtone_recording">Aufnahme</string>
+    <string name="countdown_hours_minutes">Klingelt in %1$d Std. %2$d Min.</string>
+    <string name="countdown_hours">Klingelt in %1$d Std.</string>
+    <string name="countdown_minutes">Klingelt in %1$d Min.</string>
+    <string name="script_choose">Skript wählen</string>
+    <string name="script_choose_first">Zuerst ein Skript wählen</string>
+    <string name="script_running">Skript läuft…</string>
+    <string name="script_run_ok">Skript beendet</string>
+    <string name="script_run_failed">Skript fehlgeschlagen</string>
+    <string name="script_dir_empty">Skriptordner ist leer</string>
+    <string name="script_open_dir">Ordnerauswahl öffnen</string>
+    <string name="ringtone">Klingelton</string>
+    <string name="ringtone_empty">Keine Klingeltöne verfügbar</string>
+    <string name="ringtone_load_failed">Klingeltonliste konnte nicht gelesen werden</string>
+    <string name="root_required">Root-Berechtigung erforderlich</string>
+    <string name="repeat_title">Wiederholen</string>
+    <string name="repeat_custom">Eigene</string>
+    <string name="repeat_custom_title">Eigene Wiederholung</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_ok">OK</string>
+    <string name="alarm_saved">Gespeichert</string>
+    <string name="shift_duration_days">%1$d Tage</string>
+    <string name="shift_part_title">Schicht %1$d</string>
+    <string name="shift_rest">Ruhetag</string>
+    <string name="shift_cycle_title">Schichtzyklus</string>
+    <string name="shift_ring">Klingeln</string>
+    <string name="shift_need_one">Mindestens eine Schicht muss klingeln</string>
+    <string name="shift_saved">Schichtplan gespeichert</string>
+    <string name="shift_save_failed">Speichern fehlgeschlagen; läuft die Mi Uhr?</string>
+    <string name="alarm_delete_title">Alarm löschen</string>
+    <string name="alarm_delete_message">%1$d ausgewählte Alarme löschen?</string>
+    <string name="action_delete">Löschen</string>
+    <string name="loading">Wird geladen…</string>
+    <string name="next_alarm_none">Keine aktiven Alarme</string>
+    <string name="next_alarm_in_hours_minutes">in %1$d Std. %2$d Min.</string>
+    <string name="next_alarm_in_hours">in %1$d Std.</string>
+    <string name="next_alarm_in_minutes">in %1$d Min.</string>
+    <string name="next_alarm_runs">%1$s ausführen</string>
+    <string name="task_fallback">Aufgabe</string>
+    <string name="no_alarms">Keine Alarme</string>
+    <string name="alarm_edit_title">Aufgabe bearbeiten</string>
+    <string name="ringtone_choose">Klingelton wählen</string>
+    <string name="ringtone_vibrate">Beim Klingeln vibrieren</string>
+    <string name="script">Skript</string>
+    <string name="script_run_now">Jetzt ausführen</string>
+    <string name="shift_start_date">Startdatum</string>
+    <string name="shift_parts">Schichten</string>
+    <string name="wheel_hour">Std.</string>
+    <string name="wheel_minute">Min.</string>
+    <string name="script_import_done">%1$d Skripte importiert</string>
+    <string name="script_import_done_skipped">%1$d importiert, %2$d übersprungen</string>
+    <string name="script_import_none_skipped">Keine Skripte zum Importieren: %1$d ungültige Namen</string>
+    <string name="script_import_none">Keine .sh-Skripte in diesem Ordner</string>
+    <string name="alarm_add">Alarm hinzufügen</string>
+    <string name="alarm_add_failed">Alarm konnte nicht hinzugefügt werden; läuft die Mi Uhr?</string>
+    <string name="clock_restart">Mi Uhr neu starten</string>
+    <string name="clock_restart_desc">Beendet den Uhr-Prozess zwangsweise und startet ihn im Hintergrund neu, damit die Hooks neu geladen werden.</string>
+    <string name="script_dir_label">Skriptordner</string>
+    <string name="script_dir_copied">Skriptordner kopiert: %1$s</string>
+    <string name="ringtone_updated">Klingelton aktualisiert</string>
+    <string name="shift_info">%1$d Tage · %2$d Schichten</string>
+    <string name="clock_filter_no_root">Zum Ändern des Uhrlisten-Filters ist Root erforderlich</string>
+    <string name="clock_filter_title">Uhr zeigt nur Alarme</string>
+    <string name="clock_filter_summary">Skript-Aufgaben erscheinen nicht in der Alarmliste</string>
+    <string name="log_level_title">Log-Ausführlichkeit</string>
+    <string name="script_group_title">Skript</string>
+    <string name="script_dir_copy">Skriptordner kopieren</string>
+    <string name="action_close">Schließen</string>
+    <string name="action_save">Speichern</string>
+    <string name="clock_filter_ringing_title">Klingelnde Aufgaben ausblenden</string>
+    <string name="clock_filter_ringing_summary">Aufgaben, deren Alarm klingelt, werden ausgeblendet</string>
+    <string name="alarm_load_failed">Alarmliste konnte nicht gelesen werden</string>
+    <string name="alarm_load_failed_hint">Zum Wiederholen tippen</string>
+    <string name="alarm_save_failed">Speichern fehlgeschlagen; läuft die Xiaomi-Uhr?</string>
+    <string name="alarm_delete_failed">Einige Alarme konnten nicht gelöscht werden; läuft die Xiaomi-Uhr?</string>
+    <string name="lock_password_title">Sperrbildschirm-Passwort</string>
+    <string name="lock_password_summary_unset">Nicht gesetzt: Skripte laufen ohne Entsperren</string>
+    <string name="lock_password_summary_set">Gesetzt: stille Aufgaben entsperren vor dem Lauf</string>
+    <string name="lock_password_dialog_title">Sperrbildschirm-Passwort</string>
+    <string name="lock_password_hint">Sperrbildschirm-Passwort</string>
+    <string name="lock_password_save">Speichern</string>
+    <string name="lock_password_clear">Löschen</string>
+    <string name="lock_password_saved">Gespeichert</string>
+    <string name="lock_password_cleared">Gelöscht</string>
+    <string name="lock_password_unchanged">Unverändert gelassen</string>
+    <string name="restart_tutorial_title">Einrichtung wiederholen</string>
+    <string name="restart_tutorial_summary">Aktivierung, Scope und Berechtigungen noch einmal durchgehen</string>
+    <string name="lock_password_desc">Wird verwendet, um den Bildschirm vor einer stillen Aufgabe zu entsperren. Leer lassen, um das aktuelle zu behalten.</string>
+    <string name="repeat_shift_is_schedule">Die Wiederholung einer Schichtaufgabe ergibt sich aus dem Schichtplan und wird hier nicht geändert</string>
+    <string name="ringtone_update_failed">Klingelton konnte nicht aktualisiert werden</string>
+</resources>

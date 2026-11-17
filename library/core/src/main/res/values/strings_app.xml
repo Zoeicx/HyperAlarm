@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  -->
+<resources>
+    <string name="app_name" translatable="false">HyperAlarm</string>
+
+    <string name="about_copy_right" translatable="false">© 2026 Zoeicx &amp; HyperAlarm Contributors.</string>
+    <string name="networkboost" translatable="false">NetworkBoost</string>
+    <string name="crc_value" translatable="false">399F71FC</string>
+    <string name="security_center" translatable="false">Security Center</string>
+    <!--Introduction to Xposed Modules-->
+    <string name="new_cta_app_all_purpose_agree">Agree &amp; Continue</string>
+    <string name="new_cta_app_all_purpose_reject">Reject &amp; Exit</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="about_contributer">Contributors</string>
+    <string name="about_contributer_desc">Thanks to the following contributors for their help in the development of HyperAlarm (in no particular order)</string>
+    <string name="about_device_info_device">Device</string>
+    <string name="about_device_info_android">Android version</string>
+    <string name="about_device_info_os">OS version</string>
+    <!-- Scope -->
+    <string name="settings_scope">Scope</string>
+    <string name="scope_batch_no_changes">No scope changes.</string>
+    <string name="scope_batch_service_unavailable">LSPosed service not available.</string>
+    <string name="scope_batch_remove_failed">Failed to remove scope.</string>
+    <string name="scope_batch_updated">Scope updated.</string>
+    <string name="scope_batch_request_not_approved">Some scope requests were not approved: %1$s</string>
+    <string name="scope_batch_update_failed">Failed to update scope: %1$s</string>
+    <string name="scope_batch_request_failed">Failed to request scope.</string>
+    <string name="location_add">Add</string>
+    <string name="location_delete">Delete</string>
+    <string name="edit">Please enter text</string>
+    <string name="settings_hot_reload">Hot reload process</string>
+    <string name="settings_hot_reload_unsupported">Hot reload is not supported on the current Xposed framework. Requires libxposed API 102 or higher.</string>
+    <string name="settings_hot_reload_pick_apps">Select apps to hot reload</string>
+    <string name="settings_hot_reload_pick_apps_subtitle">Only apps enabled in the framework scope are shown. All currently injected processes of selected apps will reload.</string>
+    <string name="settings_hot_reload_system_scope">System framework</string>
+    <string name="settings_hot_reload_action">Hot reload</string>
+    <string name="settings_hot_reload_no_scoped_apps">There are no installed apps enabled in the framework scope.</string>
+    <string name="settings_hot_reload_no_apps_selected">Select at least one app.</string>
+    <string name="settings_hot_reload_batch_in_progress">Reloading %1$d app(s) ...</string>
+    <string name="settings_hot_reload_batch_no_running_targets">No running hooked process was found for the %1$d selected app(s).</string>
+    <string name="settings_hot_reload_batch_result">Hot reload finished: %1$d/%2$d processes succeeded; %3$d failed; %4$d selected app(s) had no running process.</string>
+    <string name="settings_hot_reload_batch_result_timeout">Hot reload timed out: %1$d/%2$d processes succeeded; %3$d failed or timed out; %4$d selected app(s) had no running process.</string>
+    <string name="settings_hot_reload_batch_failure_detail">First failure (%1$s): %2$s</string>
+    <string name="settings_hot_reload_batch_service_error">Hot reload could not start: %1$s</string>
+    <string name="settings_show_title">Show</string>
+    <string name="settings_data_title">Backup and restore</string>
+    <string name="settings_show_all_alarms">Show all alarms</string>
+    <string name="settings_hide_app_icon">Icon in Home screen</string>
+    <string name="settings_icon">Icon in Settings</string>
+    <string name="settings_icon_disable">Disable</string>
+    <string name="settings_icon_top">Top</string>
+    <string name="settings_icon_medium">Middle</string>
+    <string name="settings_icon_down">Bottom</string>
+    <string name="settings_icon_mode">Icon style</string>
+    <string name="settings_float_nav">Floating Bottom Bar</string>
+    <string name="settings_app_language">Language</string>
+    <string name="settings_icon_miui_14">Rounded rectangle style</string>
+    <string name="settings_icon_miui_13">Background cutout style</string>
+    <string name="settings_back">Backup module settings</string>
+    <string name="settings_rest">Restore module settings</string>
+    <string name="settings_reset">Reset module settings</string>
+    <string name="reset_title">Are you sure you want to reset?</string>
+    <string name="reset_desc">After resetting the module configuration all its data will be deleted!</string>
+    <string name="reset_okay">The module configuration has been reset</string>
+    <string name="backup_success">Backup success</string>
+    <string name="backup_failed">Backup failed</string>
+    <string name="rest_success">Recovery succeeded</string>
+    <string name="rest_success_message">Please restart the app for the configuration to take effect.</string>
+    <string name="rest_failed">Recovery failed</string>
+    <string name="about_other_title">Others</string>
+    <string name="about_github">Source code</string>
+    <string name="about_github_desc">This project is open source under AGPL-3.0</string>
+    <string name="about_privacy">Privacy Policy</string>
+    <string name="about_protocol">User Agreement</string>
+    <!--Pop-up window/miuix part-->
+    <string name="more">More</string>
+    <string name="preference_recommend_tip">Need other settings?</string>
+    <!--String reuse-->
+    <string name="custom_enable">Custom enable</string>
+    <!--Multi-list Array-->
+    <string name="array_default">Default</string>
+    <string name="array_global_actions_none">No action</string>
+    <string name="array_global_actions_notif">Open the Notification shade</string>
+    <string name="array_global_actions_lock">Lock screen</string>
+    <string name="array_global_actions_screenshot">Screenshot</string>
+    <string name="array_global_actions_recents">Open Recents</string>
+    <string name="array_global_actions_volume">Open volume dialog</string>
+    <string name="array_global_actions_launch">Launch app</string>
+    <string name="array_global_actions_launch_choose">Select app</string>
+    <string name="array_global_actions_powermenu">Open the power menu</string>
+    <string name="array_global_actions_clear_memory">Clear memory</string>
+    <string name="array_global_actions_invert_colors">Color inversion</string>
+    <string name="array_global_actions_home">Go home</string>
+    <string name="array_global_actions_control_center">Open Control Center</string>
+    <string name="array_global_actions_super_xiaoai">Open Super XiaoAi</string>
+    <string name="array_global_actions_super_xiaoai_circle_search">Open Super XiaoAi screen recognition</string>
+    <string name="array_global_actions_google_circle_to_search">Open Google Circle to Search</string>
+    <string name="array_global_actions_google_voice_assistant">Open Google Voice Assistant</string>
+    <string name="array_global_actions_force_stop_current_app">Stop current app</string>
+    <!--System Framework-->
+    <string name="system_framework">System Framework</string>
+    <string name="system_framework_share_menu_test">Share menu test</string>
+    <string name="system_framework_open_with_menu_test">Open with menu test</string>
+	<string name="system_framework_bypass_force_mi_appstore_desc">To avoid redirection without confirmation, and allow to select third-party app stores</string>
+    <!--Package Manager Service-->
+    <!--Browser-->
+    <!--Camera-->
+    <!--Calendar-->
+    <!--Community-->
+    <!--File Manager-->
+    <!--Phone-->
+    <!--Message-->
+    <!--Phone Service-->
+    <!--Download management program-->
+    <!--Download UI-->
+    <!--System UI-->
+    <!--Telecom-->
+    <!--Settings-->
+    <!--Themes-->
+    <!--remotecontroller-->
+    <!--Updater-->
+    <!--Permissions-->
+
+
+
+    <!--Cast-->
+    <!--Sound Recorder-->
+    <!--Notes-->
+    <string name="notes">Notes</string>
+    <!--Always-on display-->
+    <!--Taplus-->
+    <!--Xiaomi Cloud Service-->
+    <!--Mi Mover-->
+    <!--Backup-->
+    <!--Mi Canvas-->
+    <!--LPA-->
+    <!--Gallery-->
+    <!--System security components-->
+    <!--System launcher-->
+    <string name="home_gesture">Gesture and navigation</string>
+    <string name="home_gesture_google_usage_banner">Google Voice Assistant and Google Circle Search Instructions:\n- You need to install the Google app\n- You need to set Google as the default digital assistant\n- If you cannot call Google Voice Assistant, please make sure the Google app is running in the background or reset the default digital assistant\n- If you cannot call Google Circle Search or the prompt is unavailable, you can check the Google scope to pretend to be a supported device</string>
+    <!--Gallery Editor-->
+    <!--Wallpaper-->
+    <!--Package installer-->
+    <!--NFC-->
+    <!--HTML Viewer-->
+    <!--App vault-->
+    <string name="personal_assistant">Personal assistant</string>
+    <!--Battery and performance-->
+    <string name="powerkeeper">Battery and performance</string>
+    <!--Screen Recorder-->
+    <!--Screenshot-->
+    <!--System Service Plugin-->
+    <!--Security/Tablet security center-->
+    <string name="security">Security</string>
+    <!--MiTrustService-->
+    <!--Weather-->
+    <!--Analytics-->
+    <!--AI Translate-->
+    <!--Barrage-->
+    <!--Joyose-->
+    <string name="joyose">Joyose</string>
+    <!--GetApps-->
+    <!--Mi sound-->
+    <!--Mi Settings-->
+    <!--MTB-->
+    <!--Sogou input method-->
+    <!--Sim Activation Service-->
+    <!--Scanner-->
+    <!--XIAO AI-->
+    <!--Photos n Videos-->
+    <!--Voice Trigger-->
+    <!--Contacts-->
+    <!--Health-->
+    <!--Phrase-->
+    <!--Other-->
+    <string name="custom_background">Custom background</string>
+    <string name="custom_background_blur_enabled">Background blur</string>
+    <string name="custom_background_blur_radius">Blur radius</string>
+    <string name="custom_background_color">Background color</string>
+    <string name="custom_background_corner_radius">Background rounded corners</string>
+    <string name="location_data_title">Database</string>
+    <string name="ic_qs_title_wifi">Wi-Fi</string>
+    <string name="ic_qs_title_cellular">Cellular</string>
+    <string name="ic_qs_title_bluetooth">Bluetooth</string>
+    <string name="ic_qs_title_gps">GPS</string>
+    <string name="ic_qs_title_nfc">NFC</string>
+    <string name="ic_qs_title_hotspot">Hotspot</string>
+    <string name="ic_qs_title_flashlight">Flashlight</string>
+    <string name="ic_qs_title_settings">Settings</string>
+    <string name="ic_qs_title_airplane">Airplane mode</string>
+    <string name="ic_qs_title_autobrightness">Auto brightness</string>
+    <string name="ic_qs_title_vowifi1">VoWiFi SIM 1</string>
+    <string name="ic_qs_title_vowifi2">VoWiFi SIM 2</string>
+    <string name="backup_failed_detail">Check that HyperAlarm has root access and that the file can be written, then try again.</string>
+    <string name="rest_failed_detail">Check that the file is a HyperAlarm backup and that HyperAlarm has root access.</string>
+</resources>

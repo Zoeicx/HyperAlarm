@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <string name="custom_order_title">مخصص</string>
+    <string name="app_version_update">يتوفر إصدار جديد</string>
+    <string name="developer_build">إصدار المطور</string>
+    <string name="pull_to_enter_private">اسحب لأسفل للدخول إلى المساحة الخاصة</string>
+    <string name="release_enter_private">اترك للدخول إلى المساحة الخاصة</string>
+    <!--Pop-up window/miuix part-->
+    <string name="miuix_appcompat_action_mode_select_all">تحديد الكل</string>
+    <string name="miuix_appcompat_action_mode_inverse">إلغاء تحديد الكل</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="tip">نصيحة</string>
+    <string name="root">بعض الميزات غير متوفرة بدون صلاحيات الروت</string>
+    <string name="soft_reboot">إعادة التشغيل</string>
+    <string name="restart_app_desc">هل أنت متأكد من أنك تريد إعادة التشغيل الآن %1$s؟</string>
+    <string name="hyperalarm_restart_quick">إعادة التشغيل السريع للتطبيقات</string>
+    <string name="hook_failed">لم يتم تفعيل الوحدة بعد. يُرجى التحقق من تفعيل LSPosed. في هذه الحالة، يُرجى إعادة تشغيل الوحدة أو إعادة تحسينها.</string>
+    <string name="kill_failed">فشل في إنهاء العملية. يرجى التحقق مما إذا تم منح HyperAlarm صلاحيات الجذر/المستخدم الخارق.</string>
+    <string name="start_failed">فشل في بدء النشاط. يرجى التحقق مما إذا تم منح HyperAlarm صلاحيات الجذر/المستخدم الخارق.</string>
+    <string name="pid_failed">التطبيق المستهدف ليس قيد التشغيل ولا يحتاج إلى إعادة تشغيله.</string>
+    <string name="reboot_failed">فشل إعادة التشغيل. يرجى التحقق مما إذا تم منح HyperAlarm صلاحيات الجذر/المستخدم الخارق.</string>
+    <!--HyperAlarm Tips-->
+    <string name="error">خطأ</string>
+    <string name="warn">تنبيه</string>
+    <string name="app_error_desc">لقد واجهت هذه الوحدة فشلًا خطيرًا ولا يمكنها الاستمرار في العمل! يرجى تقديم معلومات الخطأ التالية لإرسال الملاحظات! \n\n</string>
+    <string name="safe_mode_desc">%1$s تم الدخول إلى الوضع الآمن بسبب الأعطال المتعددة، وتم تعطيل ميزات HyperAlarm مؤقتًا.</string>
+    <string name="safe_mode_history">عرض سجلات الاستثناء</string>
+    <string name="safe_mode_cancel">تعطيل وضع الأمان</string>
+    <string name="safe_mode_ok">إلغاء</string>
+    <string name="safe_mode_later_title">نصيحة</string>
+    <string name="safe_mode_recorder_title">سجلات الاستثناء</string>
+    <string name="safe_mode_recorder_file">الملف</string>
+    <string name="safe_mode_recorder_class">الفئة</string>
+    <string name="safe_mode_recorder_method">الطريقة</string>
+    <string name="safe_mode_recorder_line">السطر</string>
+    <string name="safe_mode_recorder_msg">رسالة الاستثناء</string>
+    <string name="safe_mode_recorder_st">تتبع المكدس</string>
+    <string name="error_message">رسالة الاستثناء</string>
+    <string name="error_type">نوع الاستثناء</string>
+    <string name="error_file_name">اسم الملف</string>
+    <string name="error_time">وقت التسجيل</string>
+    <string name="error_version_name">اسم الإصدار</string>
+    <string name="error_git_hash">بصمة Git</string>
+    <string name="error_build_time">وقت البناء</string>
+    <string name="copy_ok">تم نسخه إلى الحافظة</string>
+    <string name="notification_channel_app_crash_name">التطبيق يعمل بشكل غير طبيعي</string>
+    <string name="notification_title_message_emergency_crash">%s تعطل عدة مرات</string>
+    <string name="notification_content_message">انقر هنا لعرض التفاصيل</string>
+    <string name="notification_view">عرض</string>
+    <string name="headtip_warn_not_offical_rom">قد لا يكون مصدر الروم الذي تستخدمه إصدارًا رسميًا من شاومي، وقد لا تعمل بعض الميزات. يُرجى التواصل مع المورّد الخاص بك للحصول على مزيد من التفاصيل.</string>
+    <string name="headtip_warn_unsupport_xposed">%1$s يستخدم Xposed API %2$d، لكن HyperAlarm يتطلب API %3$d أو أحدث. تم تعطيل ميزات الوحدة. اضغط لعرض التفاصيل.</string>
+    <string name="headtip_warn_unsupport_sysver">الجهاز الحالي يعمل على إصدار نظام غير متوافق (تمامًا)، مما قد يؤدي إلى ظهور أخطاء في وظائف HyperAlarm.</string>
+    <string name="headtip_warn_sign_verification_failed">فشلت عملية التحقق من التوقيع، وقد لا يكون الإصدار الحالي الذي تستخدمه الإصدار الرسمي لـ HyperAlarm، وقد يحتوي على تعليمات برمجية ضارة.</string>
+    <string name="headtip_tip_auto_safe_mode">يمكن للوضع الآمن فصل بعض التطبيقات بسرعة عندما تتعطل عدة مرات لضمان الأمان. تتطلب هذه الميزة نطاق ربط إطار عمل النظام لتعمل. نوصي بشدة بالتحقق من نطاق إطار عمل النظام لتفعيل الوضع الآمن.</string>
+    <string name="happy_birthday_hyperalarm">اليوم هو عيد ميلاد HyperAlarm!\nشكرًا لدعمكم طوال العام الماضي، ولنستمر معًا في العمل هذا العام!</string>
+    <string name="headtip_notice_dead_logger_errcode">خدمة سجل الجهاز الحالية غير طبيعية وستكون ميزات HyperAlarm محدودة. يرجى استعادة خدمة السجل لتعمل بشكل طبيعي.\nرمز الخطأ: %1$s</string>
+    <string name="headtip_notice_dead_logger">خدمة سجل الجهاز الحالية غير طبيعية، وستكون ميزات HyperAlarm محدودة. يُرجى استعادة خدمة السجل لتعمل بشكل طبيعي.</string>
+    <string name="unsupported_system_func">هذه الميزة غير مدعومة في إصدار النظام الحالي</string>
+    <string name="supported_system_func">هذه الوظيفة مدعومة رسميا من خلال إصدار النظام الحالي</string>
+    <string name="feature_doing_func">يتم إنتاج الوظيفة الحالية، يرجى التحلي بالصبر</string>
+    <!--System UI-->
+    <string name="system_ui">واجهة مستخدم النظام</string>
+    <!--System launcher-->
+    <string name="mihome">مشغل النظام</string>
+    <!--Settings-->
+    <string name="system_settings">الإعدادات</string>
+    <!--Security/Tablet security center-->
+    <string name="security_center_hyperos">الحماية</string>
+    <!--Other-->
+    <string name="exit">خروج</string>
+    <string name="ignore">تجاهل</string>
+    <string name="log_level_none">معطل</string>
+    <string name="disable_suggest">تعطيل الاقتراحات</string>
+    <string name="enable_suggest">تمكين الاقتراحات</string>
+    <string name="logo_egg_NotificationName">إشعار مفاجأة مخفية</string>
+    <string name="logo_egg_NotificationName_tips">هذا إشعار مفاجأة مخفية</string>
+    <string name="logo_egg_Notification_tips">الرجاء تمكين الإشعارات في الإعدادات لمشاهدة المفاجأة المخفية</string>
+    <string name="logo_egg1">واو، لقد وجدت هذا المكان، هذا رائع!</string>
+    <string name="logo_egg2">اللعنة، هل سيتم إيجادي حتى إذا كنت مختبئ هنا…</string>
+    <string name="logo_egg3">لا يوجد مفاجأة أندرويد هنا، ولكن هناك مفاجأة HyperAlarm!</string>
+    <string name="uninstall_title">إلغاء تثبيت HyperAlarm</string>
+    <string name="uninstall_summary">بعد إلغاء تثبيت HyperAlarm، ستبقى إعدادات الوحدة في قاعدة بيانات إطار Xposed. لإزالتها بالكامل، انتقل أولاً إلى إعدادات الوحدة وأعد تعيينها، ثم ألغِ التثبيت.</string>
+    <!-- LogViewer -->
+    <string name="log_search_hint">البحث في السجلات</string>
+    <string name="log_level_label">المستوى</string>
+    <string name="log_tag_label">الوسم</string>
+    <string name="log_type_app">سجل التطبيق</string>
+    <string name="log_type_xposed">سجل Xposed</string>
+    <string name="log_filter_all">الكل</string>
+    <string name="log_menu_clear">مسح السجلات</string>
+    <string name="log_menu_export">تصدير السجلات</string>
+    <string name="log_menu_share">مشاركة السجلات</string>
+    <string name="log_clear_title">مسح السجلات</string>
+    <string name="log_clear_all_message">هل أنت متأكد من أنك تريد مسح كل السجلات؟ يتضمن ذلك سجلات التطبيق وسجلات Xposed. لا يمكن التراجع عن هذا الإجراء.</string>
+    <string name="log_clear_success">تم مسح السجلات</string>
+    <string name="log_clear_failed">فشل مسح السجلات</string>
+    <string name="log_export_preparing">جارٍ تحضير التصدير…</string>
+    <string name="log_export_success">تم تصدير السجلات بنجاح</string>
+    <string name="log_export_failed">فشل تصدير السجلات</string>
+    <string name="log_share_title">مشاركة السجلات</string>
+    <string name="log_share_preparing">جارٍ التحضير للمشاركة…</string>
+    <string name="log_share_failed">فشل مشاركة السجلات</string>
+    <string name="log_share_text">ملف سجل HyperAlarm</string>
+    <string name="log_copy">نسخ</string>
+    <string name="log_copy_success">تم نسخ السجلات إلى الحافظة</string>
+    <!-- Log detail dialog -->
+    <string name="log_detail_title">تفاصيل السجل</string>
+    <!-- Log Viewer -->
+    <string name="log_loading">جارٍ تحميل السجلات…</string>
+    <string name="safe_mode_banner_title">الوضع الآمن مُفعّل</string>
+    <string name="safe_mode_banner_desc">عطّل الوضع الآمن التلقائي وظائف HyperAlarm مؤقتًا في %1$s بعد تكرار الأعطال. انقر للإدارة.</string>
+    <string name="headtip_warn_framework_service_error">تعذّر على HyperAlarm قراءة معلومات الإطار الحالية من XposedService. تم تعطيل وظائف الوحدة من أجل السلامة. انقر لعرض التفاصيل.</string>
+    <string name="homepage_unsupported_version_message">إصدار النظام الحالي غير مدرج في قائمة التوافق المدمجة في HyperAlarm.\n\n%1$s\n\nإصدارات النظام التي يدعمها هذا الإصدار:\n%2$s\n\nلتجنّب العمل في بيئة نظام غير معروفة، سيُغلق HyperAlarm تلقائيًا بعد 30 ثانية.</string>
+    <string name="homepage_unsupported_version_current">الإصدار الحالي: Android SDK %1$d - HyperOS %2$s</string>
+    <string name="load_failed">تعذّر التحميل.</string>
+    <string name="log_level_general">سجلات عامة</string>
+    <string name="log_level_detailed">سجلات مفصّلة</string>
+    <string name="help_framework_warning_unknown_framework">الإطار الحالي</string>
+    <string name="help_framework_warning_section_framework_version">إصدار الإطار الحالي:</string>
+    <string name="help_framework_warning_section_banner_reason">لماذا تظهر تحذيرات في الصفحة الرئيسية؟</string>
+    <string name="help_framework_warning_banner_reason">لا يظهر التحذير في الصفحة الرئيسية إلا عندما يكتشف HyperAlarm أن الإطار الحالي لا يستوفي الحد الأدنى من المتطلبات، أو أن XposedService لا يعيد معلومات الإطار. ولتجنّب عدم الاستقرار الناتج عن تحميل غير طبيعي للخطافات، يتوقف HyperAlarm أيضًا عن تحميلها.</string>
+    <string name="help_framework_warning_version_unavailable">تعذّرت قراءة معلومات إصدار الإطار الحالي من XposedService.</string>
+    <string name="log_menu_filter">تصفية السجلات</string>
+    <string name="log_empty_no_logs">لا توجد سجلات بعد</string>
+    <string name="log_empty_no_results">لا توجد سجلات مطابقة</string>
+    <string name="log_empty_root_required">امنح صلاحية Root وأعد تشغيل التطبيق لتحميل السجلات</string>
+    <string name="tos_update_title">اتفاقية المستخدم وسياسة الخصوصية</string>
+    <string name="tos_update_desc">حدّثنا اتفاقية المستخدم و/أو سياسة الخصوصية. يُرجى مراجعتها.\nباستمرارك في استخدام HyperAlarm فإنك توافق على <annotation key="protocol">اتفاقية المستخدم</annotation> و<annotation key="privacy">سياسة الخصوصية</annotation>.</string>
+    <string name="ha_logs_group">السجلات</string>
+    <string name="ha_history_logs">سجلات التطبيق</string>
+    <string name="ha_reference">مراجع</string>
+    <string name="ha_script_logs">سجلات السكربتات</string>
+    <string name="repeat_once">مرة واحدة</string>
+    <string name="repeat_every_day">كل يوم</string>
+    <string name="repeat_workdays">أيام العمل الرسمية</string>
+    <string name="repeat_holidays">العطلات الرسمية</string>
+    <string name="repeat_shift">جدول الورديات</string>
+    <string name="repeat_mon_fri">الاثنين–الجمعة</string>
+    <string name="repeat_weekend">السبت، الأحد</string>
+    <string name="ringtone_default">نغمة افتراضية</string>
+    <string name="ringtone_silent">صامت</string>
+    <string name="ringtone_custom">نغمة مخصصة</string>
+    <string name="ringtone_element">ديناميكي: العناصر</string>
+    <string name="ringtone_weather">ديناميكي: الطقس</string>
+    <string name="ringtone_morning_dew">ندى الصباح</string>
+    <string name="ringtone_fireflies">اليراعات</string>
+    <string name="ringtone_daydream">أحلام اليقظة</string>
+    <string name="ringtone_digital_timer">مؤقت رقمي</string>
+    <string name="ringtone_starry_sky">سماء مرصعة بالنجوم</string>
+    <string name="ringtone_music">موسيقى</string>
+    <string name="ringtone_recording">تسجيل</string>
+    <string name="countdown_hours_minutes">يرن بعد %1$d ساعة و%2$d دقيقة</string>
+    <string name="countdown_hours">يرن بعد %1$d ساعة</string>
+    <string name="countdown_minutes">يرن بعد %1$d دقيقة</string>
+    <string name="script_choose">اختيار سكربت</string>
+    <string name="script_choose_first">اختر سكربتًا أولًا</string>
+    <string name="script_running">جارٍ تشغيل السكربت…</string>
+    <string name="script_run_ok">انتهى السكربت</string>
+    <string name="script_run_failed">فشل السكربت</string>
+    <string name="script_dir_empty">مجلد السكربتات فارغ</string>
+    <string name="script_open_dir">فتح اختيار المجلد</string>
+    <string name="ringtone">نغمة</string>
+    <string name="ringtone_empty">لا توجد نغمات متاحة</string>
+    <string name="ringtone_load_failed">تعذّرت قراءة قائمة النغمات</string>
+    <string name="root_required">صلاحية root مطلوبة</string>
+    <string name="repeat_title">التكرار</string>
+    <string name="repeat_custom">مخصص</string>
+    <string name="repeat_custom_title">تكرار مخصص</string>
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_ok">موافق</string>
+    <string name="alarm_saved">تم الحفظ</string>
+    <string name="shift_duration_days">%1$d يوم</string>
+    <string name="shift_part_title">الوردية %1$d</string>
+    <string name="shift_rest">راحة</string>
+    <string name="shift_cycle_title">دورة الورديات</string>
+    <string name="shift_ring">رنين</string>
+    <string name="shift_need_one">يجب أن ترن وردية واحدة على الأقل</string>
+    <string name="shift_saved">تم حفظ جدول الورديات</string>
+    <string name="shift_save_failed">تعذّر الحفظ؛ هل تطبيق ساعة Mi قيد التشغيل؟</string>
+    <string name="alarm_delete_title">حذف المنبّه</string>
+    <string name="alarm_delete_message">حذف %1$d من المنبهات المحددة؟</string>
+    <string name="action_delete">حذف</string>
+    <string name="loading">جارٍ التحميل…</string>
+    <string name="next_alarm_none">لا توجد منبهات مفعّلة</string>
+    <string name="next_alarm_in_hours_minutes">بعد %1$d ساعة و%2$d دقيقة</string>
+    <string name="next_alarm_in_hours">بعد %1$d ساعة</string>
+    <string name="next_alarm_in_minutes">بعد %1$d دقيقة</string>
+    <string name="next_alarm_runs">تشغيل %1$s</string>
+    <string name="task_fallback">مهمة</string>
+    <string name="no_alarms">لا توجد منبهات</string>
+    <string name="alarm_edit_title">تعديل المهمة</string>
+    <string name="ringtone_choose">اختيار نغمة</string>
+    <string name="ringtone_vibrate">اهتزاز عند الرنين</string>
+    <string name="script">سكربت</string>
+    <string name="script_run_now">تشغيل الآن</string>
+    <string name="shift_start_date">تاريخ البدء</string>
+    <string name="shift_parts">الورديات</string>
+    <string name="wheel_hour">ساعة</string>
+    <string name="wheel_minute">دقيقة</string>
+    <string name="script_import_done">تم استيراد %1$d من السكربتات</string>
+    <string name="script_import_done_skipped">تم استيراد %1$d وتخطي %2$d</string>
+    <string name="script_import_none_skipped">لا توجد سكربتات للاستيراد: %1$d أسماء غير صالحة</string>
+    <string name="script_import_none">لا توجد سكربتات ‎.sh‎ في هذا المجلد</string>
+    <string name="alarm_add">إضافة منبّه</string>
+    <string name="alarm_add_failed">تعذّرت إضافة المنبّه؛ هل تطبيق ساعة Mi قيد التشغيل؟</string>
+    <string name="clock_restart">إعادة تشغيل ساعة Mi</string>
+    <string name="clock_restart_desc">يوقف تطبيق الساعة قسريًا ويعيد تشغيله في الخلفية لإعادة تحميل الخطافات.</string>
+    <string name="script_dir_label">مجلد السكربتات</string>
+    <string name="script_dir_copied">تم نسخ مجلد السكربتات: %1$s</string>
+    <string name="ringtone_updated">تم تحديث النغمة</string>
+    <string name="shift_info">%1$d يوم · %2$d وردية</string>
+    <string name="clock_filter_no_root">صلاحية root مطلوبة لتغيير تصفية قائمة الساعة</string>
+    <string name="clock_filter_title">الساعة تعرض المنبهات فقط</string>
+    <string name="clock_filter_summary">مهام السكربت لا تظهر في القائمة</string>
+    <string name="log_level_title">مستوى السجل</string>
+    <string name="script_group_title">السكربتات</string>
+    <string name="script_dir_copy">نسخ مجلد السكربتات</string>
+    <string name="action_close">إغلاق</string>
+    <string name="action_save">حفظ</string>
+    <string name="clock_filter_ringing_title">إخفاء المهام التي ترن</string>
+    <string name="clock_filter_ringing_summary">المهام التي يرن منبهها تُخفى أيضًا</string>
+    <string name="alarm_load_failed">تعذّر قراءة قائمة المنبهات</string>
+    <string name="alarm_load_failed_hint">اضغط لإعادة المحاولة</string>
+    <string name="alarm_save_failed">تعذّر الحفظ؛ هل ساعة Xiaomi قيد التشغيل؟</string>
+    <string name="alarm_delete_failed">تعذّر حذف بعض المنبهات؛ هل ساعة Xiaomi قيد التشغيل؟</string>
+    <string name="lock_password_title">كلمة سر شاشة القفل</string>
+    <string name="lock_password_summary_unset">غير محددة: تعمل السكربتات دون فتح القفل</string>
+    <string name="lock_password_summary_set">محددة: المهام الصامتة تفتح القفل قبل التشغيل</string>
+    <string name="lock_password_dialog_title">كلمة سر شاشة القفل</string>
+    <string name="lock_password_hint">كلمة سر شاشة القفل</string>
+    <string name="lock_password_save">حفظ</string>
+    <string name="lock_password_clear">مسح</string>
+    <string name="lock_password_saved">تم الحفظ</string>
+    <string name="lock_password_cleared">تم المسح</string>
+    <string name="lock_password_unchanged">دون تغيير</string>
+    <string name="restart_tutorial_title">إعادة دليل الإعداد</string>
+    <string name="restart_tutorial_summary">راجع خطوات التفعيل والنطاق والأذونات مرة أخرى</string>
+    <string name="lock_password_desc">يُستخدم لفتح قفل الشاشة قبل تشغيل مهمة صامتة. اتركه فارغًا للإبقاء على الحالي.</string>
+    <string name="repeat_shift_is_schedule">تكرار مهمة الوردية يأتي من الورديات ولا يُغيَّر من هنا</string>
+    <string name="ringtone_update_failed">تعذّر تحديث نغمة الرنين</string>
+</resources>

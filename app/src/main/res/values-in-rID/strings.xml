@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <string name="custom_order_title">Kustom</string>
+    <string name="app_version_update">Versi baru tersedia</string>
+    <string name="developer_build">Build pengembang</string>
+    <string name="pull_to_enter_private">Tarik ke bawah untuk memasuki ruang pribadi</string>
+    <string name="release_enter_private">Lepaskan untuk masuk ke ruang pribadi</string>
+    <!--Pop-up window/miuix part-->
+    <string name="miuix_appcompat_action_mode_select_all">Pilih semua</string>
+    <string name="miuix_appcompat_action_mode_inverse">Terbalik</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="tip">Tip</string>
+    <string name="root">Beberapa fitur tidak tersedia tanpa izin Root/Su</string>
+    <string name="soft_reboot">Memulai Ulang</string>
+    <string name="restart_app_desc">Apakah Anda yakin untuk memulai ulang sekarang %1$s?</string>
+    <string name="hyperalarm_restart_quick">Mulai ulang aplikasi dengan cepat</string>
+    <string name="hook_failed">Modul belum diaktifkan.\nSilakan periksa apakah manajer Xposed telah diaktifkan. Jika sudah, silakan mulai ulang atau optimalkan kembali modul.</string>
+    <string name="kill_failed">Gagal mengakhiri proses, periksa apakah HyperAlarm telah diberikan izin Root/Su?</string>
+    <string name="start_failed">Gagal memulai aktivitas, periksa apakah HyperAlarm telah diberikan izin Root/SU.</string>
+    <string name="pid_failed">Aplikasi target tidak berjalan dan tidak perlu di-restart.</string>
+    <string name="reboot_failed">Reboot gagal, periksa apakah HyperAlarm diberikan izin Root/Su?</string>
+    <!--HyperAlarm Tips-->
+    <string name="error">Kesalahan</string>
+    <string name="warn">Perhatian</string>
+    <string name="app_error_desc">HyperAlarm tiba-tiba tertutup. Untuk membantu kami memperbaiki masalah ini, berikan informasi berikut:\n\nTekan dan tahan pesan apa pun untuk menyalin semuanya.</string>
+    <string name="safe_mode_desc">%1$s telah memasuki mode aman karena beberapa kali mengalami crash, dan fitur HyperAlarm telah dinonaktifkan sementara.</string>
+    <string name="safe_mode_history">Lihat catatan pengecualian</string>
+    <string name="safe_mode_cancel">Nonaktifkan mode aman</string>
+    <string name="safe_mode_ok">Batal</string>
+    <string name="safe_mode_later_title">Tip</string>
+    <string name="safe_mode_recorder_title">Catatan pengecualian</string>
+    <string name="safe_mode_recorder_file">Mengajukan</string>
+    <string name="safe_mode_recorder_class">Kelas</string>
+    <string name="safe_mode_recorder_method">metode</string>
+    <string name="safe_mode_recorder_line">Garis</string>
+    <string name="safe_mode_recorder_msg">Pesan pengecualian</string>
+    <string name="safe_mode_recorder_st">Stack trace</string>
+    <string name="error_message">Pesan pengecualian</string>
+    <string name="error_type">Jenis pengecualian</string>
+    <string name="error_file_name">Nama file</string>
+    <string name="error_time">Waktu pencatatan</string>
+    <string name="error_version_name">Nama versi</string>
+    <string name="error_git_hash">Hash Git</string>
+    <string name="error_build_time">Waktu build</string>
+    <string name="copy_ok">Disalin ke papan klip</string>
+    <string name="notification_channel_app_crash_name">Aplikasi berjalan tidak normal</string>
+    <string name="notification_title_message_emergency_crash">%s telah beberapa kali mogok</string>
+    <string name="notification_content_message">Ketuk untuk melihat detail</string>
+    <string name="notification_view">Lihat</string>
+    <string name="headtip_warn_not_offical_rom">Sumber ROM yang Anda gunakan mungkin tidak resmi dari Xiaomi, dan beberapa fungsi mungkin tidak berfungsi, silakan hubungi penyedia yang Anda gunakan untuk detailnya.</string>
+    <string name="headtip_warn_unsupport_xposed">%1$s memakai Xposed API %2$d, tetapi HyperAlarm membutuhkan API %3$d atau lebih baru. Fitur modul dinonaktifkan. Ketuk untuk melihat detail.</string>
+    <string name="headtip_warn_unsupport_sysver">Perangkat saat ini berjalan pada versi sistem yang belum sepenuhnya didukung, sehingga dapat menyebabkan anomali pada fungsi HyperAlarm.</string>
+    <string name="headtip_warn_sign_verification_failed">Verifikasi tanda tangan gagal, dan versi yang Anda gunakan saat ini mungkin bukan dari versi resmi HyperAlarm, dan mungkin berisi kode berbahaya.</string>
+    <string name="headtip_tip_auto_safe_mode">Mode aman dapat melepas hook beberapa aplikasi ketika aplikasi tersebut beberapa kali crash demi menjaga keamanan. Fitur ini memerlukan cakupan hook System Framework untuk berjalan. Kami sangat menyarankan Anda mencentang cakupan System Framework untuk menyalakan Mode aman.</string>
+    <string name="happy_birthday_hyperalarm">Hari ini adalah hari ulang tahun HyperAlarm!\nTerima kasih atas dukungan Anda selama setahun terakhir, dan mari terus bekerja sama tahun ini!</string>
+    <string name="headtip_notice_dead_logger_errcode">Layanan log perangkat saat ini tidak normal dan fitur HyperAlarm akan dibatasi. Pulihkan layanan log agar dapat berjalan dengan benar.\nKode kesalahan: %1$s</string>
+    <string name="headtip_notice_dead_logger">Layanan log perangkat saat ini tidak normal dan fitur HyperAlarm akan dibatasi. Pulihkan layanan log agar dapat berjalan dengan benar.</string>
+    <string name="unsupported_system_func">Fitur ini tidak didukung pada versi sistem saat ini</string>
+    <string name="supported_system_func">Fitur ini didukung secara resmi pada versi sistem saat ini</string>
+    <string name="feature_doing_func">Fitur ini sedang dalam pengembangan, nantikan.</string>
+    <!--System UI-->
+    <string name="system_ui">UI Sistem</string>
+    <!--System launcher-->
+    <string name="mihome">Peluncur sistem</string>
+    <!--Settings-->
+    <string name="system_settings">Pengaturan</string>
+    <!--Security/Tablet security center-->
+    <string name="security_center_hyperos">Alat Keamanan</string>
+    <!--Other-->
+    <string name="exit">KELUAR</string>
+    <string name="ignore">Mengabaikan</string>
+    <string name="log_level_none">Nonaktifkan catatan</string>
+    <string name="disable_suggest">Nonaktifkan Saran</string>
+    <string name="enable_suggest">Aktifkan Saran</string>
+    <string name="logo_egg_NotificationName">Notifikasi Easter egg</string>
+    <string name="logo_egg_NotificationName_tips">Ini adalah notifikasi Easter egg</string>
+    <string name="logo_egg_Notification_tips">Aktifkan notifikasi di Setelan untuk melihat Easter egg</string>
+    <string name="logo_egg1">Wah, Anda benar-benar menemukan tempat ini, luar biasa!</string>
+    <string name="logo_egg2">Sial, apakah aku akan ditemukan bahkan jika bersembunyi di sini…</string>
+    <string name="logo_egg3">Tidak ada Android eggs di sini, tetapi ada HyperAlarm eggs!</string>
+    <string name="uninstall_title">Hapus instalasi HyperAlarm</string>
+    <string name="uninstall_summary">Setelah menghapus instalasi HyperAlarm, konfigurasi modul tetap ada di basis data framework Xposed. Untuk menghapusnya sepenuhnya, buka pengaturan modul dan setel ulang konfigurasi modul terlebih dahulu, lalu hapus instalasinya.</string>
+    <!-- LogViewer -->
+    <string name="log_search_hint">Cari log</string>
+    <string name="log_level_label">Level</string>
+    <string name="log_tag_label">Tag</string>
+    <string name="log_type_app">Log aplikasi</string>
+    <string name="log_type_xposed">Log Xposed</string>
+    <string name="log_filter_all">Semua</string>
+    <string name="log_menu_clear">Hapus log</string>
+    <string name="log_menu_export">Ekspor log</string>
+    <string name="log_menu_share">Bagikan log</string>
+    <string name="log_clear_title">Hapus log</string>
+    <string name="log_clear_all_message">Apakah Anda yakin ingin menghapus semua log? Ini mencakup log aplikasi dan log Xposed. Tindakan ini tidak dapat dibatalkan.</string>
+    <string name="log_clear_success">Log dihapus</string>
+    <string name="log_clear_failed">Gagal menghapus log</string>
+    <string name="log_export_preparing">Menyiapkan ekspor…</string>
+    <string name="log_export_success">Log berhasil diekspor</string>
+    <string name="log_export_failed">Gagal mengekspor log</string>
+    <string name="log_share_title">Bagikan log</string>
+    <string name="log_share_preparing">Menyiapkan berbagi…</string>
+    <string name="log_share_failed">Gagal membagikan log</string>
+    <string name="log_share_text">Berkas log HyperAlarm</string>
+    <string name="log_copy">Salin</string>
+    <string name="log_copy_success">Log disalin ke papan klip</string>
+    <!-- Log detail dialog -->
+    <string name="log_detail_title">Detail log</string>
+    <!-- Log Viewer -->
+    <string name="log_loading">Memuat log…</string>
+    <string name="safe_mode_banner_title">Mode aman aktif</string>
+    <string name="safe_mode_banner_desc">Mode aman otomatis menonaktifkan sementara fitur HyperAlarm di %1$s setelah beberapa kali crash. Ketuk untuk mengelola.</string>
+    <string name="headtip_warn_framework_service_error">HyperAlarm tidak dapat membaca informasi framework saat ini dari XposedService. Fitur modul dinonaktifkan demi keamanan. Ketuk untuk melihat detail.</string>
+    <string name="homepage_unsupported_version_message">Versi sistem saat ini tidak ada dalam daftar adaptasi bawaan HyperAlarm.\n\n%1$s\n\nVersi sistem yang didukung rilis ini:\n%2$s\n\nUntuk menghindari berjalan di lingkungan sistem yang tidak dikenal, HyperAlarm akan keluar otomatis setelah 30 detik.</string>
+    <string name="homepage_unsupported_version_current">Versi saat ini: Android SDK %1$d - HyperOS %2$s</string>
+    <string name="load_failed">Gagal memuat.</string>
+    <string name="log_level_general">Log umum</string>
+    <string name="log_level_detailed">Log terperinci</string>
+    <string name="help_framework_warning_unknown_framework">Framework saat ini</string>
+    <string name="help_framework_warning_section_framework_version">Versi framework saat ini:</string>
+    <string name="help_framework_warning_section_banner_reason">Mengapa halaman utama menampilkan peringatan?</string>
+    <string name="help_framework_warning_banner_reason">Peringatan di halaman utama hanya muncul saat HyperAlarm mendeteksi framework saat ini tidak memenuhi persyaratan minimum atau XposedService tidak dapat mengembalikan informasi framework. Untuk menghindari ketidakstabilan akibat pemuatan hook yang tidak normal, HyperAlarm juga berhenti memuat hook.</string>
+    <string name="help_framework_warning_version_unavailable">Informasi versi framework saat ini tidak dapat dibaca dari XposedService.</string>
+    <string name="log_menu_filter">Filter log</string>
+    <string name="log_empty_no_logs">Belum ada log</string>
+    <string name="log_empty_no_results">Tidak ada log yang cocok</string>
+    <string name="log_empty_root_required">Berikan izin Root dan mulai ulang aplikasi untuk memuat log</string>
+    <string name="tos_update_title">Perjanjian pengguna dan kebijakan privasi</string>
+    <string name="tos_update_desc">Kami memperbarui perjanjian pengguna dan/atau kebijakan privasi. Silakan periksa.\nDengan terus menggunakan HyperAlarm, Anda menyetujui <annotation key="protocol">Perjanjian pengguna</annotation> dan <annotation key="privacy">Kebijakan privasi</annotation> kami.</string>
+    <string name="ha_logs_group">Log</string>
+    <string name="ha_history_logs">Log aplikasi</string>
+    <string name="ha_reference">Referensi</string>
+    <string name="ha_script_logs">Log skrip</string>
+    <string name="repeat_once">Sekali saja</string>
+    <string name="repeat_every_day">Setiap hari</string>
+    <string name="repeat_workdays">Hari kerja resmi</string>
+    <string name="repeat_holidays">Hari libur resmi</string>
+    <string name="repeat_shift">Jadwal shift</string>
+    <string name="repeat_mon_fri">Sen–Jum</string>
+    <string name="repeat_weekend">Sab, Min</string>
+    <string name="ringtone_default">Nada dering bawaan</string>
+    <string name="ringtone_silent">Senyap</string>
+    <string name="ringtone_custom">Nada dering khusus</string>
+    <string name="ringtone_element">Dinamis unsur</string>
+    <string name="ringtone_weather">Dinamis cuaca</string>
+    <string name="ringtone_morning_dew">Embun pagi</string>
+    <string name="ringtone_fireflies">Kunang-kunang</string>
+    <string name="ringtone_daydream">Lamunan</string>
+    <string name="ringtone_digital_timer">Pewaktu digital</string>
+    <string name="ringtone_starry_sky">Langit berbintang</string>
+    <string name="ringtone_music">Musik</string>
+    <string name="ringtone_recording">Rekaman</string>
+    <string name="countdown_hours_minutes">Berbunyi dalam %1$d jam %2$d menit</string>
+    <string name="countdown_hours">Berbunyi dalam %1$d jam</string>
+    <string name="countdown_minutes">Berbunyi dalam %1$d menit</string>
+    <string name="script_choose">Pilih skrip</string>
+    <string name="script_choose_first">Pilih skrip dulu</string>
+    <string name="script_running">Menjalankan skrip…</string>
+    <string name="script_run_ok">Skrip selesai</string>
+    <string name="script_run_failed">Skrip gagal</string>
+    <string name="script_dir_empty">Folder skrip kosong</string>
+    <string name="script_open_dir">Buka pemilih folder</string>
+    <string name="ringtone">Nada dering</string>
+    <string name="ringtone_empty">Tidak ada nada dering</string>
+    <string name="ringtone_load_failed">Tidak dapat membaca daftar nada dering</string>
+    <string name="root_required">Perlu izin root</string>
+    <string name="repeat_title">Ulangi</string>
+    <string name="repeat_custom">Khusus</string>
+    <string name="repeat_custom_title">Ulangi khusus</string>
+    <string name="action_cancel">Batal</string>
+    <string name="action_ok">OK</string>
+    <string name="alarm_saved">Tersimpan</string>
+    <string name="shift_duration_days">%1$d hari</string>
+    <string name="shift_part_title">Shift %1$d</string>
+    <string name="shift_rest">Istirahat</string>
+    <string name="shift_cycle_title">Siklus shift</string>
+    <string name="shift_ring">Berbunyi</string>
+    <string name="shift_need_one">Minimal satu shift harus berbunyi</string>
+    <string name="shift_saved">Jadwal shift disimpan</string>
+    <string name="shift_save_failed">Gagal menyimpan; apakah Jam Mi berjalan?</string>
+    <string name="alarm_delete_title">Hapus alarm</string>
+    <string name="alarm_delete_message">Hapus %1$d alarm terpilih?</string>
+    <string name="action_delete">Hapus</string>
+    <string name="loading">Memuat…</string>
+    <string name="next_alarm_none">Tidak ada alarm aktif</string>
+    <string name="next_alarm_in_hours_minutes">dalam %1$d jam %2$d menit</string>
+    <string name="next_alarm_in_hours">dalam %1$d jam</string>
+    <string name="next_alarm_in_minutes">dalam %1$d menit</string>
+    <string name="next_alarm_runs">Jalankan %1$s</string>
+    <string name="task_fallback">tugas</string>
+    <string name="no_alarms">Tidak ada alarm</string>
+    <string name="alarm_edit_title">Edit tugas</string>
+    <string name="ringtone_choose">Pilih nada dering</string>
+    <string name="ringtone_vibrate">Getar saat berbunyi</string>
+    <string name="script">Skrip</string>
+    <string name="script_run_now">Jalankan sekarang</string>
+    <string name="shift_start_date">Tanggal mulai</string>
+    <string name="shift_parts">Shift</string>
+    <string name="wheel_hour">Jam</string>
+    <string name="wheel_minute">Menit</string>
+    <string name="script_import_done">%1$d skrip diimpor</string>
+    <string name="script_import_done_skipped">%1$d diimpor, %2$d dilewati</string>
+    <string name="script_import_none_skipped">Tidak ada skrip untuk diimpor: %1$d nama tidak valid</string>
+    <string name="script_import_none">Tidak ada skrip .sh di folder itu</string>
+    <string name="alarm_add">Tambah alarm</string>
+    <string name="alarm_add_failed">Gagal menambah alarm; apakah Jam Mi berjalan?</string>
+    <string name="clock_restart">Mulai ulang Jam Mi</string>
+    <string name="clock_restart_desc">Memaksa berhenti dan memulai ulang jam di latar belakang agar hook dimuat ulang.</string>
+    <string name="script_dir_label">Folder skrip</string>
+    <string name="script_dir_copied">Folder skrip disalin: %1$s</string>
+    <string name="ringtone_updated">Nada dering diperbarui</string>
+    <string name="shift_info">%1$d hari · %2$d shift</string>
+    <string name="clock_filter_no_root">Perlu izin root untuk mengubah filter daftar jam</string>
+    <string name="clock_filter_title">Jam hanya menampilkan alarm</string>
+    <string name="clock_filter_summary">Tugas skrip tidak tampil di daftar alarm</string>
+    <string name="log_level_title">Tingkat log</string>
+    <string name="script_group_title">Skrip</string>
+    <string name="script_dir_copy">Salin folder skrip</string>
+    <string name="action_close">Tutup</string>
+    <string name="action_save">Simpan</string>
+    <string name="clock_filter_ringing_title">Sembunyikan tugas berbunyi</string>
+    <string name="clock_filter_ringing_summary">Tugas yang alarmnya berbunyi ikut disembunyikan</string>
+    <string name="alarm_load_failed">Gagal membaca daftar alarm</string>
+    <string name="alarm_load_failed_hint">Ketuk untuk mencoba lagi</string>
+    <string name="alarm_save_failed">Gagal menyimpan; apakah Jam Xiaomi berjalan?</string>
+    <string name="alarm_delete_failed">Sebagian alarm gagal dihapus; apakah Jam Xiaomi berjalan?</string>
+    <string name="lock_password_title">Sandi kunci layar</string>
+    <string name="lock_password_summary_unset">Belum diatur: skrip berjalan tanpa membuka kunci</string>
+    <string name="lock_password_summary_set">Sudah diatur: tugas senyap membuka kunci sebelum berjalan</string>
+    <string name="lock_password_dialog_title">Sandi kunci layar</string>
+    <string name="lock_password_hint">Sandi layar kunci</string>
+    <string name="lock_password_save">Simpan</string>
+    <string name="lock_password_clear">Hapus</string>
+    <string name="lock_password_saved">Tersimpan</string>
+    <string name="lock_password_cleared">Terhapus</string>
+    <string name="lock_password_unchanged">Tidak diubah</string>
+    <string name="restart_tutorial_title">Ulangi panduan penyiapan</string>
+    <string name="restart_tutorial_summary">Lewati lagi langkah aktivasi, cakupan, dan izin</string>
+    <string name="lock_password_desc">Dipakai membuka kunci layar sebelum tugas senyap berjalan. Kosongkan bila tidak diubah.</string>
+    <string name="repeat_shift_is_schedule">Pengulangan tugas shift mengikuti shift, tidak bisa diubah di sini</string>
+    <string name="ringtone_update_failed">Gagal memperbarui nada dering</string>
+</resources>

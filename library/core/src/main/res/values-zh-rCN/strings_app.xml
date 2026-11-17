@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <!--Xposed 模块简介-->
+    <string name="new_cta_app_all_purpose_agree">同意并继续</string>
+    <string name="new_cta_app_all_purpose_reject">拒绝并退出</string>
+    <!--HyperAlarm 设置/关于页-->
+    <string name="home">主页</string>
+    <string name="settings">设置</string>
+    <string name="about">关于</string>
+    <string name="about_contributer">贡献者</string>
+    <string name="about_contributer_desc">感谢以下贡献者为 HyperAlarm 的开发提供了不同程度的帮助（排名顺序不分先后）</string>
+    <string name="about_device_info_device">设备型号</string>
+    <string name="about_device_info_android">Android 版本</string>
+    <string name="about_device_info_os">OS 版本</string>
+    <string name="hyperalarm_restart_quick">快速重启作用域</string>
+    <!-- Scope -->
+    <string name="settings_scope">作用域</string>
+    <string name="scope_batch_no_changes">作用域没有变化</string>
+    <string name="scope_batch_service_unavailable">LSPosed 服务不可用</string>
+    <string name="scope_batch_remove_failed">移除作用域失败</string>
+    <string name="scope_batch_updated">作用域已更新</string>
+    <string name="scope_batch_request_not_approved">以下作用域申请未被批准：%1$s</string>
+    <string name="scope_batch_update_failed">更新作用域失败：%1$s</string>
+    <string name="scope_batch_request_failed">申请作用域失败</string>
+    <string name="location_add">添加</string>
+    <string name="location_delete">删除</string>
+    <string name="edit">请输入文本</string>
+
+    <string name="settings_hot_reload">热重载进程</string>
+    <string name="settings_hot_reload_unsupported">当前 Xposed 框架不支持热重载，需要 libxposed API 102 或更高版本。</string>
+    <string name="settings_hot_reload_pick_apps">选择要热重载的应用</string>
+    <string name="settings_hot_reload_pick_apps_subtitle">仅显示已在框架作用域中勾选的应用。将重载所选应用当前全部已注入的进程。</string>
+    <string name="settings_hot_reload_system_scope">系统框架</string>
+    <string name="settings_hot_reload_action">热重载</string>
+    <string name="settings_hot_reload_no_scoped_apps">框架作用域中没有仍已安装的应用。</string>
+    <string name="settings_hot_reload_no_apps_selected">请至少选择一个应用。</string>
+    <string name="settings_hot_reload_batch_in_progress">正在重载 %1$d 个应用 ...</string>
+    <string name="settings_hot_reload_batch_no_running_targets">所选的 %1$d 个应用均没有运行中的已注入进程。</string>
+    <string name="settings_hot_reload_batch_result">热重载完成：%1$d/%2$d 个进程成功，%3$d 个失败；%4$d 个所选应用没有运行中的进程。</string>
+    <string name="settings_hot_reload_batch_result_timeout">热重载等待超时：%1$d/%2$d 个进程成功，%3$d 个失败或超时；%4$d 个所选应用没有运行中的进程。</string>
+    <string name="settings_hot_reload_batch_failure_detail">首个失败进程（%1$s）：%2$s</string>
+    <string name="settings_hot_reload_batch_service_error">热重载无法开始：%1$s</string>
+    <string name="settings_show_title">显示</string>
+    <string name="settings_data_title">备份与恢复</string>
+    <string name="settings_show_all_alarms">显示所有闹钟</string>
+    <string name="settings_hide_app_icon">桌面图标</string>
+    <string name="settings_icon">设置图标</string>
+    <string name="settings_icon_disable">禁用</string>
+    <string name="settings_icon_top">顶部</string>
+    <string name="settings_icon_medium">中部</string>
+    <string name="settings_icon_down">底部</string>
+    <string name="settings_icon_mode">图标样式</string>
+    <string name="settings_float_nav">悬浮底栏</string>
+    <string name="settings_app_language">语言</string>
+    <string name="settings_icon_miui_14">圆角矩形样式</string>
+    <string name="settings_icon_miui_13">背景镂空样式</string>
+    <string name="settings_back">备份模块配置</string>
+    <string name="settings_rest">恢复模块配置</string>
+    <string name="settings_reset">重置模块配置</string>
+    <string name="reset_title">确定要重置吗？</string>
+    <string name="reset_desc">重置模块配置后其所有数据将会被删除！</string>
+    <string name="reset_okay">已重置模块配置</string>
+    <string name="backup_success">备份成功</string>
+    <string name="backup_failed">备份失败</string>
+    <string name="rest_success">恢复成功</string>
+    <string name="rest_success_message">请重启应用以使配置生效。</string>
+    <string name="rest_failed">恢复失败</string>
+    <string name="about_other_title">其他</string>
+    <string name="about_github">项目地址</string>
+    <string name="about_github_desc">本项目基于 AGPL-3.0 协议开源</string>
+    <string name="about_privacy">隐私政策</string>
+    <string name="about_protocol">用户协议</string>
+    <!--弹窗/miuix 部分-->
+    <string name="preference_recommend_tip">在查找其他内容吗？</string>
+    <!--字符串复用-->
+    <string name="custom_enable">启用自定义</string>
+    <!--多列表 Array-->
+    <string name="array_default">默认</string>
+    <string name="array_global_actions_none">无动作</string>
+    <string name="array_global_actions_notif">打开通知中心</string>
+    <string name="array_global_actions_lock">锁屏</string>
+    <string name="array_global_actions_screenshot">截屏</string>
+    <string name="array_global_actions_recents">打开最近任务</string>
+    <string name="array_global_actions_volume">打开音量对话框</string>
+    <string name="array_global_actions_launch">启动应用</string>
+    <string name="array_global_actions_launch_choose">选择应用</string>
+    <string name="array_global_actions_powermenu">打开电源菜单</string>
+    <string name="array_global_actions_clear_memory">清理内存</string>
+    <string name="array_global_actions_invert_colors">颜色反转</string>
+    <string name="array_global_actions_home">返回桌面</string>
+    <string name="array_global_actions_control_center">打开控制中心</string>
+    <string name="array_global_actions_super_xiaoai">呼出超级小爱</string>
+    <string name="array_global_actions_super_xiaoai_circle_search">呼出超级小爱识屏</string>
+    <string name="array_global_actions_google_circle_to_search">呼出 Google 即圈即搜</string>
+    <string name="array_global_actions_google_voice_assistant">呼出 Google 语音助手</string>
+    <string name="array_global_actions_force_stop_current_app">停止当前应用</string>
+    <!--系统框架-->
+    <string name="system_framework">系统框架</string>
+    <string name="system_framework_share_menu_test">分享菜单测试</string>
+    <string name="system_framework_open_with_menu_test">打开方式菜单测试</string>
+
+    <!--核心破解-->
+    <!--浏览器-->
+    <!--相机-->
+    <!--日历-->
+    <!--小米社区-->
+    <!--文件管理-->
+    <!--电话-->
+    <!--短信-->
+    <!--电话服务-->
+    <!--下载管理程序-->
+    <!--下载管理-->
+    <!--系统界面-->
+    <!--设置-->
+    <!--主题壁纸-->
+    <!--万能遥控-->
+    <!--系统更新-->
+    <!--权限管理服务-->
+    <!--投屏-->
+    <!--录音机-->
+    <!--笔记-->
+    <string name="notes">笔记</string>
+    <!--万象息屏-->
+    <!--传送门-->
+    <!--小米云服务-->
+    <!--小米换机-->
+    <!--备份-->
+    <!--小米创作-->
+    <!--相册-->
+    <!--MIUI 安全组件-->
+    <!--系统桌面-->
+    <string name="home_gesture">手势与导航</string>
+    <string name="home_gesture_google_usage_banner">Google 语音助手、Google 即圈即搜使用说明：\n- 需要安装 Google 应用\n- 需要设置 Google 为默认数字助理\n- 如遇到呼不出 Google 语音助手，请确保 Google 应用在后台运行或重新设置默认数字助理\n- 如遇到呼不出 Google 即圈即搜或提示不可用，可以勾选 Google 作用域伪装成支持的设备</string>
+    <!--LPA-->
+    <!--小米相册-编辑-->
+    <!--壁纸-->
+    <!--应用包管理组件-->
+    <!--nfc-->
+    <!--HTML Viewer-->
+    <!--智能助理-->
+    <string name="personal_assistant">智能助理</string>
+    <!--电量与性能-->
+    <string name="powerkeeper">电量与性能</string>
+    <!--屏幕录制-->
+    <!--截屏-->
+    <!--系统服务组件-->
+    <!--手机管家/平板管家-->
+    <string name="security">手机管家</string>
+    <!--MiTrustService-->
+    <!--天气-->
+    <!--Analytics-->
+    <!--小爱翻译-->
+    <!--弹幕通知-->
+    <!--Joyose-->
+    <string name="joyose">Joyose</string>
+    <!--应用商店-->
+    <!--音质音效-->
+    <!--小米设置-->
+    <!--鲁班 (MTB)-->
+    <!--搜狗输入法-->
+    <!--小爱视觉-->
+    <!--通话管理-->
+    <!--超级小爱-->
+    <!--照片和视频-->
+    <!--语音唤醒-->
+    <!--Sim Activation Service-->
+    <!--Contacts-->
+    <!--Health-->
+    <!--剪贴板与常用语-->
+    <!--其他-->
+    <string name="custom_background">自定义弹窗背景</string>
+    <string name="custom_background_blur_enabled">背景模糊</string>
+    <string name="custom_background_blur_radius">模糊半径</string>
+    <string name="custom_background_color">颜色</string>
+    <string name="custom_background_corner_radius">圆角</string>
+    <string name="location_data_title">数据库</string>
+    <string name="system_notifrowmenu_appinfo">应用信息</string>
+    <string name="system_notifrowmenu_openinfw">浮窗</string>
+    <string name="system_notifrowmenu_forceclose">强制关闭</string>
+    <string name="ic_qs_title_wifi">WLAN</string>
+    <string name="ic_qs_title_cellular">移动数据</string>
+    <string name="ic_qs_title_bluetooth">蓝牙</string>
+    <string name="ic_qs_title_gps">位置信息</string>
+    <string name="ic_qs_title_nfc">NFC</string>
+    <string name="ic_qs_title_hotspot">热点</string>
+    <string name="ic_qs_title_flashlight">手电筒</string>
+    <string name="ic_qs_title_settings">设置</string>
+    <string name="ic_qs_title_airplane">飞行模式</string>
+    <string name="ic_qs_title_autobrightness">自动亮度</string>
+    <string name="ic_qs_title_vowifi1">WLAN通话\nSIM1</string>
+    <string name="ic_qs_title_vowifi2">WLAN通话\nSIM2</string>
+    <string name="backup_failed_detail">请确认 HyperAlarm 已获得 root 权限，且该文件可写入后重试。</string>
+    <string name="rest_failed_detail">请确认选择的是 HyperAlarm 的备份文件，且 HyperAlarm 已获得 root 权限。</string>
+    <string name="more">更多</string>
+    <string name="system_framework_bypass_force_mi_appstore_desc">跳过跳转前的不必要确认，并允许选择第三方应用商店</string>
+</resources>

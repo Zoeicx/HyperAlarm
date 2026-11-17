@@ -1,0 +1,15 @@
+# Copy to signing.properties (it is git-ignored) and fill in both parts.
+#
+# 1) GitHub Packages credentials - required for every build, they resolve the fan.miuix dependencies.
+#    GIT_ACTOR / GIT_TOKEN environment variables take precedence over these two keys.
+gpr.user=your-github-user
+gpr.key=ghp_token_with_read_packages
+#
+# 2) Release keystore - required for release/beta/canary builds. A release signed with the public
+#    debug key cannot be published, and users cannot upgrade to a real key later; for a throwaway
+#    local build pass -PallowDebugSigning instead of filling this in.
+#    The same keystore must be used for every published build, otherwise users have to uninstall.
+storeFile=/absolute/path/to/release.keystore
+storePassword=change-me
+keyAlias=change-me
+keyPassword=change-me

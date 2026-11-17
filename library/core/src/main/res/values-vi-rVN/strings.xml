@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <!--Pop-up window/miuix part-->
+    <string name="miuix_appcompat_action_mode_select_all">Chọn tất cả</string>
+    <string name="miuix_appcompat_action_mode_inverse">Đảo ngược</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="tip">Mẹo</string>
+    <string name="root">Một số tính năng không khả dụng nếu không có quyền Root/Su</string>
+    <string name="soft_reboot">Khởi động lại</string>
+    <string name="restart_app_desc">Bạn có chắc chắn muốn khởi động lại ngay bây giờ không %1$s?</string>
+    <string name="hyperalarm_restart_quick">Ứng dụng khởi động lại nhanh</string>
+    <string name="hook_failed">Module chưa được kích hoạt. Vui lòng kiểm tra xem LSPosed có được bật không. Nếu có, vui lòng khởi động lại hoặc tối ưu hóa lại module.</string>
+    <string name="kill_failed">Không thể kết thúc tiến trình. Vui lòng kiểm tra xem HyperAlarm đã được cấp quyền Root/Su chưa.</string>
+    <string name="pid_failed">Ứng dụng mục tiêu không chạy và không cần phải khởi động lại.</string>
+    <string name="reboot_failed">Khởi động lại không thành công. Vui lòng kiểm tra xem HyperAlarm đã được cấp quyền Root/Su chưa.</string>
+    <!--HyperAlarm Tips-->
+    <string name="warn">Cảnh báo</string>
+    <string name="app_error_desc">Mô-đun này đã gặp lỗi nghiêm trọng và không thể tiếp tục chạy! Vui lòng cung cấp thông tin lỗi sau để phản hồi! \n\n</string>
+    <string name="safe_mode_history">Xem hồ sơ ngoại lệ</string>
+    <string name="safe_mode_cancel">Tắt chế độ an toàn</string>
+    <string name="safe_mode_ok">Hủy</string>
+    <string name="safe_mode_later_title">Mẹo</string>
+    <string name="safe_mode_recorder_title">Hồ sơ ngoại lệ</string>
+    <string name="safe_mode_recorder_file">Tệp</string>
+    <string name="safe_mode_recorder_class">Lớp</string>
+    <string name="safe_mode_recorder_method">Phương thức</string>
+    <string name="safe_mode_recorder_line">Hàng</string>
+    <string name="safe_mode_recorder_msg">Thông báo ngoại lệ</string>
+    <string name="safe_mode_recorder_st">Dấu vết ngăn xếp</string>
+    <string name="error_message">Tin nhắn ngoại lệ</string>
+    <string name="error_type">Loại ngoại lệ</string>
+    <string name="error_file_name">Tên tập tin</string>
+    <string name="error_time">Thời gian ghi âm</string>
+    <string name="error_version_name">Tên phiên bản</string>
+    <string name="error_git_hash">Git hash</string>
+    <string name="error_build_time">Thời gian xây dựng</string>
+    <string name="headtip_tip_auto_safe_mode">Chế độ an toàn có thể gỡ bỏ một số ứng dụng kịp thời khi chúng bị sập nhiều lần để đảm bảo an toàn. Tính năng này yêu cầu phạm vi hook của System Framework để chạy. Chúng tôi đặc biệt khuyên bạn nên kiểm tra phạm vi System Framework để bật Chế độ an toàn.</string>
+    <string name="happy_birthday_hyperalarm">Hôm nay là sinh nhật của HyperAlarm!\nCảm ơn sự ủng hộ của bạn trong năm qua và chúng ta hãy tiếp tục hợp tác trong năm nay nhé!</string>
+    <string name="headtip_notice_dead_logger_errcode">Dịch vụ nhật ký thiết bị hiện tại không bình thường và các tính năng HyperAlarm sẽ bị hạn chế. Vui lòng khôi phục dịch vụ nhật ký để nó có thể chạy bình thường.\nMã lỗi: %1$s</string>
+    <string name="headtip_notice_dead_logger">Dịch vụ nhật ký thiết bị hiện tại không bình thường và các tính năng của HyperAlarm sẽ bị hạn chế. Vui lòng khôi phục dịch vụ nhật ký để có thể chạy bình thường.</string>
+    <string name="unsupported_system_func">Tính năng này không được hỗ trợ trong phiên bản hệ thống hiện tại</string>
+    <string name="supported_system_func">Chức năng này được hỗ trợ chính thức bởi phiên bản hệ thống hiện tại</string>
+    <string name="feature_doing_func">Chức năng hiện tại đang được tạo ra, vui lòng chờ</string>
+    <!--System UI-->
+    <string name="system_ui">Giao diện hệ thống</string>
+    <!--System launcher-->
+    <string name="mihome">Trình khởi chạy hệ thống</string>
+    <!--Settings-->
+    <string name="system_settings">Cài đặt</string>
+    <!--Security/Tablet security center-->
+    <string name="security_center_hyperos">Bảo mật</string>
+    <!--Other-->
+    <string name="exit">Thoát</string>
+    <string name="ignore">Bỏ qua</string>
+    <string name="search_apps_hint">Tìm kiếm %d ứng dụng</string>
+    <string name="load_apps_failed">Không tải được danh sách ứng dụng</string>
+    <string name="search_result_not_available">Tính năng này có thể không được hỗ trợ trên thiết bị này hoặc có thể bị ẩn trong một số tùy chọn</string>
+
+    <!--AICR-->
+</resources>

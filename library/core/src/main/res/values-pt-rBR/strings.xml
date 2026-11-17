@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of HyperAlarm.
+  ~
+  ~ HyperAlarm is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU Affero General Public License as
+  ~ published by the Free Software Foundation, either version 3 of the
+  ~ License.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU Affero General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU Affero General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2023-2026 HyperAlarm Contributions
+  --><resources>
+    <!--Pop-up window/miuix part-->
+    <string name="miuix_appcompat_action_mode_select_all">Selecionar todos</string>
+    <string name="miuix_appcompat_action_mode_inverse">Desmarcar todos</string>
+    <!--HyperAlarm Settings/About Page-->
+    <string name="tip">Dica</string>
+    <string name="root">Alguns recursos não estão disponíveis sem permissão Root/Su</string>
+    <string name="soft_reboot">Reiniciar</string>
+    <string name="restart_app_desc">Você tem certeza que deseja reiniciar %1$s agora?</string>
+    <string name="hyperalarm_restart_quick">Reiniciar apps rapidamente</string>
+    <string name="hook_failed">O módulo ainda não está ativado. Por favor, verifique se o LSPosed está ativado. Nesse caso, por favor, reinicie ou re-otimize o módulo.</string>
+    <string name="kill_failed">Falha ao finalizar o processo. Por favor, verifique se o HyperAlarm recebeu permissões Root/Su.</string>
+    <string name="pid_failed">O app de destino não está em execução e não precisa ser reiniciado.</string>
+    <string name="reboot_failed">Falha ao reiniciar. Por favor, verifique se o HyperAlarm recebeu permissões Root/Su.</string>
+    <!--HyperAlarm Tips-->
+    <string name="warn">Atenção!</string>
+    <string name="app_error_desc">O HyperAlarm foi encerrado de forma inesperada. Para que possamos corrigir isso, envie as informações abaixo:\n\nPressione e segure qualquer mensagem para copiar tudo.</string>
+    <string name="safe_mode_history">Ver registros de exceção</string>
+    <string name="safe_mode_cancel">Desativar Modo seguro</string>
+    <string name="safe_mode_ok">Cancelar</string>
+    <string name="safe_mode_later_title">Dica</string>
+    <string name="safe_mode_recorder_title">Registros de exceção</string>
+    <string name="safe_mode_recorder_file">Arquivo</string>
+    <string name="safe_mode_recorder_class">Classe</string>
+    <string name="safe_mode_recorder_method">Método</string>
+    <string name="safe_mode_recorder_line">Linha</string>
+    <string name="safe_mode_recorder_msg">Mensagem de exceção</string>
+    <string name="safe_mode_recorder_st">Rastreamento de erros</string>
+    <string name="error_message">Mensagem de exceção</string>
+    <string name="error_type">Tipo de exceção</string>
+    <string name="error_file_name">Nome do arquivo</string>
+    <string name="error_time">Hora do registro</string>
+    <string name="error_version_name">Nome da versão</string>
+    <string name="error_git_hash">Git hash</string>
+    <string name="error_build_time">Hora da compilação</string>
+    <string name="headtip_tip_auto_safe_mode">O Modo seguro pode desconectar alguns apps a tempo quando eles travam várias vezes para garantir a segurança. Esse recurso requer que o escopo Framework do Sistema seja executado. Recomendamos fortemente verificar o escopo Framework do Sistema para ativar o Modo seguro.</string>
+    <string name="happy_birthday_hyperalarm">Hoje é o aniversário do HyperAlarm!\nObrigado pelo seu apoio durante o ano passado e vamos continuar trabalhando juntos este ano!</string>
+    <string name="headtip_notice_dead_logger_errcode">O serviço de log do dispositivo atual está anormal e os recursos do HyperAlarm serão limitados. Por favor, restaure o serviço de log para que ele possa funcionar normalmente.\nCódigo de erro: %1$s</string>
+    <string name="headtip_notice_dead_logger">O serviço de log do dispositivo atual está anormal e os recursos do HyperAlarm serão limitados. Por favor, restaure o serviço de log para que ele possa funcionar normalmente.</string>
+    <string name="unsupported_system_func">Este recurso não é suportado na versão atual do sistema</string>
+    <string name="supported_system_func">Este recurso é oficialmente suportado na versão atual do sistema</string>
+    <string name="feature_doing_func">O recurso atual está em desenvolvimento, fique ligado.</string>
+    <!--System UI-->
+    <string name="system_ui">UI do Sistema</string>
+    <!--System launcher-->
+    <string name="mihome">Launcher do sistema</string>
+    <!--Settings-->
+    <string name="system_settings">Configurações</string>
+    <!--Security/Tablet security center-->
+    <string name="security_center_hyperos">Segurança</string>
+    <!--Other-->
+    <string name="exit">Sair</string>
+    <string name="ignore">Ignorar</string>
+</resources>

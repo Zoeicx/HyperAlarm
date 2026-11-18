@@ -65,6 +65,9 @@ GIT_TOKEN=$(gh auth token) \
 - APK 安装后不生效
   - 先确认 LSPosed 里模块已启用、作用域只有 `com.android.deskclock`。
   - 再强制停止时钟并重新启动进程。
+  - **卸载重装（尤其是换了签名）会让 LSPosed 丢掉这个模块的绑定**：日志里只剩
+    `Failed to find package info of com.hyperalarm`，时钟进程里没有任何 `hooks installed`。
+    必须回 LSPosed 管理器重新启用模块并重勾作用域，然后重启时钟进程。
 
 ---
 
@@ -656,6 +659,12 @@ keyPassword=...
 
 - 换正式签名后，之前 debug 签名的安装包不能直接覆盖安装。
 - 发布更新必须一直使用同一个 keystore。
+- 当前这把 release keystore 在 `C:/Users/Grace/hyperalarm-release.jks`，密码另存
+  `C:/Users/Grace/hyperalarm-release.password`；`signing.properties` 指向它。
+  **这两个文件是唯一无法重建的东西**，必须离线备份；CI 用的是同一把（GitHub secrets
+  `SIGNING_KEY` / `KEY_STORE_PASSWORD` / `ALIAS`）。
+- 仓库地址：`https://github.com/Zoeicx/HyperAlarm`（public），`origin` 指它；
+  上游 HyperCeiler 保留为 `upstream` 远端。发布流程标注见下：tag 与 Release 用 `gh release create`。
 
 ### 版本
 

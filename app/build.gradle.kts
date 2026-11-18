@@ -27,7 +27,7 @@ val gitBranch: String by lazy { runGitCommand("branch", "--show-current") ?: "un
  * <p>1.0.0 first usable release, 1.0.x bug fixes, 1.x.0 new features, 2.0.0 a breaking change
  * (data contract, bridge protocol). The tag pushed by CI uses this same string.</p>
  */
-val appVersionName = "1.0.0"
+val appVersionName = "1.0.1"
 
 /**
  * The version Android compares: {@code yyyyMMdd * 10 + build-of-the-day}.

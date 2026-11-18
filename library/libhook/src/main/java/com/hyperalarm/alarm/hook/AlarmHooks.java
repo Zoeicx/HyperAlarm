@@ -820,7 +820,8 @@ public final class AlarmHooks {
             Intent intent = context.getPackageManager().getLaunchIntentForPackage(MODULE_PKG);
             if (intent == null) {
                 intent = new Intent(Intent.ACTION_MAIN);
-                intent.setClassName(MODULE_PKG, MODULE_PKG + ".ui.SplashActivity");
+                // 第一个参数是应用包名（随 applicationId），第二个是类名（随 namespace，两者现在不是同一个字符串）。
+                intent.setClassName(MODULE_PKG, "com.hyperalarm.ui.SplashActivity");
             }
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);

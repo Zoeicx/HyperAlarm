@@ -44,7 +44,7 @@
             android:key="prefs_key_log_viewer"
             android:title="@string/ha_history_logs">
             <intent
-                android:targetPackage="com.hyperalarm"
+                android:targetPackage="io.github.zoeicx.hyperalarm"
                 android:targetClass="com.hyperalarm.log.LogViewerActivity"/>
         </Preference>
 
@@ -52,7 +52,7 @@
             android:key="prefs_key_script_logs"
             android:title="@string/ha_script_logs">
             <intent
-                android:targetPackage="com.hyperalarm"
+                android:targetPackage="io.github.zoeicx.hyperalarm"
                 android:targetClass="com.hyperalarm.log.ScriptLogActivity"/>
         </Preference>
     </PreferenceCategory>
@@ -82,7 +82,7 @@
             android:key="prefs_key_script_dir"
             android:title="@string/script_dir_copy">
             <intent
-                android:targetPackage="com.hyperalarm"
+                android:targetPackage="io.github.zoeicx.hyperalarm"
                 android:targetClass="com.hyperalarm.script.ScriptDirActivity"/>
         </Preference>
     </PreferenceCategory>

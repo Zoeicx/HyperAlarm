@@ -20,7 +20,7 @@ android {
         minSdk = 35
         consumerProguardFiles("diagnostics-rules.pro")
 
-        buildConfigField("String", "APP_MODULE_ID", "\"com.hyperalarm\"")
+        buildConfigField("String", "APP_MODULE_ID", "\"io.github.zoeicx.hyperalarm\"")
     }
 
     buildFeatures {

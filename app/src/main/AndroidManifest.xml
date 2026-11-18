@@ -64,7 +64,7 @@
 
         <provider
             android:name=".script.ScriptDocumentsProvider"
-            android:authorities="com.hyperalarm.scripts"
+            android:authorities="${applicationId}.scripts"
             android:exported="true"
             android:grantUriPermissions="true"
             android:permission="android.permission.MANAGE_DOCUMENTS">

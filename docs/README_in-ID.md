@@ -48,7 +48,7 @@ Skrip disimpan di `/data/adb/alarm_shell/scripts/`, dan nama di label harus sama
 - Akhir baris harus LF. Berkas dengan CRLF dari Windows langsung gagal.
 - Skrip berjalan sebagai root di ruang nama utama sistem, jadi bisa melihat direktori data aplikasi lain.
 - Setiap eksekusi meninggalkan log: terlihat di «Log skrip» dalam aplikasi, sekaligus dicerminkan ke
-  `/sdcard/Android/data/com.hyperalarm/files/script_logs/<nama skrip>/`.
+  `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<nama skrip>/`.
 - Sebelum tugas senyap, modul membuka layar dengan sandi layar kunci kalau sudah diatur.
 
 ## Pengaturan

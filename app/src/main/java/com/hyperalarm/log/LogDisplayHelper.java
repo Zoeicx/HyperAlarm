@@ -25,7 +25,7 @@ import com.hyperalarm.R;
 
 public final class LogDisplayHelper {
 
-    private static final String APP_PACKAGE = "com.hyperalarm";
+    private static final String APP_PACKAGE = "io.github.zoeicx.hyperalarm";
     public static final String OTHER_TAG_VALUE = "Other";
     private static final String META_PREFIX = "[[HC_META uidPid=";
     private static final String META_SUFFIX = "]] ";

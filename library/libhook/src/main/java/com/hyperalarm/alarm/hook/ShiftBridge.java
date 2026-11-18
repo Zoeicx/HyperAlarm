@@ -345,7 +345,7 @@ public final class ShiftBridge {
                         }
                         Object alert = XposedHelpers.getObjectField(param.thisObject, "mAlert");
                         Intent result = new Intent(ACTION_RINGTONE_PICKED);
-                        result.setPackage("com.hyperalarm");
+                        result.setPackage(BridgeContract.MODULE_PACKAGE);
                         result.putExtra(BridgeContract.EXTRA_ID, id);
                         result.putExtra(BridgeContract.EXTRA_SHIFT, pendingRingtoneShift);
                         result.putExtra(BridgeContract.EXTRA_RINGTONE, alert == null ? "" : alert.toString());

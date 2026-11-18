@@ -48,7 +48,7 @@ Script nằm trong `/data/adb/alarm_shell/scripts/`, tên trong nhãn phải tr�
 - Xuống dòng phải là LF. Tệp có CRLF từ Windows sẽ hỏng ngay.
 - Script chạy bằng quyền root trong không gian tên chính của hệ thống nên thấy được thư mục dữ liệu của ứng dụng khác.
 - Mỗi lần chạy đều để lại log: xem ở trang «Log script» trong ứng dụng, đồng thời được sao sang
-  `/sdcard/Android/data/com.hyperalarm/files/script_logs/<tên script>/`.
+  `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<tên script>/`.
 - Trước nhiệm vụ lặng lẽ, nếu bạn đã đặt mật khẩu màn hình khóa, mô-đun sẽ dùng nó để mở khóa.
 
 ## Cài đặt trong ứng dụng

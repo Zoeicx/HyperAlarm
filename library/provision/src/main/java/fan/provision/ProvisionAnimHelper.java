@@ -161,7 +161,7 @@ public class ProvisionAnimHelper {
         if (mContext != null) {
             mContext.registerReceiver(mReceiver, new IntentFilter("fan.action.PROVISION_ANIM_END"), Context.RECEIVER_EXPORTED);
             Intent intent = new Intent("fan.intent.action.OOBSERVICE");
-            intent.setPackage("com.hyperalarm");
+            intent.setPackage(mContext.getPackageName());
             mContext.bindService(intent, mConnection, 1);
         } else {
             AndroidLog.e(TAG, "registerAnimService context is null");

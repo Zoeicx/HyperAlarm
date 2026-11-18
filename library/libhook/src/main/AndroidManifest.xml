@@ -5,7 +5,7 @@
     <application>
         <provider
             android:name=".provider.SharedPrefsProvider"
-            android:authorities="com.hyperalarm.provider.sharedprefs"
+            android:authorities="${applicationId}.provider.sharedprefs"
             android:defaultToDeviceProtectedStorage="true"
             android:directBootAware="true"
             android:exported="true"

@@ -14,7 +14,7 @@ android {
     defaultConfig {
         minSdk = 35
 
-        buildConfigField("String", "APP_MODULE_ID", "\"com.hyperalarm\"")
+        buildConfigField("String", "APP_MODULE_ID", "\"io.github.zoeicx.hyperalarm\"")
         buildConfigField("boolean", "STATUS_BAR_FOLLOW_AVAILABLE", "false")
         buildConfigField("boolean", "STATUS_BAR_FOLLOW_SERVER_AVAILABLE", "false")
     }

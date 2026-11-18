@@ -13,7 +13,7 @@ public final class BridgeContract {
     public static final String PERMISSION = "hyperalarm.permission.BRIDGE";
     public static final String CLOCK_PACKAGE = "com.android.deskclock";
     /** The module app, i.e. the only sender the bridge accepts besides the permission itself. */
-    public static final String MODULE_PACKAGE = "com.hyperalarm";
+    public static final String MODULE_PACKAGE = "io.github.zoeicx.hyperalarm";
     /** Exported clock service that starts the process without opening the UI. */
     public static final String CLOCK_SERVICE = "com.xiaomi.smarthome.ClockService";
 

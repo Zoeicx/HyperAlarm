@@ -55,7 +55,7 @@ public final class AlarmHooks {
     private static final String CLOCK_UTIL = "com.android.deskclock.util.Util";
     private static final String SHIFT_DATA_HELPER =
             "com.android.deskclock.alarm.shiftalarm.ShiftAlarmDataHelper";
-    private static final String MODULE_PKG = "com.hyperalarm";
+    private static final String MODULE_PKG = BridgeContract.MODULE_PACKAGE;
     /** Menu item id for the module entry; high enough to stay clear of the clock's own ids. */
     private static final int MENU_ID = 16805;
     /**

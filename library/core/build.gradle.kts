@@ -9,7 +9,7 @@ android {
     defaultConfig {
         minSdk = 35
 
-        buildConfigField("String", "APP_MODULE_ID", "\"com.hyperalarm\"")
+        buildConfigField("String", "APP_MODULE_ID", "\"io.github.zoeicx.hyperalarm\"")
     }
 
     buildFeatures {

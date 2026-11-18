@@ -48,7 +48,7 @@ Scripts live in `/data/adb/alarm_shell/scripts/`, and the name in the label must
 - Line endings must be LF. A Windows CRLF file simply fails.
 - Scripts run as root inside the main system namespace, so they can see other apps' data directories.
 - Every run leaves a log: the in-app "Script logs" page shows it, and it is mirrored to
-  `/sdcard/Android/data/com.hyperalarm/files/script_logs/<script name>/`.
+  `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<script name>/`.
 - Before a silent task runs, the module unlocks the screen with your lock screen password, if you set one.
 
 ## Settings

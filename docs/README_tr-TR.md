@@ -48,7 +48,7 @@ Betikler `/data/adb/alarm_shell/scripts/` içinde durur; etiketteki ad dosya ad�
 - Satır sonları LF olmalı. Windows'un CRLF dosyası doğrudan başarısız olur.
 - Betikler root olarak sistemin ana isim alanında çalışır, bu yüzden diğer uygulamaların veri dizinlerini görür.
 - Her çalıştırma log bırakır: uygulama içindeki «Betik logları» sayfasında görünür, ayrıca
-  `/sdcard/Android/data/com.hyperalarm/files/script_logs/<betik adı>/` altına kopyalanır.
+  `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<betik adı>/` altına kopyalanır.
 - Sessiz görevden önce, parola belirlediysen modül ekranı onunla açar.
 
 ## Ayarlar

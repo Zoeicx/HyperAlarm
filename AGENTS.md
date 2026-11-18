@@ -10,7 +10,10 @@
 HyperAlarm 是一个基于 HyperCeiler 原生 MIUIX 代码 fork 的 Xposed 模块：
 
 - 用户可见名称：`HyperAlarm`
-- 包名：`com.hyperalarm`
+- 包名（applicationId）：`io.github.zoeicx.hyperalarm`
+- 代码命名空间：`com.hyperalarm`（Java/Kotlin package 与 `namespace` 都没动，只换了 applicationId）
+  - 为什么不是 `com.hyperalarm`：LSPosed 模块仓库（`Xposed-Modules-Repo`）的机器人要求包名 **≥3 段**，
+    2 段会被直接判 invalid；`io.github.<用户名>` 前缀还能走自动过审通道
 - 唯一 Hook 作用域：`com.android.deskclock`（小米时钟）
 - 核心能力：在小米时钟的闹钟触发时执行 `/data/adb/alarm_shell/scripts` 下的 root 脚本
 - HyperAlarm 自己的主页 1:1 复刻小米时钟闹钟列表
@@ -66,7 +69,7 @@ GIT_TOKEN=$(gh auth token) \
   - 先确认 LSPosed 里模块已启用、作用域只有 `com.android.deskclock`。
   - 再强制停止时钟并重新启动进程。
   - **卸载重装（尤其是换了签名）会让 LSPosed 丢掉这个模块的绑定**：日志里只剩
-    `Failed to find package info of com.hyperalarm`，时钟进程里没有任何 `hooks installed`。
+    `Failed to find package info of io.github.zoeicx.hyperalarm`，时钟进程里没有任何 `hooks installed`。
     必须回 LSPosed 管理器重新启用模块并重勾作用域，然后重启时钟进程。
 
 ---
@@ -242,7 +245,7 @@ script.sh      静默执行脚本
 ## 7.4 已在实机验证的行为（2026-11-09）
 
 - 08:00 的真实闹钟（`valorant.sh`）触发后脚本以 root 执行，`exitCode=0`，日志镜像到
-  `/sdcard/Android/data/com.hyperalarm/files/script_logs/valorant.sh/`，重复闹钟重排到次日同时间
+  `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/valorant.sh/`，重复闹钟重排到次日同时间
 - 受控测试闹钟（+2 分钟、标签 `itest.sh`）准点触发，脚本内 `id` 输出为 `uid=0(root)`，
   证明走的是 `nsenter -t 1 -m -- sh`（时钟进程自身是 u0_a284）
 - 触发后一次性脚本闹钟会从 `alarm` 表删除：`reschedule()` 调完 `enableAlarm(false)` 与
@@ -289,7 +292,7 @@ signature 权限，小米时钟签名不同、永远拿不到它，于是所有�
 表现就是：列表还能显示（查询失败后回退 root `content query`），但新增/编辑/删除/开关/铃声/轮班全部静默失效。
 
 权限之外还有第二层：`ShiftBridge` 的接收器用 `getSentFromUid()` 校验发送方 uid 是否等于
-`com.hyperalarm`（自定义权限归先声明者，先装的恶意应用可以把它声明成 normal）。两层都不要去掉。
+`BridgeContract.MODULE_PACKAGE`（自定义权限归先声明者，先装的恶意应用可以把它声明成 normal）。两层都不要去掉。
 
 没有这个权限，任意应用都能给时钟发广播，进而以 root 执行任意脚本。
 
@@ -411,7 +414,7 @@ content://com.android.deskclock/shift_alarms
 同时镜像到：
 
 ```text
-/sdcard/Android/data/com.hyperalarm/files/script_logs/<script>/
+/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<script>/
 ```
 
 权限（脚本 cache 目录由时钟进程自己占有；镜像目录见 §10.3.1）：
@@ -424,7 +427,7 @@ content://com.android.deskclock/shift_alarms
 
 ### 10.3.1 日志镜像权限
 
-`/sdcard/Android/data/com.hyperalarm/files/script_logs/<script>/` 由 root 写入后立刻
+`/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<script>/` 由 root 写入后立刻
 `chown -R <app uid>:<app gid>`（取自 `files` 目录的属主）+ 目录 `700` / 文件 `600`：
 只有 HyperAlarm 自己能读（它的日志导入器），其它应用读不到。root 与 adb shell 仍可读，
 这是外部存储的固有限制，需真正保密时不要把密钥写进脚本输出。
@@ -474,7 +477,7 @@ content://com.android.deskclock/shift_alarms
 - 数据只能经桥取：app 直接读时钟 provider 会被 `miui.permission.ACCESS_ALARM_PROVIDER` 拒绝
   （`registerContentObserver` 抛 SecurityException），所以 **观察者必须挂在时钟进程**
 - 时钟进程在 `DeskClockApp.onCreate` 里 `observeAlarms(app)` 监听 `alarm` / `shift_alarms`，
-  防抖 300ms 后广播 `BridgeContract.ACTION_ALARMS_CHANGED`（`setPackage("com.hyperalarm")`）
+  防抖 300ms 后广播 `BridgeContract.ACTION_ALARMS_CHANGED`（`setPackage(BridgeContract.MODULE_PACKAGE)`）
 - app 侧在 `onResume` 注册运行时接收器（**必须 EXPORTED**，发送方是时钟这个别的应用；伪造该广播
   只能触发一次刷新，刷新本身仍走带 BRIDGE 权限的查询），防抖 400ms → `invalidate()` + 重查
 - 自己写入后 2 秒内的广播用 `ClockBridge.lastWriteAt()` 抑制，避免一次写查两遍

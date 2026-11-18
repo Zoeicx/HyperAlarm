@@ -48,7 +48,7 @@ Script 放喺 `/data/adb/alarm_shell/scripts/`，標籤入面個名一定要同�
 - 一定要用 LF 換行，Windows 嘅 CRLF 會令 script 直接死。
 - Script 以 root 身分執行，跑喺系統主命名空間，睇得到其他應用嘅資料目錄。
 - 每次執行都會留日誌：應用入面嘅「Script 日誌」睇得到，同時鏡像去
-  `/sdcard/Android/data/com.hyperalarm/files/script_logs/<script 名>/`。
+  `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<script 名>/`。
 - 靜默任務執行之前，如果你設過鎖屏密碼，會先用佢解鎖螢幕。
 
 ## 設定

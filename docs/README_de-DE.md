@@ -48,7 +48,7 @@ Skripte liegen in `/data/adb/alarm_shell/scripts/`, der Name in der Bezeichnung 
 - Zeilenenden müssen LF sein. Eine Datei mit Windows-CRLF schlägt einfach fehl.
 - Skripte laufen als root im Haupt-Namespace des Systems und sehen daher die Datenverzeichnisse anderer Apps.
 - Jeder Lauf hinterlässt ein Log: sichtbar unter „Skript-Logs“ in der App, zusätzlich gespiegelt nach
-  `/sdcard/Android/data/com.hyperalarm/files/script_logs/<Skriptname>/`.
+  `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<Skriptname>/`.
 - Vor einem stillen Wecker entsperrt das Modul den Bildschirm mit dem hinterlegten Passwort, falls eines gesetzt ist.
 
 ## Einstellungen

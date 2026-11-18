@@ -21,7 +21,7 @@ import java.io.FileNotFoundException;
  * it never advertises create/delete, because it cannot implement them safely.</p>
  */
 public class ScriptDocumentsProvider extends DocumentsProvider {
-    public static final String AUTHORITY = "com.hyperalarm.scripts";
+    public static final String AUTHORITY = "io.github.zoeicx.hyperalarm.scripts";
     private static final String ROOT_ID = "scripts";
     private static final String DIR = "/data/adb/alarm_shell/scripts";
 

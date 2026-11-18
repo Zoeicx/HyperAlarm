@@ -32,6 +32,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.hyperalarm.common.alarm.BridgeContract;
 import com.hyperalarm.common.utils.RootShell;
 import com.hyperalarm.common.utils.ThreadUtils;
 
@@ -80,7 +81,8 @@ public final class TaskManager {
 
     /** The default {@code unlock_phone}: wake the screen, swipe, type the password, confirm. */
     /** The app's external files dir; mirrored logs are owned by the app so only it can read them. */
-    private static final String APP_FILES_DIR = "/sdcard/Android/data/com.hyperalarm/files";
+    private static final String APP_FILES_DIR =
+            "/sdcard/Android/data/" + BridgeContract.MODULE_PACKAGE + "/files";
     private static final String LOG_MIRROR_DIR = APP_FILES_DIR + "/script_logs/";
 
     private static final String UNLOCK_SCRIPT_B64 =
@@ -487,7 +489,7 @@ public final class TaskManager {
      */
     private static Intent logIntent(File log) {
         Intent intent = new Intent();
-        intent.setClassName("com.hyperalarm", "com.hyperalarm.log.ScriptLogLauncher");
+        intent.setClassName(BridgeContract.MODULE_PACKAGE, "com.hyperalarm.log.ScriptLogLauncher");
         if (log != null && log.getParentFile() != null) {
             intent.putExtra("script", log.getParentFile().getName());
             // The file name is the run's timestamp, which is how the app finds the record.

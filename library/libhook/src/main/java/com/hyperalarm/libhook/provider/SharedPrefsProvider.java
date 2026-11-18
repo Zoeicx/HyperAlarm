@@ -48,7 +48,8 @@ import java.util.Set;
 
 public class SharedPrefsProvider extends ContentProvider {
 
-    public static final String AUTHORITY = "com.hyperalarm.provider.sharedprefs";
+    public static final String AUTHORITY =
+            com.hyperalarm.libhook.BuildConfig.APP_MODULE_ID + ".provider.sharedprefs";
     private static final UriMatcher uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 
     /**

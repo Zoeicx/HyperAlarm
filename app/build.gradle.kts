@@ -148,7 +148,7 @@ android {
     buildToolsVersion = "37.0.0"
 
     defaultConfig {
-        applicationId = "com.hyperalarm"
+        applicationId = "io.github.zoeicx.hyperalarm"
         // Room writes the schema here so migrations can be reviewed and tested.
         javaCompileOptions {
             annotationProcessorOptions {

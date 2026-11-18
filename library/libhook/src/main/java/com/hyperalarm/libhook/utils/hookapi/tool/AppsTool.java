@@ -235,7 +235,9 @@ public class AppsTool {
     private static String getCallerMethod() {
         StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
         for (StackTraceElement el : stackTrace) {
-            if (el != null && el.getClassName().startsWith(ProjectApi.mAppModulePkg + ".module"))
+            // 这里比的是模块自身代码的命名空间（namespace 仍是 com.hyperalarm），
+            // 不是 applicationId：用 applicationId 匹配永远不命中，栈帧会被误判成外部调用。
+            if (el != null && el.getClassName().startsWith("com.hyperalarm."))
                 return el.getMethodName();
         }
         return stackTrace[4].getMethodName();

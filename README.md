@@ -48,7 +48,7 @@ HyperAlarm 是一个 Xposed 模块，**唯一作用域是小米时钟**。它把
 - 必须是 LF 换行，Windows 的 CRLF 会让脚本直接失败。
 - 脚本以 root 身份执行，运行在系统主命名空间里，能看到其他应用的数据目录。
 - 每次执行都会留日志：应用内的「脚本日志」能看，同时镜像到
-  `/sdcard/Android/data/com.hyperalarm/files/script_logs/<脚本名>/`。
+  `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<脚本名>/`。
 - 静默任务执行前，如果设过锁屏密码，会先用它解锁屏幕。
 
 ## 设置

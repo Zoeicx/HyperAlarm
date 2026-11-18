@@ -78,12 +78,12 @@
     <PreferenceCategory>
         <Preference android:title="@string/about_protocol">
             <intent
-                android:targetPackage="com.hyperalarm"
+                android:targetPackage="io.github.zoeicx.hyperalarm"
                 android:targetClass="com.hyperalarm.about.TermsViewerActivity" />
         </Preference>
         <Preference android:title="@string/about_privacy">
             <intent
-                android:targetPackage="com.hyperalarm"
+                android:targetPackage="io.github.zoeicx.hyperalarm"
                 android:targetClass="com.hyperalarm.about.TermsViewerActivity">
                 <extra
                     android:name="document"

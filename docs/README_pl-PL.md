@@ -48,7 +48,7 @@ Skrypty leżą w `/data/adb/alarm_shell/scripts/`, a nazwa w etykiecie musi zgad
 - Konieczne są zakończenia linii LF. Plik z CRLF z Windows po prostu zawiedzie.
 - Skrypty działają jako root w głównej przestrzeni nazw systemu, więc widzą katalogi danych innych aplikacji.
 - Każde uruchomienie zostawia log: widać go w „Logach skryptów” w aplikacji, a kopia trafia do
-  `/sdcard/Android/data/com.hyperalarm/files/script_logs/<nazwa skryptu>/`.
+  `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<nazwa skryptu>/`.
 - Przed cichym zadaniem moduł odblokuje ekran Twoim hasłem, jeśli je ustawiono.
 
 ## Ustawienia

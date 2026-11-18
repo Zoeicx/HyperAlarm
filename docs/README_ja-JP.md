@@ -48,7 +48,7 @@ HyperAlarm は Xposed モジュールで、**スコープは小米時計だけ**
 - 改行は LF のみ。Windows の CRLF を持ち込むとスクリプトは即失敗します。
 - スクリプトは root 権限で、システムのメインネームスペース上で動くため、他アプリのデータディレクトリも見えます。
 - 実行のたびにログが残ります。アプリ内の「スクリプトログ」で見られ、
-  `/sdcard/Android/data/com.hyperalarm/files/script_logs/<スクリプト名>/` にも複製されます。
+  `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<スクリプト名>/` にも複製されます。
 - 静かなタスクの実行前、ロック画面のパスワードを設定してあれば、それで画面を解除します。
 
 ## 設定

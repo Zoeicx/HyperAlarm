@@ -48,7 +48,7 @@ Los scripts viven en `/data/adb/alarm_shell/scripts/` y el nombre de la etiqueta
 - Los saltos de línea deben ser LF. Un archivo con CRLF de Windows simplemente falla.
 - Los scripts se ejecutan como root dentro del espacio de nombres principal del sistema, así que ven los directorios de datos de otras apps.
 - Cada ejecución deja un registro: se ve en «Registros de scripts» dentro de la app y además se copia a
-  `/sdcard/Android/data/com.hyperalarm/files/script_logs/<nombre del script>/`.
+  `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<nombre del script>/`.
 - Antes de una tarea silenciosa, el módulo desbloquea la pantalla con tu contraseña si la has definido.
 
 ## Ajustes

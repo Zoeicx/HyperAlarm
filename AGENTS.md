@@ -819,3 +819,25 @@ app/build/outputs/apk/release/*.apk
 APK=$(find app/build/outputs/apk/release -name '*.apk' | head -1)
 sha256sum "$APK"
 ```
+
+---
+
+## 19. LSPosed 模块仓库（Xposed-Modules-Repo）
+
+模块已提交并被自动批准，镜像仓：`https://github.com/Xposed-Modules-Repo/io.github.zoeicx.hyperalarm`。
+
+- **包名是硬门槛**：`bot.ts` 的 `checkPackageName()` 要求 applicationId 至少三段、每段
+  `[A-Za-z_][A-Za-z0-9_]*`、不含 `example`、不以 `com.android/com.google/org.lsposed/io.github.lsposed/com.xiaomi`
+  开头。这就是 applicationId 从 `com.hyperalarm` 改成 `io.github.zoeicx.hyperalarm` 的唯一原因
+  （代码命名空间仍是 `com.hyperalarm`）。
+- **自动过审只有三条路**：包名以 `io.github.<用户名，小写、`-`→`_`>` 开头；或是你有权限的组织同前缀；
+  或在包名域名的根域放 TXT `lsposed-modules-repo-verification=<github 用户名>`。
+  否则 issue 会被打 `invalid` 直接关闭，没有人工。
+- **镜像仓的三条硬要求**：仓库 description 不能空（= 模块显示名 `HyperAlarm`，**只能在网页 UI 设**，
+  maintain 权限的 API 会 404）、至少一个 release、tag 必须是 `<VersionCode>-<VersionName>`
+  （如 `202611180-1.0.1-20261118`）。全齐后约 3 个工作日出现在管理器与站点。
+- 镜像仓自己维护 `README.md` / `SUMMARY` / `SOURCE_URL` / `icon.svg`，与源码仓是两套内容。
+- **踩过的坑**：`release_build.yml` 的 `post_release` 曾按 artifact 目录名（`HyperAlarm Release`）
+  找 APK，`files:` 解析为空，release 建成但**没有附件**，而且失败是静默的。现在改成按文件名匹配
+  `*-release.apk`，并打印 `find` 结果、找不到就直接 `exit 1`。
+

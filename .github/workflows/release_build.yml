@@ -156,10 +156,16 @@ jobs:
       - name: Locate APKs
         run: |
           # $GITHUB_ENV does not cross jobs, so the paths are rebuilt from the downloaded artifacts.
-          RELEASE=$(find dist -name '*.apk' -path '*Release*' | head -n1)
-          BETA=$(find dist -name '*.apk' -path '*Beta*' | head -n1)
+          # Match on the APK file name (AGP appends the build type: ...-release.apk), not on the
+          # artifact directory: that directory is the artifact *name* ("HyperAlarm Release"), so any
+          # rename there silently yields an empty path and a release with no APK attached.
+          find dist -name '*.apk' -print
+          RELEASE=$(find dist -name '*-release.apk' | head -n1)
+          BETA=$(find dist -name '*-beta.apk' | head -n1)
           if [[ -n "$RELEASE" ]]; then echo "APK_FILE_RELEASE=$RELEASE" >> $GITHUB_ENV; fi
           if [[ -n "$BETA" ]]; then echo "APK_FILE_BETA=$BETA" >> $GITHUB_ENV; fi
+          # An empty path makes the release step skip the upload without failing, so say it out loud.
+          if [[ -z "$RELEASE$BETA" ]]; then echo "::error::no APK found under dist"; exit 1; fi
 
       - name: Get Tag Info
         id: taginfo

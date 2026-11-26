@@ -256,7 +256,7 @@
     <string name="alarm_delete_failed">Some alarms could not be deleted; is Mi Clock running?</string>
     <string name="lock_password_title">Lock screen password</string>
     <string name="lock_password_summary_unset">Not set: scripts run without unlocking the screen</string>
-    <string name="lock_password_summary_set">Set: silent tasks unlock the screen before running</string>
+    <string name="lock_password_summary_set">Set: unlocks only while the device is still locked after a reboot</string>
     <string name="lock_password_dialog_title">Lock screen password</string>
     <string name="lock_password_hint">Lock screen password</string>
     <string name="lock_password_save">Save</string>
@@ -266,7 +266,7 @@
     <string name="lock_password_unchanged">Left unchanged</string>
     <string name="restart_tutorial_title">Replay setup tutorial</string>
     <string name="restart_tutorial_summary">Walk through the enable, scope and permission steps again</string>
-    <string name="lock_password_desc">Used to unlock the screen before a silent task runs. Leave empty to keep the current one.</string>
+    <string name="lock_password_desc">Used only while the device is still locked (for example before the first unlock after a reboot). Leave empty to keep the current one.</string>
     <string name="repeat_shift_is_schedule">A shift task repeats on its rotation; change the shifts in the shift editor</string>
     <string name="ringtone_update_failed">Couldn\'t update the ringtone</string>
 </resources>

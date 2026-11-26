@@ -49,14 +49,14 @@ Skrip disimpan di `/data/adb/alarm_shell/scripts/`, dan nama di label harus sama
 - Skrip berjalan sebagai root di ruang nama utama sistem, jadi bisa melihat direktori data aplikasi lain.
 - Setiap eksekusi meninggalkan log: terlihat di «Log skrip» dalam aplikasi, sekaligus dicerminkan ke
   `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<nama skrip>/`.
-- Sebelum tugas senyap, modul membuka layar dengan sandi layar kunci kalau sudah diatur.
+- Sebelum tugas senyap, modul hanya menyalakan dan membuka layar kalau perangkat masih terkunci (misalnya sebelum pembukaan pertama setelah reboot). Layar yang sekadar mati akan tetap mati.
 
 ## Pengaturan
 
 - **Jam hanya menampilkan alarm**: daftar Jam Xiaomi hanya menyisakan alarm sungguhan, tugas skrip disembunyikan.
 - **Sembunyikan tugas berdering**: ikut menyembunyikan tugas yang nada deringnya aktif.
 - Tingkat log / Log aplikasi / Log skrip: naikkan tingkatnya dulu saat menelusuri masalah.
-- **Sandi layar kunci**: dipakai membuka layar sebelum tugas senyap; kosong berarti tidak diubah.
+- **Sandi layar kunci**: membuka layar untuk tugas senyap hanya selama perangkat masih terkunci setelah reboot; kosong berarti tidak diubah.
 - Panduan mulai ulang, salin direktori skrip, cadangkan dan pulihkan konfigurasi modul.
 
 ## Batasan yang diketahui

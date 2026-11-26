@@ -68,14 +68,14 @@
     <string name="clock_filter_ringing_summary">开了响铃的也一起藏起来</string>
     <string name="lock_password_title">锁屏咒语怎么念</string>
     <string name="lock_password_summary_unset">还没设：脚本开跑前不会帮你解锁</string>
-    <string name="lock_password_summary_set">设好了：闷声跑之前会先解锁</string>
+    <string name="lock_password_summary_set">设好了：只在设备重启后还没解锁那阵子出手</string>
     <string name="provision_basic_settings_category_clock">小米时钟那头</string>
     <string name="lock_password_clear">擦掉</string>
     <string name="lock_password_save">存一下</string>
     <string name="lock_password_cleared">清干净了</string>
     <string name="lock_password_saved">存好了</string>
     <string name="lock_password_unchanged">一个字都没改</string>
-    <string name="lock_password_desc">闷声跑任务前拿它解锁屏幕；留空就是不动它。</string>
+    <string name="lock_password_desc">只在设备还锁着的时候才用它（比如刚重启完还没解锁）；留空就是不动它。</string>
     <string name="lock_password_hint">把这串咒语打进去</string>
     <string name="clock_filter_no_root">改时钟列表过滤得有 Root 权限</string>
     <string name="lock_password_failed_toast">密码写不进去，root 给了没？</string>

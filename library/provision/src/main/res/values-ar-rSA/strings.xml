@@ -70,14 +70,14 @@
     <string name="clock_filter_ringing_summary">المهام التي يرن منبهها تُخفى أيضًا</string>
     <string name="lock_password_title">كلمة سر شاشة القفل</string>
     <string name="lock_password_summary_unset">غير محددة: تعمل السكربتات دون فتح القفل</string>
-    <string name="lock_password_summary_set">محددة: المهام الصامتة تفتح القفل قبل التشغيل</string>
+    <string name="lock_password_summary_set">محددة: تفتح القفل فقط ما دام الجهاز مقفلًا بعد إعادة التشغيل</string>
     <string name="provision_basic_settings_category_clock">قائمة الساعة</string>
     <string name="lock_password_clear">مسح</string>
     <string name="lock_password_save">حفظ</string>
     <string name="lock_password_cleared">تم المسح</string>
     <string name="lock_password_saved">تم الحفظ</string>
     <string name="lock_password_unchanged">دون تغيير</string>
-    <string name="lock_password_desc">يُستخدم لفتح قفل الشاشة قبل تشغيل مهمة صامتة. اتركه فارغًا للإبقاء على الحالي.</string>
+    <string name="lock_password_desc">تُستخدم فقط ما دام الجهاز مقفلًا (مثلًا قبل أول فتح بعد إعادة التشغيل). اتركها فارغة للإبقاء على الحالي.</string>
     <string name="lock_password_hint">كلمة سر شاشة القفل</string>
     <string name="clock_filter_no_root">صلاحية root مطلوبة لتغيير تصفية قائمة الساعة</string>
     <string name="lock_password_failed_toast">تعذّرت كتابة ملف كلمة السر. هل مُنح root؟</string>

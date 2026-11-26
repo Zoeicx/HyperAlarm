@@ -242,7 +242,7 @@
     <string name="alarm_delete_failed">Часть будильников не удалена; «Часы» запущены?</string>
     <string name="lock_password_title">Пароль блокировки экрана</string>
     <string name="lock_password_summary_unset">Не задан: скрипты выполняются без разблокировки</string>
-    <string name="lock_password_summary_set">Задан: тихие задачи разблокируют экран перед запуском</string>
+    <string name="lock_password_summary_set">Задан: разблокирует только пока после перезагрузки устройство всё ещё заблокировано</string>
     <string name="lock_password_dialog_title">Пароль блокировки экрана</string>
     <string name="lock_password_hint">Пароль блокировки экрана</string>
     <string name="lock_password_save">Сохранить</string>
@@ -252,7 +252,7 @@
     <string name="lock_password_unchanged">Оставлено без изменений</string>
     <string name="restart_tutorial_title">Повторить настройку</string>
     <string name="restart_tutorial_summary">Ещё раз пройти активацию, область и разрешения</string>
-    <string name="lock_password_desc">Нужен, чтобы разблокировать экран перед тихой задачей. Оставьте пустым, чтобы не менять.</string>
+    <string name="lock_password_desc">Используется только пока устройство ещё заблокировано (например, до первой разблокировки после перезагрузки). Оставьте пустым, чтобы не менять.</string>
     <string name="repeat_shift_is_schedule">Повтор сменной задачи задаётся сменами, здесь это не меняется</string>
     <string name="ringtone_update_failed">Не удалось обновить мелодию</string>
 </resources>

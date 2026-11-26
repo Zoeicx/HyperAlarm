@@ -70,14 +70,14 @@
     <string name="clock_filter_ringing_summary">Anche le attività con sveglia che suona vengono nascoste</string>
     <string name="lock_password_title">Password di blocco</string>
     <string name="lock_password_summary_unset">Non impostata: gli script girano senza sbloccare</string>
-    <string name="lock_password_summary_set">Impostata: le attività silenziose sbloccano prima di partire</string>
+    <string name="lock_password_summary_set">Impostata: sblocca solo finché il dispositivo è ancora bloccato dopo un riavvio</string>
     <string name="provision_basic_settings_category_clock">Elenco dell\'orologio</string>
     <string name="lock_password_clear">Cancella</string>
     <string name="lock_password_save">Salva</string>
     <string name="lock_password_cleared">Cancellata</string>
     <string name="lock_password_saved">Salvata</string>
     <string name="lock_password_unchanged">Lasciata invariata</string>
-    <string name="lock_password_desc">Serve a sbloccare lo schermo prima di un\'attività silenziosa. Lascia vuoto per mantenere quella attuale.</string>
+    <string name="lock_password_desc">Serve solo finché il dispositivo è ancora bloccato (per esempio prima del primo sblocco dopo un riavvio). Lascia vuoto per mantenere quella attuale.</string>
     <string name="lock_password_hint">Password della schermata di blocco</string>
     <string name="clock_filter_no_root">Serve il permesso root per cambiare il filtro dell\'elenco orologi</string>
     <string name="lock_password_failed_toast">Impossibile scrivere il file della password. Root concesso?</string>

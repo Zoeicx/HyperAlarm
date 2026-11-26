@@ -49,14 +49,14 @@ Skripte liegen in `/data/adb/alarm_shell/scripts/`, der Name in der Bezeichnung 
 - Skripte laufen als root im Haupt-Namespace des Systems und sehen daher die Datenverzeichnisse anderer Apps.
 - Jeder Lauf hinterlässt ein Log: sichtbar unter „Skript-Logs“ in der App, zusätzlich gespiegelt nach
   `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<Skriptname>/`.
-- Vor einem stillen Wecker entsperrt das Modul den Bildschirm mit dem hinterlegten Passwort, falls eines gesetzt ist.
+- Vor einem stillen Wecker weckt und entsperrt das Modul den Bildschirm nur, wenn das Gerät noch gesperrt ist (etwa vor dem ersten Entsperren nach einem Neustart). Ein bloß ausgeschalteter Bildschirm bleibt aus.
 
 ## Einstellungen
 
 - **Uhr zeigt nur Wecker**: in der Liste der Xiaomi-Uhr bleiben echte Wecker, Skript-Aufgaben verschwinden.
 - **Klingelnde Aufgaben ausblenden**: blendet auch Aufgaben mit Klingelton aus.
 - Log-Level / App-Logs / Skript-Logs: bei Problemen zuerst das Level hochsetzen.
-- **Sperrbildschirm-Passwort**: entsperrt vor stillen Aufgaben; leer lassen heißt unverändert.
+- **Sperrbildschirm-Passwort**: entsperrt stille Aufgaben nur, solange das Gerät nach einem Neustart noch gesperrt ist; leer lassen heißt unverändert.
 - Neustart-Anleitung, Skriptverzeichnis kopieren, Konfiguration sichern und wiederherstellen.
 
 ## Bekannte Grenzen

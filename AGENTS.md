@@ -403,6 +403,26 @@ content://com.android.deskclock/shift_alarms
 
 执行。
 
+### 10.2.1 解锁闸门
+
+`UnlockHelper` 判断“要不要解锁”用的是 `UserManager.isUserUnlocked()`，**不是**
+`KeyguardManager.isKeyguardLocked()`：后者在屏幕熄灭时也会返回 true，即使开机后早已解锁、
+`/data` 早已可读。用错闸门会让每个熄屏静默任务都唤醒并解锁屏幕，解锁瞬间露出锁屏前最后
+使用的应用（通常是正在配置任务的 HyperAlarm），然后才拉起时钟。
+
+- 用户已解锁：不碰屏幕，脚本直接跑。
+- 用户仍锁定（典型是重启后尚未解锁）：优先走 `locksettings verify --user 0 --old <密码>`。
+  `LockSettingsService` 会解锁 CE 存储和用户状态，但保留锁屏界面，所以不亮屏、不唤醒屏幕、
+  也不会露出锁屏前最后使用的应用（响铃任务同样适用）。解锁后可以安全地把时钟放到锁屏后面，
+  下次用户解锁时先看到时钟。
+- `locksettings` 不存在或不可用时才回退到 UI：唤醒 → `wm dismiss-keyguard` / 上滑 → 执行
+  `unlock_phone` 输入凭据 → 确认解锁后拉 `DeskClockTabActivity` 到前台、再熄屏。
+- 密码只尝试一次。`locksettings` 明确拒绝时绝不回退到 UI 再输一遍；重复错误密码会触发系统级
+  锁定计数，比一次任务失败严重得多。被拒绝的凭据在本时钟进程内不再尝试，改密码（hash 变化）
+  或重启时钟进程后才会重新尝试。
+- 默认 `unlock_phone` 只负责输入密码；唤醒、`wm dismiss-keyguard` 和上滑由 `UnlockHelper` 做，
+  避免二次滑动把已经弹出的密码面板收回。
+
 ### 10.3 日志
 
 时钟进程内：
@@ -428,9 +448,14 @@ content://com.android.deskclock/shift_alarms
 ### 10.3.1 日志镜像权限
 
 `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<script>/` 由 root 写入后立刻
-`chown -R <app uid>:<app gid>`（取自 `files` 目录的属主）+ 目录 `700` / 文件 `600`：
-只有 HyperAlarm 自己能读（它的日志导入器），其它应用读不到。root 与 adb shell 仍可读，
-这是外部存储的固有限制，需真正保密时不要把密钥写进脚本输出。
+`chown -R <app uid>:<app gid>` + 目录 `700` / 文件 `600`：只有 HyperAlarm 自己能读
+（它的日志导入器），其它应用读不到。root 与 adb shell 仍可读，这是外部存储的固有限制，
+需真正保密时不要把密钥写进脚本输出。
+
+uid 不能从 `files` 目录的属主推：root 的 `mkdir -p` 可能先创建它，属主就是 root；而时钟进程的
+mount namespace 看不到 `/data/data/<pkg>`。正确来源是 `PackageManager.getPackageUid()`，
+取不到时用 root `pm list packages -U` 解析。旧版本留下的 root 属主镜像由应用侧
+`AlarmLogImporter` 在发现目录不可读时用 root 递归 chown 修复，并重置 `last_ts` 重扫。
 
 `/data/adb/alarm_shell/password` 由 `ensureSetup` 显式 `chmod 600`。注意它仍以 `$1` 参数
 交给 `unlock_phone`（为兼容既有用户脚本），因此会短暂出现在该子进程的 argv 里——能读

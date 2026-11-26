@@ -242,7 +242,7 @@
     <string name="alarm_delete_failed">Nie udało się usunąć części budzików; czy Zegar działa?</string>
     <string name="lock_password_title">Hasło ekranu blokady</string>
     <string name="lock_password_summary_unset">Nie ustawiono: skrypty działają bez odblokowania</string>
-    <string name="lock_password_summary_set">Ustawiono: ciche zadania odblokowują ekran przed startem</string>
+    <string name="lock_password_summary_set">Ustawiono: odblokowuje tylko wtedy, gdy po restarcie urządzenie jest jeszcze zablokowane</string>
     <string name="lock_password_dialog_title">Hasło ekranu blokady</string>
     <string name="lock_password_hint">Hasło ekranu blokady</string>
     <string name="lock_password_save">Zapisz</string>
@@ -252,7 +252,7 @@
     <string name="lock_password_unchanged">Bez zmian</string>
     <string name="restart_tutorial_title">Powtórz konfigurację</string>
     <string name="restart_tutorial_summary">Przejdź ponownie przez aktywację, zakres i uprawnienia</string>
-    <string name="lock_password_desc">Służy do odblokowania ekranu przed cichym zadaniem. Zostaw puste, aby zachować obecne.</string>
+    <string name="lock_password_desc">Służy tylko wtedy, gdy urządzenie jest jeszcze zablokowane (np. przed pierwszym odblokowaniem po restarcie). Zostaw puste, aby zachować obecne.</string>
     <string name="repeat_shift_is_schedule">Powtarzanie zadania zmianowego wynika ze zmian i nie zmienia się tutaj</string>
     <string name="ringtone_update_failed">Nie udało się zmienić dzwonka</string>
 </resources>

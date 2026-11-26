@@ -242,7 +242,7 @@
     <string name="alarm_delete_failed">Частину будильників не видалено; «Годинник» запущено?</string>
     <string name="lock_password_title">Пароль блокування екрана</string>
     <string name="lock_password_summary_unset">Не задано: скрипти виконуються без розблокування</string>
-    <string name="lock_password_summary_set">Задано: тихі завдання розблоковують екран перед запуском</string>
+    <string name="lock_password_summary_set">Задано: розблоковує лише поки після перезавантаження пристрій усе ще заблокований</string>
     <string name="lock_password_dialog_title">Пароль блокування екрана</string>
     <string name="lock_password_hint">Пароль блокування екрана</string>
     <string name="lock_password_save">Зберегти</string>
@@ -252,7 +252,7 @@
     <string name="lock_password_unchanged">Залишено без змін</string>
     <string name="restart_tutorial_title">Повторити налаштування</string>
     <string name="restart_tutorial_summary">Ще раз пройти активацію, область і дозволи</string>
-    <string name="lock_password_desc">Потрібен, щоб розблокувати екран перед тихим завданням. Залиште порожнім, щоб не змінювати.</string>
+    <string name="lock_password_desc">Використовується лише поки пристрій ще заблокований (наприклад, до першого розблокування після перезавантаження). Залиште порожнім, щоб не змінювати.</string>
     <string name="repeat_shift_is_schedule">Повторення змінної задачі визначається змінами, тут це не змінюється</string>
     <string name="ringtone_update_failed">Не вдалося оновити мелодію</string>
 </resources>

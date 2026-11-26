@@ -242,7 +242,7 @@
     <string name="alarm_delete_failed">Impossibile eliminare alcune sveglie; l\'Orologio è in esecuzione?</string>
     <string name="lock_password_title">Password di blocco</string>
     <string name="lock_password_summary_unset">Non impostata: gli script girano senza sbloccare</string>
-    <string name="lock_password_summary_set">Impostata: le attività silenziose sbloccano prima di partire</string>
+    <string name="lock_password_summary_set">Impostata: sblocca solo finché il dispositivo è ancora bloccato dopo un riavvio</string>
     <string name="lock_password_dialog_title">Password di blocco</string>
     <string name="lock_password_hint">Password della schermata di blocco</string>
     <string name="lock_password_save">Salva</string>
@@ -252,7 +252,7 @@
     <string name="lock_password_unchanged">Lasciata invariata</string>
     <string name="restart_tutorial_title">Ripeti la configurazione</string>
     <string name="restart_tutorial_summary">Rifai i passaggi di attivazione, ambito e permessi</string>
-    <string name="lock_password_desc">Serve a sbloccare lo schermo prima di un\'attività silenziosa. Lascia vuoto per mantenere quella attuale.</string>
+    <string name="lock_password_desc">Serve solo finché il dispositivo è ancora bloccato (per esempio prima del primo sblocco dopo un riavvio). Lascia vuoto per mantenere quella attuale.</string>
     <string name="repeat_shift_is_schedule">La ripetizione di un\'attività a turni dipende dai turni e non si cambia qui</string>
     <string name="ringtone_update_failed">Impossibile aggiornare la suoneria</string>
 </resources>

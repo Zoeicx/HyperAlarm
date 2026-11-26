@@ -235,7 +235,7 @@
     <string name="alarm_delete_failed">有几个没删掉，小米时钟是不是没在跑</string>
     <string name="lock_password_title">锁屏咒语怎么念</string>
     <string name="lock_password_summary_unset">还没设：脚本开跑前不会帮你解锁</string>
-    <string name="lock_password_summary_set">设好了：闷声跑之前会先解锁</string>
+    <string name="lock_password_summary_set">设好了：只在设备重启后还没解锁那阵子出手</string>
     <string name="lock_password_dialog_title">锁屏那句咒语</string>
     <string name="lock_password_hint">把这串咒语打进去</string>
     <string name="lock_password_save">存一下</string>
@@ -245,7 +245,7 @@
     <string name="lock_password_unchanged">一个字都没改</string>
     <string name="restart_tutorial_title">怎么重启，看这儿</string>
     <string name="restart_tutorial_summary">把这套启用、作用域、权限再来一遍</string>
-    <string name="lock_password_desc">闷声跑任务前拿它解锁屏幕；留空就是不动它。</string>
+    <string name="lock_password_desc">只在设备还锁着的时候才用它（比如刚重启完还没解锁）；留空就是不动它。</string>
     <string name="repeat_shift_is_schedule">轮班的「重复」是班次表说了算，这儿改不动</string>
     <string name="ringtone_update_failed">响儿没换成功</string>
 </resources>

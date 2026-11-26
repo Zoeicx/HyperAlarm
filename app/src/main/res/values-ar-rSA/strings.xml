@@ -242,7 +242,7 @@
     <string name="alarm_delete_failed">تعذّر حذف بعض المنبهات؛ هل ساعة Xiaomi قيد التشغيل؟</string>
     <string name="lock_password_title">كلمة سر شاشة القفل</string>
     <string name="lock_password_summary_unset">غير محددة: تعمل السكربتات دون فتح القفل</string>
-    <string name="lock_password_summary_set">محددة: المهام الصامتة تفتح القفل قبل التشغيل</string>
+    <string name="lock_password_summary_set">محددة: تفتح القفل فقط ما دام الجهاز مقفلًا بعد إعادة التشغيل</string>
     <string name="lock_password_dialog_title">كلمة سر شاشة القفل</string>
     <string name="lock_password_hint">كلمة سر شاشة القفل</string>
     <string name="lock_password_save">حفظ</string>
@@ -252,7 +252,7 @@
     <string name="lock_password_unchanged">دون تغيير</string>
     <string name="restart_tutorial_title">إعادة دليل الإعداد</string>
     <string name="restart_tutorial_summary">راجع خطوات التفعيل والنطاق والأذونات مرة أخرى</string>
-    <string name="lock_password_desc">يُستخدم لفتح قفل الشاشة قبل تشغيل مهمة صامتة. اتركه فارغًا للإبقاء على الحالي.</string>
+    <string name="lock_password_desc">تُستخدم فقط ما دام الجهاز مقفلًا (مثلًا قبل أول فتح بعد إعادة التشغيل). اتركها فارغة للإبقاء على الحالي.</string>
     <string name="repeat_shift_is_schedule">تكرار مهمة الوردية يأتي من الورديات ولا يُغيَّر من هنا</string>
     <string name="ringtone_update_failed">تعذّر تحديث نغمة الرنين</string>
 </resources>

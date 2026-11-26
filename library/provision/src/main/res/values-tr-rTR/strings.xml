@@ -68,14 +68,14 @@
     <string name="clock_filter_ringing_summary">Alarmı çalan görevler de gizlenir</string>
     <string name="lock_password_title">Kilit ekranı parolası</string>
     <string name="lock_password_summary_unset">Ayarlı değil: betikler ekran açılmadan çalışır</string>
-    <string name="lock_password_summary_set">Ayarlı: sessiz görevler çalışmadan önce ekranı açar</string>
+    <string name="lock_password_summary_set">Ayarlı: yalnızca yeniden başlatmadan sonra cihaz hâlâ kilitliyken ekranı açar</string>
     <string name="provision_basic_settings_category_clock">Saat listesi</string>
     <string name="lock_password_clear">Temizle</string>
     <string name="lock_password_save">Kaydet</string>
     <string name="lock_password_cleared">Temizlendi</string>
     <string name="lock_password_saved">Kaydedildi</string>
     <string name="lock_password_unchanged">Değiştirilmedi</string>
-    <string name="lock_password_desc">Sessiz görev çalışmadan önce ekranı açmak için kullanılır. Boş bırakırsanız mevcut kalır.</string>
+    <string name="lock_password_desc">Yalnızca cihaz hâlâ kilitliyken kullanılır (örneğin yeniden başlatmadan sonraki ilk açılıştan önce). Boş bırakırsanız mevcut kalır.</string>
     <string name="lock_password_hint">Kilit ekranı parolası</string>
     <string name="clock_filter_no_root">Saat listesi filtresini değiştirmek için root gerekli</string>
     <string name="lock_password_failed_toast">Parola dosyası yazılamadı. root verildi mi?</string>

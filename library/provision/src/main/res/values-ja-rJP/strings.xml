@@ -68,14 +68,14 @@
     <string name="clock_filter_ringing_summary">アラームが鳴るタスクも表示しません</string>
     <string name="lock_password_title">ロック画面のパスワード</string>
     <string name="lock_password_summary_unset">未設定：スクリプト実行前に画面ロックを解除しません</string>
-    <string name="lock_password_summary_set">設定済み：サイレント実行前に画面ロックを解除します</string>
+    <string name="lock_password_summary_set">設定済み：再起動後に端末がまだロックされている間だけ解除します</string>
     <string name="provision_basic_settings_category_clock">時計の一覧</string>
     <string name="lock_password_clear">消去</string>
     <string name="lock_password_save">保存</string>
     <string name="lock_password_cleared">消去しました</string>
     <string name="lock_password_saved">保存しました</string>
     <string name="lock_password_unchanged">変更していません</string>
-    <string name="lock_password_desc">サイレント実行の前に画面ロックを解除するためのパスワードです。空欄なら変更しません。</string>
+    <string name="lock_password_desc">端末がまだロックされている間だけ使います（例：再起動後の最初の解除前）。空欄なら変更しません。</string>
     <string name="lock_password_hint">ロック画面のパスワード</string>
     <string name="clock_filter_no_root">時計リストのフィルターを変更するには Root 権限が必要です</string>
     <string name="lock_password_failed_toast">パスワードファイルを書き込めません。root が許可されていますか？</string>

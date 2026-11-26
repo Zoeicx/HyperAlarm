@@ -8,8 +8,6 @@ import com.hyperalarm.common.utils.RootShell;
 import com.hyperalarm.log.db.LogEntry;
 import com.hyperalarm.log.db.LogRepository;
 
-import com.topjohnwu.superuser.Shell;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -29,8 +27,15 @@ final class AlarmLogImporter {
     private static final String KEY_LAST_TS = "last_ts";
     /** Set once the rows that older builds imported twice have been collapsed. */
     private static final String KEY_DEDUPED = "deduped_v1";
+    /** Set once the mirror tree has been handed back to this app's uid. */
+    private static final String KEY_MIRROR_OWNER_FIXED = "mirror_owner_fixed_v2";
+    /** A failed root call is retried on the next app process, not on every page refresh. */
+    private static final java.util.concurrent.atomic.AtomicBoolean OWNER_REPAIR_TRIED =
+            new java.util.concurrent.atomic.AtomicBoolean(false);
+    /** One extra repair per process for directories recreated by an old clock process. */
+    private static final java.util.concurrent.atomic.AtomicBoolean FORCED_OWNER_REPAIR_TRIED =
+            new java.util.concurrent.atomic.AtomicBoolean(false);
     private static final String TAG = "AlarmLogImporter";
-    private static final String LOG_ROOT = "/data/data/com.android.deskclock/cache/log";
 
     /**
      * The log page imports on every refresh, and a refresh can start while the previous import is
@@ -56,10 +61,27 @@ final class AlarmLogImporter {
     private static void importNewLocked(Context context) {
         try {
             SharedPreferences prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE);
-            long last = prefs.getLong(KEY_LAST_TS, 0L);
             List<String> files = new java.util.ArrayList<>();
-            File mirror = new File(context.getExternalFilesDir(null), "script_logs");
-            collectFiles(mirror, files);
+            File external = context.getExternalFilesDir(null);
+            if (external == null) return; // external storage unavailable; nothing can be read
+            File mirror = new File(external, "script_logs");
+            boolean unreadable = collectFiles(mirror, files);
+            boolean repairedOwner = false;
+            if (unreadable) {
+                // A clock process still running the old module can recreate root-owned directories
+                // after the one-time repair flag was set. Repair again when listing actually failed.
+                repairedOwner = repairMirrorOwner(prefs, mirror, true);
+                if (repairedOwner) {
+                    files.clear();
+                    collectFiles(mirror, files);
+                }
+            } else {
+                repairedOwner = repairMirrorOwner(prefs, mirror, false);
+            }
+            // Files that were unreadable when they were skipped may now be readable. Rescan from the
+            // beginning; the unique index and insertImportedLogs(IGNORE) keep already stored runs out.
+            if (repairedOwner) prefs.edit().remove(KEY_LAST_TS).apply();
+            long last = repairedOwner ? 0L : prefs.getLong(KEY_LAST_TS, 0L);
             // Order by the timestamp in the name, not by path. Paths sort per script directory, so a
             // newer run of an alphabetically earlier script advanced the single last_ts past every
             // older, still unimported run of the others - those were then skipped for good.
@@ -115,13 +137,20 @@ final class AlarmLogImporter {
                 String body = title + (code.isEmpty() ? "" : "  exit=" + code)
                         + NL + "--- output ---" + NL + output;
                 String key = ts + "|" + body;
-                if (known.contains(key) || IMPORTED.contains(key)) continue;
+                if (known.contains(key) || IMPORTED.contains(key)) {
+                    // Already stored: advance the bookmark too. Without this a repair rescan (or a
+                    // restored database) left last_ts at 0 and walked every old file on every refresh.
+                    if (ts > newest) newest = ts;
+                    continue;
+                }
                 try {
                     // The key is remembered only once the row is really in the database: adding it
                     // first means a failed insert silently drops that run for good.
-                    LogRepository.getInstance().getDao().insert(
-                            new LogEntry("Script", level, "AlarmTask", body, ts,
-                                    LogEntry.SOURCE_GROUP_CURRENT, ""));
+                    // IGNORE, not ABORT: a repair rescan walks already imported files again, and
+                    // the unique (module, timestamp, message) index is the real duplicate guard.
+                    LogRepository.getInstance().getDao().insertImportedLogs(
+                            Collections.singletonList(new LogEntry("Script", level, "AlarmTask",
+                                    body, ts, LogEntry.SOURCE_GROUP_CURRENT, "")));
                 } catch (Throwable t) {
                     ModuleLog.w(TAG, "import failed for " + path, t);
                     continue;
@@ -146,14 +175,64 @@ final class AlarmLogImporter {
         }
     }
 
-    private static void collectFiles(File dir, List<String> out) {
-        if (dir == null || !dir.exists()) return;
-        File[] files = dir.listFiles();
-        if (files == null) return;
-        for (File file : files) {
-            if (file.isDirectory()) collectFiles(file, out);
-            else out.add(file.getAbsolutePath());
+    /**
+     * Hands mirrors written by older builds back to this app.
+     *
+     * <p>Older code chowned the mirror to the owner of
+     * {@code /sdcard/Android/data/<pkg>/files}. When root's {@code mkdir -p} created that directory
+     * before the app did, the owner was root, every mirror stayed mode 700 root, and the importer
+     * could not read a single run. The app process already knows its own uid, so a one-time
+     * recursive chown repairs those old directories without needing to guess from the external
+     * directory.</p>
+     */
+    private static boolean repairMirrorOwner(SharedPreferences prefs, File mirror, boolean force) {
+        if (!force && prefs.getBoolean(KEY_MIRROR_OWNER_FIXED, false)) return false;
+        if (mirror == null) {
+            prefs.edit().putBoolean(KEY_MIRROR_OWNER_FIXED, true).apply();
+            return false;
         }
+        if (force) {
+            if (!FORCED_OWNER_REPAIR_TRIED.compareAndSet(false, true)) return false;
+        } else if (!OWNER_REPAIR_TRIED.compareAndSet(false, true)) {
+            return false;
+        }
+        int uid = android.os.Process.myUid();
+        // The app may not even be able to stat script_logs when files itself is root-owned. Hand
+        // the parent back first, then recursively fix the mirror if it is visible now.
+        File parent = mirror.getParentFile();
+        boolean fixed = parent == null || RootShell.succeeded(
+                "chown " + uid + ":" + uid + " " + RootShell.quote(parent.getAbsolutePath()));
+        if (fixed && mirror.exists()) {
+            fixed = RootShell.succeeded("chown -R " + uid + ":" + uid + " "
+                    + RootShell.quote(mirror.getAbsolutePath()));
+        }
+        if (fixed) {
+            prefs.edit().putBoolean(KEY_MIRROR_OWNER_FIXED, true).apply();
+            return true;
+        }
+        ModuleLog.w(TAG, "could not hand the script log mirror back to uid " + uid);
+        return false;
+    }
+
+    /** @return true when some directory under {@code dir} could not be listed */
+    private static boolean collectFiles(File dir, List<String> out) {
+        if (dir == null || !dir.exists()) return false;
+        File[] files = dir.listFiles();
+        if (files == null) {
+            // A directory we may not read used to look exactly like an empty one, which is how the
+            // root-owned mirror stayed invisible.
+            ModuleLog.w(TAG, "cannot list " + dir.getAbsolutePath());
+            return true;
+        }
+        boolean unreadable = false;
+        for (File file : files) {
+            if (file.isDirectory()) {
+                unreadable |= collectFiles(file, out);
+            } else {
+                out.add(file.getAbsolutePath());
+            }
+        }
+        return unreadable;
     }
 
     /** A run that printed more than this is truncated: the page is for reading, not for log dumps. */
@@ -174,6 +253,7 @@ final class AlarmLogImporter {
             }
             return sb.toString();
         } catch (Throwable t) {
+            ModuleLog.w(TAG, "cannot read " + path, t);
             return "";
         }
     }

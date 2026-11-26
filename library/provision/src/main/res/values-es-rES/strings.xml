@@ -70,14 +70,14 @@
     <string name="clock_filter_ringing_summary">Tareas cuya alarma suena también se ocultan</string>
     <string name="lock_password_title">Contraseña de bloqueo</string>
     <string name="lock_password_summary_unset">Sin definir: los scripts se ejecutan sin desbloquear</string>
-    <string name="lock_password_summary_set">Definida: las tareas silenciosas desbloquean antes de ejecutarse</string>
+    <string name="lock_password_summary_set">Definida: solo desbloquea mientras el dispositivo siga bloqueado tras reiniciar</string>
     <string name="provision_basic_settings_category_clock">Lista del reloj</string>
     <string name="lock_password_clear">Borrar</string>
     <string name="lock_password_save">Guardar</string>
     <string name="lock_password_cleared">Borrada</string>
     <string name="lock_password_saved">Guardada</string>
     <string name="lock_password_unchanged">Sin cambios</string>
-    <string name="lock_password_desc">Se usa para desbloquear la pantalla antes de una tarea silenciosa. Déjalo vacío para mantener la actual.</string>
+    <string name="lock_password_desc">Se usa solo mientras el dispositivo sigue bloqueado (por ejemplo, antes del primer desbloqueo tras reiniciar). Déjalo vacío para mantener la actual.</string>
     <string name="lock_password_hint">Contraseña de la pantalla de bloqueo</string>
     <string name="clock_filter_no_root">Se requiere root para cambiar el filtro de la lista del reloj</string>
     <string name="lock_password_failed_toast">No se pudo escribir el archivo de contraseña. ¿Está concedido root?</string>

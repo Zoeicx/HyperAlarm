@@ -49,14 +49,14 @@ Skrypty leżą w `/data/adb/alarm_shell/scripts/`, a nazwa w etykiecie musi zgad
 - Skrypty działają jako root w głównej przestrzeni nazw systemu, więc widzą katalogi danych innych aplikacji.
 - Każde uruchomienie zostawia log: widać go w „Logach skryptów” w aplikacji, a kopia trafia do
   `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<nazwa skryptu>/`.
-- Przed cichym zadaniem moduł odblokuje ekran Twoim hasłem, jeśli je ustawiono.
+- Przed cichym zadaniem moduł wybudza i odblokowuje ekran tylko wtedy, gdy urządzenie jest nadal zablokowane (np. przed pierwszym odblokowaniem po restarcie). Wyłączony ekran pozostaje wyłączony.
 
 ## Ustawienia
 
 - **Zegar pokazuje tylko budziki**: w liście Zegara zostają prawdziwe budziki, zadania-skrypty znikają.
 - **Ukryj zadania z dzwonkiem**: ukrywa także zadania z włączonym dzwonkiem.
 - Poziom logów / Logi aplikacji / Logi skryptów: przy problemach najpierw podnieś poziom.
-- **Hasło ekranu blokady**: służy do odblokowania przed cichymi zadaniami; puste pole nic nie zmienia.
+- **Hasło ekranu blokady**: odblokowuje ciche zadania tylko wtedy, gdy po restarcie urządzenie jest jeszcze zablokowane; puste pole nic nie zmienia.
 - Przewodnik restartu, kopiowanie katalogu skryptów, kopia zapasowa i przywracanie konfiguracji.
 
 ## Znane ograniczenia

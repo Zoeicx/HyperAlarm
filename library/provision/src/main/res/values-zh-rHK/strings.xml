@@ -68,14 +68,14 @@
     <string name="clock_filter_ringing_summary">開啟了響鈴鬧鐘的任務也不顯示</string>
     <string name="lock_password_title">鎖屏密碼設定</string>
     <string name="lock_password_summary_unset">未設定：腳本執行前不會解鎖螢幕</string>
-    <string name="lock_password_summary_set">已設定：靜音任務執行前會先解鎖螢幕</string>
+    <string name="lock_password_summary_set">已設定：只喺部機重啟後仲鎖住嗰陣解鎖</string>
     <string name="provision_basic_settings_category_clock">時鐘清單</string>
     <string name="lock_password_clear">清空</string>
     <string name="lock_password_save">儲存</string>
     <string name="lock_password_cleared">已清空</string>
     <string name="lock_password_saved">已儲存</string>
     <string name="lock_password_unchanged">已維持不變</string>
-    <string name="lock_password_desc">靜音任務執行前用它解鎖螢幕；留空表示不修改。</string>
+    <string name="lock_password_desc">只喺部機仲鎖住嘅時候先用（例如重啟後未解鎖）；留空即係唔改。</string>
     <string name="lock_password_hint">鎖屏密碼</string>
     <string name="clock_filter_no_root">需要 root 權限才可修改時鐘列表過濾</string>
     <string name="lock_password_failed_toast">密碼檔寫入失敗，請確認已畀咗 root</string>

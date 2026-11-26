@@ -49,14 +49,14 @@ Scripts live in `/data/adb/alarm_shell/scripts/`, and the name in the label must
 - Scripts run as root inside the main system namespace, so they can see other apps' data directories.
 - Every run leaves a log: the in-app "Script logs" page shows it, and it is mirrored to
   `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<script name>/`.
-- Before a silent task runs, the module unlocks the screen with your lock screen password, if you set one.
+- Before a silent task runs, the module wakes and unlocks the screen only when the device is still locked (for example before the first unlock after a reboot). A screen that is merely off stays off.
 
 ## Settings
 
 - **Clock shows alarms only**: the Mi Clock list keeps real alarms and hides script tasks.
 - **Hide ringing tasks**: hides ringing tasks as well.
 - Log levels / App logs / Script logs: raise the level first when something goes wrong.
-- **Lock screen password**: used to unlock for silent tasks; leave it empty to keep the current one.
+- **Lock screen password**: unlocks for silent tasks only while the device is still locked after a reboot; leave it empty to keep the current one.
 - Restart tutorial, copy the script directory, back up and restore the module configuration.
 
 ## Known limits

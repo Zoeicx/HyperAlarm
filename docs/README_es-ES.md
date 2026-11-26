@@ -49,14 +49,14 @@ Los scripts viven en `/data/adb/alarm_shell/scripts/` y el nombre de la etiqueta
 - Los scripts se ejecutan como root dentro del espacio de nombres principal del sistema, así que ven los directorios de datos de otras apps.
 - Cada ejecución deja un registro: se ve en «Registros de scripts» dentro de la app y además se copia a
   `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<nombre del script>/`.
-- Antes de una tarea silenciosa, el módulo desbloquea la pantalla con tu contraseña si la has definido.
+- Antes de una tarea silenciosa, el módulo solo enciende y desbloquea la pantalla si el dispositivo sigue bloqueado (por ejemplo, antes del primer desbloqueo tras reiniciar). Una pantalla que solo está apagada permanece apagada.
 
 ## Ajustes
 
 - **El reloj solo muestra alarmas**: en la lista del Reloj quedan las alarmas reales y se ocultan las tareas de script.
 - **Ocultar tareas con sonido**: oculta también las tareas con tono activado.
 - Nivel de registro / Registros de la app / Registros de scripts: sube el nivel antes de investigar un fallo.
-- **Contraseña de la pantalla de bloqueo**: sirve para desbloquear antes de las tareas silenciosas; vacío significa no cambiarla.
+- **Contraseña de la pantalla de bloqueo**: desbloquea las tareas silenciosas solo mientras el dispositivo siga bloqueado tras reiniciar; vacío significa no cambiarla.
 - Tutorial de reinicio, copiar el directorio de scripts, copia de seguridad y restauración de la configuración.
 
 ## Limitaciones conocidas

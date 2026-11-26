@@ -242,7 +242,7 @@
     <string name="alarm_delete_failed">No se pudieron borrar algunas alarmas; ¿está abierto el Reloj?</string>
     <string name="lock_password_title">Contraseña de bloqueo</string>
     <string name="lock_password_summary_unset">Sin definir: los scripts se ejecutan sin desbloquear</string>
-    <string name="lock_password_summary_set">Definida: las tareas silenciosas desbloquean antes de ejecutarse</string>
+    <string name="lock_password_summary_set">Definida: solo desbloquea mientras el dispositivo siga bloqueado tras reiniciar</string>
     <string name="lock_password_dialog_title">Contraseña de bloqueo</string>
     <string name="lock_password_hint">Contraseña de la pantalla de bloqueo</string>
     <string name="lock_password_save">Guardar</string>
@@ -252,7 +252,7 @@
     <string name="lock_password_unchanged">Sin cambios</string>
     <string name="restart_tutorial_title">Repetir la configuración</string>
     <string name="restart_tutorial_summary">Repasa la activación, el ámbito y los permisos</string>
-    <string name="lock_password_desc">Se usa para desbloquear la pantalla antes de una tarea silenciosa. Déjalo vacío para mantener la actual.</string>
+    <string name="lock_password_desc">Se usa solo mientras el dispositivo sigue bloqueado (por ejemplo, antes del primer desbloqueo tras reiniciar). Déjalo vacío para mantener la actual.</string>
     <string name="repeat_shift_is_schedule">La repetición de una tarea por turnos la define el turno y no se cambia aquí</string>
     <string name="ringtone_update_failed">No se pudo actualizar el tono</string>
 </resources>

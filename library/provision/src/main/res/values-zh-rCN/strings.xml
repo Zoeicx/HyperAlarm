@@ -51,14 +51,14 @@
     <string name="clock_filter_ringing_summary">开启了响铃闹钟的任务也不显示</string>
     <string name="lock_password_title">锁屏密码设置</string>
     <string name="lock_password_summary_unset">未设置：脚本执行前不会解锁屏幕</string>
-    <string name="lock_password_summary_set">已设置：静默任务执行前会先解锁屏幕</string>
+    <string name="lock_password_summary_set">已设置：只在设备重启后仍锁定时解锁</string>
     <string name="provision_basic_settings_category_clock">时钟列表</string>
     <string name="lock_password_clear">清空</string>
     <string name="lock_password_save">保存</string>
     <string name="lock_password_cleared">已清空</string>
     <string name="lock_password_saved">已保存</string>
     <string name="lock_password_unchanged">已保持不变</string>
-    <string name="lock_password_desc">静默任务执行前用它解锁屏幕；留空表示不修改。</string>
+    <string name="lock_password_desc">仅在设备仍处于锁定状态时使用（例如重启后尚未解锁）；留空表示不修改。</string>
     <string name="lock_password_hint">锁屏密码</string>
     <string name="clock_filter_no_root">需要 root 权限才能修改时钟列表过滤</string>
     <string name="lock_password_failed_toast">密码文件写入失败，请确认已授予 root</string>

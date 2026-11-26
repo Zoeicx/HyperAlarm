@@ -8,6 +8,7 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
+import android.util.Base64;
 import android.service.notification.StatusBarNotification;
 import android.os.Looper;
 import android.widget.Toast;
@@ -78,14 +79,23 @@ public final class TaskManager {
     private static final Map<String, Task> RUNNING = new ConcurrentHashMap<>();
     private static final Handler MAIN = new Handler(Looper.getMainLooper());
     private static Runnable stateUpdater;
+    /** Cached module app uid:gid for the log mirror; resolved once per clock process. */
+    private static volatile String sAppOwner;
 
-    /** The default {@code unlock_phone}: wake the screen, swipe, type the password, confirm. */
     /** The app's external files dir; mirrored logs are owned by the app so only it can read them. */
     private static final String APP_FILES_DIR =
             "/sdcard/Android/data/" + BridgeContract.MODULE_PACKAGE + "/files";
     private static final String LOG_MIRROR_DIR = APP_FILES_DIR + "/script_logs/";
-
+    /**
+     * The default fallback {@code unlock_phone}: type the password into the credential entry the
+     * helper has already opened. {@link UnlockHelper} tries {@code locksettings verify} first; this
+     * script is only used when that command is unavailable.
+     */
     private static final String UNLOCK_SCRIPT_B64 =
+            "IyEvc3lzdGVtL2Jpbi9zaAojIEh5cGVyQWxhcm0gZGVmYXVsdCB1bmxvY2sgc2NyaXB0LgojIFRoZSBtb2R1bGUgaGFzIGFscmVhZHkgd29rZW4gdGhlIHNjcmVlbiwgZGlzbWlzc2VkIGEgc3dpcGUga2V5Z3VhcmQgYW5kIHN3aXBlZCB1cCB0byB0aGUKIyBjcmVkZW50aWFsIGVudHJ5LiBUaGlzIHNjcmlwdCBvbmx5IHR5cGVzIHRoZSBwYXNzd29yZCBwYXNzZWQgYXMgJDEgKHF1b3RlZCwgc28gc3BhY2VzIHN1cnZpdmUpLgpQQVNTV09SRD0iJDEiClsgLXogIiRQQVNTV09SRCIgXSAmJiBleGl0IDAKaW5wdXQgdGV4dCAiJFBBU1NXT1JEIgppbnB1dCBrZXlldmVudCBLRVlDT0RFX0VOVEVSCnNsZWVwIDEK";
+
+    /** The v1 default script, replaced in place only when the user has not edited it. */
+    private static final String UNLOCK_SCRIPT_V1_B64 =
             "IyBFeGVjdXRlZCBvbmx5IHdoZW4gdGhlIGFsYXJtIGZpcmVzIHdoaWxlIHRoZSBkZXZpY2UgaXMgbG9ja2VkIGFuZCAvZGF0YSBpcyBzdGlsbCBlbmNyeXB0ZWQuCmlucHV0IGtleWV2ZW50IEtFWUNPREVfV0FLRVVQCnNsZWVwIDEKaW5wdXQgc3dpcGUgNTAwIDE1MDAgNTAwIDUwMApzbGVlcCAxCmlucHV0IHRleHQgJDEKaW5wdXQga2V5ZXZlbnQgS0VZQ09ERV9FTlRFUgpzbGVlcCAxCg==";
 
     private TaskManager() {
@@ -269,11 +279,30 @@ public final class TaskManager {
                 XposedLog.e(TAG, "cannot prepare " + PASSWORD_FILE);
                 return false;
             }
-            if (!RootShell.fileExists(UNLOCK_SCRIPT)) {
-                RootShell.writeFileFromBase64(UNLOCK_SCRIPT, UNLOCK_SCRIPT_B64);
+            boolean writeUnlockScript = !RootShell.fileExists(UNLOCK_SCRIPT);
+            if (!writeUnlockScript && isLegacyDefaultUnlockScript(RootShell.readFile(UNLOCK_SCRIPT))) {
+                // Keep custom unlock scripts untouched; only replace the old default that hardcoded
+                // a 1080x2400 swipe and split a password containing spaces.
+                writeUnlockScript = true;
+            }
+            if (writeUnlockScript
+                    && !RootShell.writeFileFromBase64(UNLOCK_SCRIPT, UNLOCK_SCRIPT_B64)) {
+                XposedLog.w(TAG, "cannot write the default unlock script");
             }
             SETUP_DONE.set(true);
             return true;
+        }
+    }
+
+    /** True only for the unchanged v1 default script, so a user's edit is never overwritten. */
+    private static boolean isLegacyDefaultUnlockScript(String current) {
+        if (current == null || current.trim().isEmpty()) return false;
+        try {
+            String legacy = new String(Base64.decode(UNLOCK_SCRIPT_V1_B64, Base64.DEFAULT),
+                    StandardCharsets.UTF_8);
+            return current.trim().equals(legacy.trim());
+        } catch (Throwable t) {
+            return false;
         }
     }
 
@@ -325,7 +354,7 @@ public final class TaskManager {
             try (FileOutputStream fos = new FileOutputStream(file)) {
                 fos.write(sb.toString().getBytes(StandardCharsets.UTF_8));
             }
-            mirrorLog(file, name);
+            mirrorLog(context, file, name);
             return file;
         } catch (Throwable t) {
             return null;
@@ -349,23 +378,79 @@ public final class TaskManager {
      * Copies a finished log to the app readable location. The HyperAlarm app cannot read the clock
      * process private cache, so this copy is what its script log importer reads.
      */
-    public static void mirrorLog(File file, String name) {
+    public static void mirrorLog(Context context, File file, String name) {
+        String owner = appOwner(context);
+        if (owner == null) {
+            XposedLog.w(TAG, "log mirror failed for " + name + ": cannot resolve the app uid");
+            return;
+        }
         String mirrorDir = LOG_MIRROR_DIR + name;
-        // Script output routinely carries tickets, tokens and internal host names, so the copy is
-        // restricted to the app that has to read it: ownership comes from the app's own external
-        // dir, mode 600 for the file and 700 for the directory. If the ownership lookup fails the
-        // chain stops and the copy keeps the defaults, which the app can still read.
-        RootShell.run("mkdir -p " + RootShell.quote(mirrorDir)
+        // Do not guess the owner from the external directory: root's own mkdir may have created it.
+        // The clock process also cannot stat /data/data/<pkg> (other apps' data directories are
+        // hidden in its mount namespace), so the uid comes from PackageManager or `pm list
+        // packages -U`. Script output routinely carries tickets, tokens and internal host names, so
+        // the copy is restricted to the app: owner is the app uid, mode 700/600.
+        Shell.Result result = RootShell.run("mkdir -p " + RootShell.quote(mirrorDir)
+                + " && chown " + owner + " " + RootShell.quote(APP_FILES_DIR)
+                + " " + RootShell.quote(LOG_MIRROR_DIR)
+                + " && chown -R " + owner + " " + RootShell.quote(mirrorDir)
                 + " && cp " + RootShell.quote(file.getAbsolutePath()) + " " + RootShell.quote(mirrorDir + "/")
-                + " && chown -R $(stat -c %u:%g " + RootShell.quote(APP_FILES_DIR) + ") "
-                + RootShell.quote(mirrorDir)
-                + " && chmod 700 " + RootShell.quote(mirrorDir)
+                + " && chown " + owner + " " + RootShell.quote(mirrorDir + "/" + file.getName())
+                + " && chmod 700 " + RootShell.quote(LOG_MIRROR_DIR)
+                + " " + RootShell.quote(mirrorDir)
                 + " && chmod 600 " + RootShell.quote(mirrorDir + "/" + file.getName()));
-        // The chain stops at the first failure, which is the documented behaviour above; say so,
-        // otherwise the app quietly shows nothing for a run that did happen.
-        if (!RootShell.fileExists(mirrorDir + "/" + file.getName())) {
+        // Check the chain as a whole, not just the copied file: a failed chown still leaves the
+        // file in place, which is how root-owned mirrors silently made every script log unreadable.
+        if (result == null || !result.isSuccess()
+                || !RootShell.fileExists(mirrorDir + "/" + file.getName())) {
+            // The uid may have changed after a reinstall while this clock process stayed alive.
+            sAppOwner = null;
             XposedLog.w(TAG, "log mirror failed for " + name);
         }
+    }
+
+    /**
+     * The module app's uid/gid, used for every file the app has to read from the mirror.
+     *
+     * <p>The clock process usually cannot see the module package through its PackageManager
+     * ({@code NameNotFoundException}) and cannot stat other apps' data directories either: both are
+     * hidden by its mount namespace. {@code pm list packages -U} runs through the root shell and
+     * reports the install-time uid, which is exactly what the external mirror needs.</p>
+     */
+    private static String appOwner(Context context) {
+        String cached = sAppOwner;
+        if (cached != null) return cached;
+
+        int uid = -1;
+        try {
+            uid = context.getPackageManager()
+                    .getPackageUid(BridgeContract.MODULE_PACKAGE, 0);
+        } catch (Throwable ignored) {
+            // Normal in the clock process; the root fallback below is the real path.
+        }
+        if (uid <= 0) {
+            String line = RootShell.runOutput("pm list packages -U | grep -F "
+                    + RootShell.quote("package:" + BridgeContract.MODULE_PACKAGE + " "));
+            int marker = line.indexOf("uid:");
+            if (marker >= 0) {
+                String tail = line.substring(marker + 4).trim();
+                int end = 0;
+                while (end < tail.length() && Character.isDigit(tail.charAt(end))) end++;
+                if (end > 0) {
+                    try {
+                        uid = Integer.parseInt(tail.substring(0, end));
+                    } catch (Throwable ignored) {
+                    }
+                }
+            }
+        }
+        if (uid <= 0) {
+            XposedLog.w(TAG, "cannot resolve " + BridgeContract.MODULE_PACKAGE + " uid");
+            return null;
+        }
+        String owner = uid + ":" + uid;
+        sAppOwner = owner;
+        return owner;
     }
 
     /**
@@ -419,7 +504,7 @@ public final class TaskManager {
             try (FileOutputStream fos = new FileOutputStream(file)) {
                 fos.write(sb.toString().getBytes(StandardCharsets.UTF_8));
             }
-            mirrorLog(file, task.name);
+            mirrorLog(context, file, task.name);
             return file;
         } catch (Throwable t) {
             return null;

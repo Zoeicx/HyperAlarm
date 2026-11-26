@@ -242,7 +242,7 @@
     <string name="alarm_delete_failed">一部のアラームを削除できませんでした。小米時計は動作していますか？</string>
     <string name="lock_password_title">ロック画面のパスワード</string>
     <string name="lock_password_summary_unset">未設定：スクリプト実行前に画面ロックを解除しません</string>
-    <string name="lock_password_summary_set">設定済み：サイレント実行前に画面ロックを解除します</string>
+    <string name="lock_password_summary_set">設定済み：再起動後に端末がまだロックされている間だけ解除します</string>
     <string name="lock_password_dialog_title">ロック画面のパスワード</string>
     <string name="lock_password_hint">ロック画面のパスワード</string>
     <string name="lock_password_save">保存</string>
@@ -252,7 +252,7 @@
     <string name="lock_password_unchanged">変更していません</string>
     <string name="restart_tutorial_title">セットアップをもう一度</string>
     <string name="restart_tutorial_summary">有効化・スコープ・権限の手順をやり直します</string>
-    <string name="lock_password_desc">サイレント実行の前に画面ロックを解除するためのパスワードです。空欄なら変更しません。</string>
+    <string name="lock_password_desc">端末がまだロックされている間だけ使います（例：再起動後の最初の解除前）。空欄なら変更しません。</string>
     <string name="repeat_shift_is_schedule">シフトの繰り返しはシフト表で決まります。ここでは変更できません</string>
     <string name="ringtone_update_failed">着信音を更新できませんでした</string>
 </resources>

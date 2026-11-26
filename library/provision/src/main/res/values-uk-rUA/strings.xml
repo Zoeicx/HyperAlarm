@@ -70,14 +70,14 @@
     <string name="clock_filter_ringing_summary">Завдання, чий будильник дзвонить, теж ховаються</string>
     <string name="lock_password_title">Пароль блокування екрана</string>
     <string name="lock_password_summary_unset">Не задано: скрипти виконуються без розблокування</string>
-    <string name="lock_password_summary_set">Задано: тихі завдання розблоковують екран перед запуском</string>
+    <string name="lock_password_summary_set">Задано: розблоковує лише поки після перезавантаження пристрій усе ще заблокований</string>
     <string name="provision_basic_settings_category_clock">Список годинника</string>
     <string name="lock_password_clear">Очистити</string>
     <string name="lock_password_save">Зберегти</string>
     <string name="lock_password_cleared">Очищено</string>
     <string name="lock_password_saved">Збережено</string>
     <string name="lock_password_unchanged">Залишено без змін</string>
-    <string name="lock_password_desc">Потрібен, щоб розблокувати екран перед тихим завданням. Залиште порожнім, щоб не змінювати.</string>
+    <string name="lock_password_desc">Використовується лише поки пристрій ще заблокований (наприклад, до першого розблокування після перезавантаження). Залиште порожнім, щоб не змінювати.</string>
     <string name="lock_password_hint">Пароль блокування екрана</string>
     <string name="clock_filter_no_root">Для зміни фільтра списку годинника потрібен root</string>
     <string name="lock_password_failed_toast">Не вдалося записати файл пароля. Root надано?</string>

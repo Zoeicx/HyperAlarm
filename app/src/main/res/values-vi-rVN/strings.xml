@@ -242,7 +242,7 @@
     <string name="alarm_delete_failed">Không xóa được một số báo thức; Đồng hồ có đang chạy?</string>
     <string name="lock_password_title">Mật khẩu khóa màn hình</string>
     <string name="lock_password_summary_unset">Chưa đặt: script chạy mà không mở khóa</string>
-    <string name="lock_password_summary_set">Đã đặt: tác vụ im lặng sẽ mở khóa trước khi chạy</string>
+    <string name="lock_password_summary_set">Đã đặt: chỉ mở khóa khi thiết bị vẫn còn khóa sau khi khởi động lại</string>
     <string name="lock_password_dialog_title">Mật khẩu khóa màn hình</string>
     <string name="lock_password_hint">Mật khẩu màn hình khóa</string>
     <string name="lock_password_save">Lưu</string>
@@ -252,7 +252,7 @@
     <string name="lock_password_unchanged">Giữ nguyên</string>
     <string name="restart_tutorial_title">Chạy lại hướng dẫn</string>
     <string name="restart_tutorial_summary">Xem lại các bước bật, phạm vi và quyền</string>
-    <string name="lock_password_desc">Dùng để mở khóa màn hình trước khi tác vụ im lặng chạy. Để trống nếu không đổi.</string>
+    <string name="lock_password_desc">Chỉ dùng khi thiết bị vẫn còn khóa (ví dụ trước lần mở khóa đầu tiên sau khi khởi động lại). Để trống nếu không đổi.</string>
     <string name="repeat_shift_is_schedule">Nhiệm vụ theo ca lặp lại theo ca, không đổi được ở đây</string>
     <string name="ringtone_update_failed">Không cập nhật được nhạc chuông</string>
 </resources>

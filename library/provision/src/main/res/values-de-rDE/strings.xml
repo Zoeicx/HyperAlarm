@@ -70,14 +70,14 @@
     <string name="clock_filter_ringing_summary">Aufgaben, deren Alarm klingelt, werden ausgeblendet</string>
     <string name="lock_password_title">Sperrbildschirm-Passwort</string>
     <string name="lock_password_summary_unset">Nicht gesetzt: Skripte laufen ohne Entsperren</string>
-    <string name="lock_password_summary_set">Gesetzt: stille Aufgaben entsperren vor dem Lauf</string>
+    <string name="lock_password_summary_set">Gesetzt: entsperrt nur, solange das Gerät nach einem Neustart noch gesperrt ist</string>
     <string name="provision_basic_settings_category_clock">Uhr-Liste</string>
     <string name="lock_password_clear">Löschen</string>
     <string name="lock_password_save">Speichern</string>
     <string name="lock_password_cleared">Gelöscht</string>
     <string name="lock_password_saved">Gespeichert</string>
     <string name="lock_password_unchanged">Unverändert gelassen</string>
-    <string name="lock_password_desc">Wird verwendet, um den Bildschirm vor einer stillen Aufgabe zu entsperren. Leer lassen, um das aktuelle zu behalten.</string>
+    <string name="lock_password_desc">Wird nur verwendet, solange das Gerät noch gesperrt ist (etwa vor dem ersten Entsperren nach einem Neustart). Leer lassen, um das aktuelle zu behalten.</string>
     <string name="lock_password_hint">Sperrbildschirm-Passwort</string>
     <string name="clock_filter_no_root">Zum Ändern des Uhrlisten-Filters ist Root erforderlich</string>
     <string name="lock_password_failed_toast">Passwortdatei konnte nicht geschrieben werden. Ist Root erteilt?</string>

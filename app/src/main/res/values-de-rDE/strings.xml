@@ -242,7 +242,7 @@
     <string name="alarm_delete_failed">Einige Alarme konnten nicht gelöscht werden; läuft die Xiaomi-Uhr?</string>
     <string name="lock_password_title">Sperrbildschirm-Passwort</string>
     <string name="lock_password_summary_unset">Nicht gesetzt: Skripte laufen ohne Entsperren</string>
-    <string name="lock_password_summary_set">Gesetzt: stille Aufgaben entsperren vor dem Lauf</string>
+    <string name="lock_password_summary_set">Gesetzt: entsperrt nur, solange das Gerät nach einem Neustart noch gesperrt ist</string>
     <string name="lock_password_dialog_title">Sperrbildschirm-Passwort</string>
     <string name="lock_password_hint">Sperrbildschirm-Passwort</string>
     <string name="lock_password_save">Speichern</string>
@@ -252,7 +252,7 @@
     <string name="lock_password_unchanged">Unverändert gelassen</string>
     <string name="restart_tutorial_title">Einrichtung wiederholen</string>
     <string name="restart_tutorial_summary">Aktivierung, Scope und Berechtigungen noch einmal durchgehen</string>
-    <string name="lock_password_desc">Wird verwendet, um den Bildschirm vor einer stillen Aufgabe zu entsperren. Leer lassen, um das aktuelle zu behalten.</string>
+    <string name="lock_password_desc">Wird nur verwendet, solange das Gerät noch gesperrt ist (etwa vor dem ersten Entsperren nach einem Neustart). Leer lassen, um das aktuelle zu behalten.</string>
     <string name="repeat_shift_is_schedule">Die Wiederholung einer Schichtaufgabe ergibt sich aus dem Schichtplan und wird hier nicht geändert</string>
     <string name="ringtone_update_failed">Klingelton konnte nicht aktualisiert werden</string>
 </resources>

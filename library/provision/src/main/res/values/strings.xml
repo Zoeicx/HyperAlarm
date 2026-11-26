@@ -54,14 +54,14 @@
     <string name="clock_filter_ringing_summary">Tasks whose alarm rings are hidden too</string>
     <string name="lock_password_title">Lock screen password</string>
     <string name="lock_password_summary_unset">Not set: scripts run without unlocking the screen</string>
-    <string name="lock_password_summary_set">Set: silent tasks unlock the screen before running</string>
+    <string name="lock_password_summary_set">Set: unlocks only while the device is still locked after a reboot</string>
     <string name="provision_basic_settings_category_clock">Clock list</string>
     <string name="lock_password_clear">Clear</string>
     <string name="lock_password_save">Save</string>
     <string name="lock_password_cleared">Cleared</string>
     <string name="lock_password_saved">Saved</string>
     <string name="lock_password_unchanged">Left unchanged</string>
-    <string name="lock_password_desc">Used to unlock the screen before a silent task runs. Leave empty to keep the current one.</string>
+    <string name="lock_password_desc">Used only while the device is still locked (for example before the first unlock after a reboot). Leave empty to keep the current one.</string>
     <string name="lock_password_hint">Lock screen password</string>
     <string name="clock_filter_no_root">Root is required to change the clock list filter</string>
     <string name="lock_password_failed_toast">Couldn\'t write the password file; is root granted?</string>

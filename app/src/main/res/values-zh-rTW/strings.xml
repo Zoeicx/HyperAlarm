@@ -242,7 +242,7 @@
     <string name="alarm_delete_failed">部分鬧鐘刪除失敗，請確認小米時鐘正在執行</string>
     <string name="lock_password_title">鎖屏密碼設定</string>
     <string name="lock_password_summary_unset">未設定：腳本執行前不會解鎖螢幕</string>
-    <string name="lock_password_summary_set">已設定：靜音任務執行前會先解鎖螢幕</string>
+    <string name="lock_password_summary_set">已設定：只在裝置重新開機後仍鎖定時解鎖</string>
     <string name="lock_password_dialog_title">鎖屏密碼</string>
     <string name="lock_password_hint">鎖屏密碼</string>
     <string name="lock_password_save">儲存</string>
@@ -252,7 +252,7 @@
     <string name="lock_password_unchanged">已維持不變</string>
     <string name="restart_tutorial_title">重啟教學</string>
     <string name="restart_tutorial_summary">重新走一遍啟用、作用域與權限步驟</string>
-    <string name="lock_password_desc">靜音任務執行前用它解鎖螢幕；留空表示不修改。</string>
+    <string name="lock_password_desc">僅在裝置仍處於鎖定狀態時使用（例如重新開機後尚未解鎖）；留空表示不修改。</string>
     <string name="repeat_shift_is_schedule">輪班的重複由班次表決定，不能在這裡改</string>
     <string name="ringtone_update_failed">鈴聲更新失敗</string>
 </resources>

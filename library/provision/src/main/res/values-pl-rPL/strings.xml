@@ -70,14 +70,14 @@
     <string name="clock_filter_ringing_summary">Zadania z dzwoniącym budzikiem też są ukrywane</string>
     <string name="lock_password_title">Hasło ekranu blokady</string>
     <string name="lock_password_summary_unset">Nie ustawiono: skrypty działają bez odblokowania</string>
-    <string name="lock_password_summary_set">Ustawiono: ciche zadania odblokowują ekran przed startem</string>
+    <string name="lock_password_summary_set">Ustawiono: odblokowuje tylko wtedy, gdy po restarcie urządzenie jest jeszcze zablokowane</string>
     <string name="provision_basic_settings_category_clock">Lista zegara</string>
     <string name="lock_password_clear">Wyczyść</string>
     <string name="lock_password_save">Zapisz</string>
     <string name="lock_password_cleared">Wyczyszczono</string>
     <string name="lock_password_saved">Zapisano</string>
     <string name="lock_password_unchanged">Bez zmian</string>
-    <string name="lock_password_desc">Służy do odblokowania ekranu przed cichym zadaniem. Zostaw puste, aby zachować obecne.</string>
+    <string name="lock_password_desc">Służy tylko wtedy, gdy urządzenie jest jeszcze zablokowane (np. przed pierwszym odblokowaniem po restarcie). Zostaw puste, aby zachować obecne.</string>
     <string name="lock_password_hint">Hasło ekranu blokady</string>
     <string name="clock_filter_no_root">Do zmiany filtra listy zegara potrzebne są uprawnienia root</string>
     <string name="lock_password_failed_toast">Nie udało się zapisać pliku hasła. Czy root jest przyznany?</string>

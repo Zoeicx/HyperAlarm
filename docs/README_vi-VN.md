@@ -49,14 +49,14 @@ Script nằm trong `/data/adb/alarm_shell/scripts/`, tên trong nhãn phải tr�
 - Script chạy bằng quyền root trong không gian tên chính của hệ thống nên thấy được thư mục dữ liệu của ứng dụng khác.
 - Mỗi lần chạy đều để lại log: xem ở trang «Log script» trong ứng dụng, đồng thời được sao sang
   `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<tên script>/`.
-- Trước nhiệm vụ lặng lẽ, nếu bạn đã đặt mật khẩu màn hình khóa, mô-đun sẽ dùng nó để mở khóa.
+- Trước nhiệm vụ lặng lẽ, mô-đun chỉ đánh thức và mở khóa màn hình khi thiết bị vẫn đang khóa (ví dụ trước lần mở khóa đầu tiên sau khi khởi động lại). Màn hình chỉ tắt sẽ vẫn tắt.
 
 ## Cài đặt trong ứng dụng
 
 - **Đồng hồ chỉ hiện báo thức**: danh sách Đồng hồ chỉ còn báo thức thật, nhiệm vụ script bị ẩn.
 - **Ẩn nhiệm vụ có chuông**: ẩn luôn cả nhiệm vụ đang bật nhạc chuông.
 - Mức log / Log ứng dụng / Log script: khi cần tìm lỗi hãy nâng mức log trước.
-- **Mật khẩu màn hình khóa**: dùng để mở khóa trước nhiệm vụ lặng lẽ; để trống nghĩa là không đổi.
+- **Mật khẩu màn hình khóa**: mở khóa cho nhiệm vụ lặng lẽ chỉ khi thiết bị vẫn còn khóa sau khi khởi động lại; để trống nghĩa là không đổi.
 - Hướng dẫn khởi động lại, sao chép thư mục script, sao lưu và phục hồi cấu hình.
 
 ## Hạn chế đã biết

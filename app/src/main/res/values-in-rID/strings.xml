@@ -242,7 +242,7 @@
     <string name="alarm_delete_failed">Sebagian alarm gagal dihapus; apakah Jam Xiaomi berjalan?</string>
     <string name="lock_password_title">Sandi kunci layar</string>
     <string name="lock_password_summary_unset">Belum diatur: skrip berjalan tanpa membuka kunci</string>
-    <string name="lock_password_summary_set">Sudah diatur: tugas senyap membuka kunci sebelum berjalan</string>
+    <string name="lock_password_summary_set">Sudah diatur: hanya membuka kunci selama perangkat masih terkunci setelah reboot</string>
     <string name="lock_password_dialog_title">Sandi kunci layar</string>
     <string name="lock_password_hint">Sandi layar kunci</string>
     <string name="lock_password_save">Simpan</string>
@@ -252,7 +252,7 @@
     <string name="lock_password_unchanged">Tidak diubah</string>
     <string name="restart_tutorial_title">Ulangi panduan penyiapan</string>
     <string name="restart_tutorial_summary">Lewati lagi langkah aktivasi, cakupan, dan izin</string>
-    <string name="lock_password_desc">Dipakai membuka kunci layar sebelum tugas senyap berjalan. Kosongkan bila tidak diubah.</string>
+    <string name="lock_password_desc">Dipakai hanya selama perangkat masih terkunci (misalnya sebelum pembukaan pertama setelah reboot). Kosongkan bila tidak diubah.</string>
     <string name="repeat_shift_is_schedule">Pengulangan tugas shift mengikuti shift, tidak bisa diubah di sini</string>
     <string name="ringtone_update_failed">Gagal memperbarui nada dering</string>
 </resources>

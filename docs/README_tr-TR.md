@@ -49,14 +49,14 @@ Betikler `/data/adb/alarm_shell/scripts/` içinde durur; etiketteki ad dosya ad�
 - Betikler root olarak sistemin ana isim alanında çalışır, bu yüzden diğer uygulamaların veri dizinlerini görür.
 - Her çalıştırma log bırakır: uygulama içindeki «Betik logları» sayfasında görünür, ayrıca
   `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<betik adı>/` altına kopyalanır.
-- Sessiz görevden önce, parola belirlediysen modül ekranı onunla açar.
+- Sessiz görevden önce modül ekranı yalnızca cihaz hâlâ kilitliyse açar ve kilidini açar (örneğin yeniden başlatmadan sonraki ilk açılıştan önce). Yalnızca kapanmış ekran kapalı kalır.
 
 ## Ayarlar
 
 - **Saat yalnızca alarmları göstersin**: Xiaomi Saat listesinde gerçek alarmlar kalır, betik görevleri görünmez.
 - **Çalan görevleri gizle**: zil sesi açık görevleri de gizler.
 - Log düzeyi / Uygulama logları / Betik logları: sorun ararken önce düzeyi yükselt.
-- **Kilit ekranı parolası**: sessiz görevlerden önce ekranı açmak için kullanılır; boş bırakmak değiştirmez.
+- **Kilit ekranı parolası**: yeniden başlatmadan sonra cihaz hâlâ kilitliyken sessiz görevler için ekranı açar; boş bırakmak değiştirmez.
 - Yeniden başlatma rehberi, betik dizinini kopyala, yapılandırmayı yedekle ve geri yükle.
 
 ## Bilinen sınırlar

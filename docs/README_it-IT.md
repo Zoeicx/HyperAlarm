@@ -49,14 +49,14 @@ Gli script stanno in `/data/adb/alarm_shell/scripts/` e il nome nell'etichetta d
 - Gli script girano come root nel namespace principale del sistema, quindi vedono le cartelle dati delle altre app.
 - Ogni esecuzione lascia un log: si legge in «Log degli script» nell'app ed è copiato anche in
   `/sdcard/Android/data/io.github.zoeicx.hyperalarm/files/script_logs/<nome script>/`.
-- Prima di un'attività silenziosa il modulo sblocca lo schermo con la password, se l'hai impostata.
+- Prima di un'attività silenziosa il modulo accende e sblocca lo schermo solo se il dispositivo è ancora bloccato (per esempio prima del primo sblocco dopo un riavvio). Uno schermo solo spento resta spento.
 
 ## Impostazioni
 
 - **L'orologio mostra solo le sveglie**: nell'elenco dell'Orologio restano le sveglie vere, le attività script spariscono.
 - **Nascondi le attività con suoneria**: nasconde anche quelle con la suoneria attiva.
 - Livello dei log / Log dell'app / Log degli script: alza il livello prima di indagare un problema.
-- **Password della schermata di blocco**: serve per sbloccare prima delle attività silenziose; vuoto significa non modificarla.
+- **Password della schermata di blocco**: sblocca le attività silenziose solo finché il dispositivo è ancora bloccato dopo un riavvio; vuoto significa non modificarla.
 - Guida al riavvio, copia della cartella degli script, backup e ripristino della configurazione.
 
 ## Limiti noti

@@ -177,7 +177,9 @@ jobs:
           if [[ -z "$CUR_TAG" ]]; then
             CUR_TAG=$(grep -oP 'val appVersionName = "\K[^"]+' app/build.gradle.kts)
           fi
-          PREV_TAG=$(git tag --sort=-creatordate | grep -Fxv "$CUR_TAG" | head -n1 || true)
+          # Ancestry, not tag creation time: upstream tags share this history, and the newest
+          # created tag is not necessarily the previous release (2.11.170 was created after 1.0.0).
+          PREV_TAG=$(git describe --tags --abbrev=0 "${CUR_TAG}^" 2>/dev/null || true)
           echo "CUR_TAG=$CUR_TAG" >> $GITHUB_ENV
           echo "PREV_TAG=$PREV_TAG" >> $GITHUB_ENV
 
